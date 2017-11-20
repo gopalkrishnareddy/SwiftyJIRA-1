@@ -5,7 +5,7 @@ import Alamofire
 
 public class IssuesController {
 
-    private let queue = DispatchQueue(label: "SwiftyGitHub")
+    private let queue = DispatchQueue(label: "SwiftyJIRA")
     let user: String
     let password: String
     public var owner: String?
@@ -20,177 +20,6 @@ public class IssuesController {
         self.org = org
     }
 
-    public func getAllIssues(
-        filter: Filter = .assigned,
-        state: State = .open,
-        labels: [String]? = nil,
-        sort: SortIssues = .created,
-        direction: Direction = .desc,
-        since: Date? = nil,
-        completion: @escaping ([Issue]?) -> Void)
-    {
-        var parameters: Parameters = [
-            "filter": filter.rawValue,
-            "state": state.rawValue,
-            "sort": sort.rawValue,
-            "direction": direction.rawValue,
-        ]
-        if let labels = labels {
-            parameters["labels"] = labels.joined(separator: ", ")
-        }
-        if let date = since?.iso8601 {
-            parameters["since"] = date
-        }
-        let request = BaseRouter(user: user,
-                                 password: password,
-                                 action: .allIssues(params: parameters))
-        Alamofire.request(request)
-            .validate()
-            .responseJSON(queue: queue) { response in
-            guard let data = response.data else {
-                completion(nil)
-                return
-            }
-            do {
-                let issues = try JSONDecoder().decode([Issue].self, from: data)
-                completion(issues)
-            } catch {
-                print("Error decoding json")
-                completion(nil)
-            }
-        }
-    }
-
-    public func getUserIssues(
-        filter: Filter = .assigned,
-        state: State = .open,
-        labels: [String]? = nil,
-        sort: SortIssues = .created,
-        direction: Direction = .desc,
-        since: Date? = nil,
-        completion: @escaping ([Issue]?) -> Void)
-    {
-        var parameters: Parameters = [
-            "filter": filter.rawValue,
-            "state": state.rawValue,
-            "sort": sort.rawValue,
-            "direction": direction.rawValue,
-        ]
-        if let labels = labels {
-            parameters["labels"] = labels
-        }
-        if let date = since?.iso8601 {
-            parameters["since"] = date
-        }
-        let request = UserRouter(user: user,
-                                 password: password,
-                                 action: .userIssues(params: parameters))
-        Alamofire.request(request)
-            .validate()
-            .responseJSON { response in
-            guard let data = response.data else {
-                completion(nil)
-                return
-            }
-            completion(try? JSONDecoder().decode([Issue].self, from: data))
-        }
-    }
-
-    public func getOrgIssues(
-        filter: Filter = .assigned,
-        state: State = .open,
-        labels: [String]? = nil,
-        sort: SortIssues = .created,
-        direction: Direction = .desc,
-        since: Date? = nil,
-        completion: @escaping ([Issue]?) -> Void)
-    {
-        guard let org = org else {
-            completion(nil)
-            return
-        }
-        var parameters: Parameters = [
-            "filter": filter.rawValue,
-            "state": state.rawValue,
-            "sort": sort.rawValue,
-            "direction": direction.rawValue
-        ]
-        if let labels = labels {
-            parameters["labels"] = labels
-        }
-        if let date = since?.iso8601 {
-            parameters["since"] = date
-        }
-        let request = OrganizationRouter(user: user,
-                                   password: password,
-                                   org: org,
-                                   action: .orgIssues(org: org, params: parameters))
-        Alamofire.request(request)
-            .validate()
-            .responseJSON { response in
-            guard let data = response.data else {
-                completion(nil)
-                return
-            }
-            completion(try? JSONDecoder().decode([Issue].self, from: data))
-        }
-    }
-
-    public func getRepoIssues(
-        milestone: MilestoneFilter? = nil,
-        state: State = .open,
-        assignee: Assignee? = nil,
-        creator: String? = nil,
-        mentioned: String? = nil,
-        labels: [String]? = nil,
-        sort: SortIssues = .created,
-        direction: Direction = .desc,
-        since: Date? = nil,
-        completion: @escaping ([Issue]?) -> Void)
-    {
-        guard let owner = owner, let repo = repo else {
-            completion(nil)
-            return
-        }
-        var parameters: Parameters = [
-            "state": state.rawValue,
-            "sort": sort.rawValue,
-            "direction": direction.rawValue
-        ]
-        if let milestone = milestone {
-            parameters["milestone"] = milestone.stringValue
-        }
-        if let assignee = assignee {
-            parameters["assignee"] = assignee.stringValue
-        }
-        if let creator = creator {
-            parameters["creator"] = creator
-        }
-        if let mentioned = mentioned {
-            parameters["mentioned"] = mentioned
-        }
-        if let labels = labels {
-            parameters["labels"] = labels.joined(separator: ", ")
-        }
-        if let date = since?.iso8601 {
-            parameters["since"] = date
-        }
-        let request = IssuesRouter(user: user,
-                                   password: password,
-                                   owner: owner,
-                                   repo: repo,
-                                   action: .repoIssues(params: parameters))
-        Alamofire.request(request)
-            .validate()
-            .responseJSON { response in
-            guard let data = response.data else {
-                completion(nil)
-                return
-            }
-            completion(try? JSONDecoder().decode([Issue].self, from: data))
-        }
-    }
-
     public func getIssue(
         number: Int,
         completion: @escaping (Issue?) -> Void)
@@ -203,7 +32,7 @@ public class IssuesController {
                                    password: password,
                                    owner: owner,
                                    repo: repo,
-                                   action: .issue(number: number))
+                                   action: .createIssue(params: [:]))
         Alamofire.request(request)
             .validate()
             .responseJSON { response in
@@ -295,7 +124,7 @@ public class IssuesController {
                                    password: password,
                                    owner: owner,
                                    repo: repo,
-                                   action: .editIssue(number: number, params: parameters))
+                                   action: .createIssue(params: [:]))
         Alamofire.request(request)
             .validate()
             .responseJSON { response in
@@ -319,7 +148,7 @@ public class IssuesController {
                                    password: password,
                                    owner: owner,
                                    repo: repo,
-                                   action: .lockIssue(number: number))
+                                   action: .createIssue(params: [:]))
         Alamofire.request(request)
             .validate(statusCode: 204..<205)
             .responseJSON { response in
@@ -346,7 +175,7 @@ public class IssuesController {
                                    password: password,
                                    owner: owner,
                                    repo: repo,
-                                   action: .unlockIssue(number: number))
+                                   action: .createIssue(params: [:]))
         Alamofire.request(request)
             .validate(statusCode: 204..<205)
             .responseJSON { response in

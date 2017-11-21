@@ -36,173 +36,111 @@ struct IssuesRouter: URLRequestConvertible {
     let repo: String
     let action: Action
     
-    var baseURLString: String {
-        return "\(base)/repos/\(owner)/\(repo)/issue"
-    }
-    
     func asURLRequest() throws -> URLRequest {
-        var method: HTTPMethod {
-            switch self.action {
-            case .createIssue:
-                return .post
-            case .createIssues:
-                return .post
-            case .getIssue:
-                return .get
-            case .deleteIssue:
-                return .delete
-            case .editIssue:
-                return .put
-            case .assign:
-                return .put
-            case .getEditIssueMetadata:
-                return .get
-            case .notify:
-                return .post
-            case .createUpdateRemoteIssueLink:
-                return .post
-            case .deleteRemoteIssueLinkByGlobalId:
-                return .delete
-            case .getRemoteIssueLinks:
-                return .delete
-            case .getRemoteIssueLinkById:
-                return .delete
-            case .updateRemoteIssueLink:
-                return .put
-            case .deleteRemoteIssueLinkById:
-                return .delete
-            case .doTransition:
-                return .post
-            case .getTransitions:
-                return .get
-            case .removeVote:
-                return .delete
-            case .addVote:
-                return .post
-            case .getVotes:
-                return .get
-            case .getIssueWatchers:
-                return .get
-            case .addWatcher:
-                return .post
-            case .removeWatcher:
-                return .delete
-            case .getCreateIssueMetadata:
-                return .get
-            case .getIssuePickerResource:
-                return .get
-            }
+        var relativePath: String?
+        let method: HTTPMethod
+        var parameters: Parameters?
+        
+        switch self.action {
+        case .createIssue(let params):
+            method = .post
+            parameters = params
+        case .createIssues(let params):
+            method = .post
+            relativePath = "bulk"
+            parameters = params
+        case .getIssue(let issueIdOrKey, let params):
+            method = .get
+            relativePath = "\(issueIdOrKey)"
+            parameters = params
+        case .deleteIssue(let issueIdOrKey, let params):
+            method = .delete
+            relativePath = "\(issueIdOrKey)"
+            parameters = params
+        case .editIssue(let issueIdOrKey, let params):
+            method = .put
+            relativePath = "\(issueIdOrKey)"
+            parameters = params
+        case .assign(let issueIdOrKey, let params):
+            method = .put
+            relativePath = "\(issueIdOrKey)/assignee"
+            parameters = params
+        case .getEditIssueMetadata(let issueIdOrKey, let params):
+            method = .get
+            relativePath = "\(issueIdOrKey)/editmeta"
+            parameters = params
+        case .notify(let issueIdOrKey, let params):
+            method = .post
+            relativePath = "\(issueIdOrKey)/notify"
+            parameters = params
+        case .createUpdateRemoteIssueLink(let issueIdOrKey, let params):
+            method = .post
+            relativePath = "\(issueIdOrKey)/remotelink"
+            parameters = params
+        case .deleteRemoteIssueLinkByGlobalId(let issueIdOrKey, let params):
+            method = .delete
+            relativePath = "\(issueIdOrKey)/remotelink"
+            parameters = params
+        case .getRemoteIssueLinks(let issueIdOrKey, let params):
+            method = .get
+            relativePath = "\(issueIdOrKey)/remotelink"
+            parameters = params
+        case .getRemoteIssueLinkById(let issueIdOrKey, let linkId, let params):
+            method = .get
+            relativePath = "\(issueIdOrKey)/remotelink/\(linkId)"
+            parameters = params
+        case .updateRemoteIssueLink(let issueIdOrKey, let linkId, let params):
+            method = .put
+            relativePath = "\(issueIdOrKey)/remotelink/\(linkId)"
+            parameters = params
+        case .deleteRemoteIssueLinkById(let issueIdOrKey, let linkId, let params):
+            method = .delete
+            relativePath = "\(issueIdOrKey)/remotelink/\(linkId)"
+            parameters = params
+        case .doTransition(let issueIdOrKey, let params):
+            method = .post
+            relativePath = "\(issueIdOrKey)/transitions"
+            parameters = params
+        case .getTransitions(let issueIdOrKey, let params):
+            method = .get
+            relativePath = "\(issueIdOrKey)/transitions"
+            parameters = params
+        case .removeVote(let issueIdOrKey, let params):
+            method = .delete
+            relativePath = "\(issueIdOrKey)/votes"
+            parameters = params
+        case .addVote(let issueIdOrKey, let params):
+            method = .post
+            relativePath = "\(issueIdOrKey)/votes"
+            parameters = params
+        case .getVotes(let issueIdOrKey, let params):
+            method = .get
+            relativePath = "\(issueIdOrKey)/votes"
+            parameters = params
+        case .getIssueWatchers(let issueIdOrKey, let params):
+            method = .get
+            relativePath = "\(issueIdOrKey)/watchers"
+            parameters = params
+        case .addWatcher(let issueIdOrKey, let params):
+            method = .post
+            relativePath = "\(issueIdOrKey)/watchers"
+            parameters = params
+        case .removeWatcher(let issueIdOrKey, let params):
+            method = .delete
+            relativePath = "\(issueIdOrKey)/watchers"
+            parameters = params
+        case .getCreateIssueMetadata(let params):
+            method = .get
+            relativePath = "createmeta"
+            parameters = params
+        case .getIssuePickerResource(let params):
+            method = .get
+            relativePath = "picker"
+            parameters = params
         }
         
-        let params: (Parameters?) = {
-            switch self.action {
-            case .createIssue(let params):
-                return params
-            case .createIssues(let params):
-                return params
-            case .getIssue(_, let params):
-                return params
-            case .deleteIssue(_, let params):
-                return params
-            case .editIssue(_, let params):
-                return params
-            case .assign(_, let params):
-                return params
-            case .getEditIssueMetadata(_, let params):
-                return params
-            case .notify(_, let params):
-                return params
-            case .createUpdateRemoteIssueLink(_, let params):
-                return params
-            case .deleteRemoteIssueLinkByGlobalId(_, let params):
-                return params
-            case .getRemoteIssueLinks(_, let params):
-                return params
-            case .getRemoteIssueLinkById(_, _, let params):
-                return params
-            case .updateRemoteIssueLink(_, _, let params):
-                return params
-            case .deleteRemoteIssueLinkById(_, _, let params):
-                return params
-            case .doTransition(_, let params):
-                return params
-            case .getTransitions(_, let params):
-                return params
-            case .removeVote(_, let params):
-                return params
-            case .addVote(_, let params):
-                return params
-            case .getVotes(_, let params):
-                return params
-            case .getIssueWatchers(_, let params):
-                return params
-            case .addWatcher(_, let params):
-                return params
-            case .removeWatcher(_, let params):
-                return params
-            case .getCreateIssueMetadata(let params):
-                return params
-            case .getIssuePickerResource(let params):
-                return params
-            }
-        }()
-        
         let url: URL = {
-            // build up and return the URL for each endpoint
-            let relativePath: String?
-            switch self.action {
-            case .createIssue:
-                relativePath = ""
-            case .createIssues:
-                relativePath = "bulk"
-            case .getIssue(let issueIdOrKey, _):
-                relativePath = "\(issueIdOrKey)"
-            case .deleteIssue(let issueIdOrKey, _):
-                relativePath = "\(issueIdOrKey)"
-            case .editIssue(let issueIdOrKey, _):
-                relativePath = "\(issueIdOrKey)"
-            case .assign(let issueIdOrKey, _):
-                relativePath = "\(issueIdOrKey)/assignee"
-            case .getEditIssueMetadata(let issueIdOrKey, _):
-                relativePath = "\(issueIdOrKey)/editmeta"
-            case .notify(let issueIdOrKey, _):
-                relativePath = "\(issueIdOrKey)/notify"
-            case .createUpdateRemoteIssueLink(let issueIdOrKey, _):
-                relativePath = "\(issueIdOrKey)/remotelink"
-            case .deleteRemoteIssueLinkByGlobalId(let issueIdOrKey, _):
-                relativePath = "\(issueIdOrKey)/remotelink"
-            case .getRemoteIssueLinks(let issueIdOrKey, _):
-                relativePath = "\(issueIdOrKey)/remotelink"
-            case .getRemoteIssueLinkById(let issueIdOrKey, let linkId, _):
-                relativePath = "\(issueIdOrKey)/remotelink/\(linkId)"
-            case .updateRemoteIssueLink(let issueIdOrKey, let linkId, _):
-                relativePath = "\(issueIdOrKey)/remotelink/\(linkId)"
-            case .deleteRemoteIssueLinkById(let issueIdOrKey, let linkId, _):
-                relativePath = "\(issueIdOrKey)/remotelink/\(linkId)"
-            case .doTransition(let issueIdOrKey, _):
-                relativePath = "\(issueIdOrKey)/transitions"
-            case .getTransitions(let issueIdOrKey, _):
-                relativePath = "\(issueIdOrKey)/transitions"
-            case .removeVote(let issueIdOrKey, _):
-                relativePath = "\(issueIdOrKey)/votes"
-            case .addVote(let issueIdOrKey, _):
-                relativePath = "\(issueIdOrKey)/votes"
-            case .getVotes(let issueIdOrKey, _):
-                relativePath = "\(issueIdOrKey)/votes"
-            case .getIssueWatchers(let issueIdOrKey, _):
-                relativePath = "\(issueIdOrKey)/watchers"
-            case .addWatcher(let issueIdOrKey, _):
-                relativePath = "\(issueIdOrKey)/watchers"
-            case .removeWatcher(let issueIdOrKey, _):
-                relativePath = "\(issueIdOrKey)/watchers"
-            case .getCreateIssueMetadata:
-                relativePath = "createmeta"
-            case .getIssuePickerResource:
-                relativePath = "picker"
-            }
-            
-            
-            var url = URL(string: baseURLString)!
+            var url = URL(string: "\(base)/repos/\(owner)/\(repo)/issue")!
             if let relativePath = relativePath {
                 url = url.appendingPathComponent(relativePath)
             }
@@ -224,6 +162,6 @@ struct IssuesRouter: URLRequestConvertible {
                 return JSONEncoding.default
             }
         }()
-        return try encoding.encode(urlRequest, with: params)
+        return try encoding.encode(urlRequest, with: parameters)
     }
 }

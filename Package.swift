@@ -8,7 +8,7 @@ let package = Package(
         .library(name: "SwiftyJIRA", targets: ["SwiftyJIRA"])
     ],
     dependencies: [
-        .package(url: "https://github.com/Alamofire/Alamofire.git", .upToNextMajor(from: "4.0.0"))
+        .package(url: "https://github.com/JrGoodle/Alamofire.git", .branch("linux"))
     ],
     targets: [
         .target(name: "SwiftyJIRA", dependencies: ["Alamofire"], path: "Sources")

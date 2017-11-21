@@ -3,11 +3,11 @@
     "pins": [
       {
         "package": "Alamofire",
-        "repositoryURL": "https://github.com/Alamofire/Alamofire.git",
+        "repositoryURL": "https://github.com/JrGoodle/Alamofire.git",
         "state": {
-          "branch": null,
-          "revision": "b8995447518fd57af14c88a47f27434a16f60403",
-          "version": "4.5.1"
+          "branch": "linux",
+          "revision": "23a86820efba8724c8c60ee1f7fcae3ea51175de",
+          "version": null
         }
       }
     ]

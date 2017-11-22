@@ -2,7 +2,6 @@ import Foundation
 
 public struct User: Codable {
     public var `self`: String?
-    public var fields: [String: String?]
     public var key: String?
     public var accountId: String?
     public var name: String?

@@ -5,6 +5,7 @@ public struct Issue: Codable {
     public var id: String?
     public var `self`: String?
     public var key: String?
+    public var fields: Fields?
     public var renderedFields: [String]?
     public var properties: [String]?
     public var names: [String]?
@@ -12,10 +13,115 @@ public struct Issue: Codable {
     public var transitions: [Transition]?
     public var operations: [Opsbar]?
     public var editmeta: EditMeta?
-    public var changelog: Changelog?
+    public var changelog: IssueChangelog?
     public var versionedRepresentations: [String: String]?
     public var fieldsToInclude: [Field]?
-    public var fields: [Field]?
+}
+
+public struct Fields: Codable {
+    public var creator: User?
+    public var aggregateprogress: IssueProgress?
+    public var reporter: User?
+    public var subtasks: [Subtask]?
+    public var aggregatetimeoriginalestimate: String?
+    public var assignee: User?
+    public var lastViewed: String?
+    public var timeestimate: String?
+    public var timeoriginalestimate: String?
+    public var aggregatetimeestimate: String?
+    public var progress: IssueProgress?
+    public var created: String?
+    public var versions: [String]?
+    public var components: [String]?
+    public var timetracking: [String: String?]?
+    public var votes: [Vote]?
+    public var labels: [Label]?
+    public var workratio: Int?
+    public var description: String?
+    public var updated: String
+    public var issuetype: IssueType?
+    public var watches: Watches?
+    public var environment: String?
+    public var comment: Comment?
+    public var timespent: String?
+    public var priority: Priority?
+    public var project: Project?
+    public var fixVersions: [Version]?
+    public var issueLinks: [IssueLink]?
+    public var resolution: String?
+    public var status: IssueStatus?
+    public var summary: String?
+    public var attachment: [Attachment]?
+    public var duedate: String?
+    public var security: String?
+}
+
+public struct Attachment: Codable {
+    
+}
+
+public struct IssueStatus: Codable {
+    public var `self`: String?
+    public var description: String?
+    public var name: String?
+    public var statusCategory: StatusCategory?
+    public var iconUrl: String?
+    public var id: String?
+}
+
+public struct IssueLink: Codable {
+    
+}
+
+public struct Version: Codable {
+    
+}
+
+public struct Project: Codable {
+    public var `self`: String?
+    public var name: String?
+    public var avatarUrls: [AvatarURL]?
+    public var id: String?
+    public var key: String?
+}
+
+public struct Priority: Codable {
+    public var `self`: String?
+    public var name: String?
+    public var iconUrl: String?
+    public var id: String?
+}
+
+public struct Comment: Codable {
+    public var comments: [String]?
+    public var startAt: Int?
+    public var maxResults: Int?
+    public var total: Int?
+}
+
+public struct Watches: Codable {
+    public var `self`: String?
+    public var watchCount: Int?
+    public var isWatching: Bool?
+}
+
+public struct Label: Codable {
+    
+}
+
+public struct Vote: Codable {
+    public var votes: Int?
+    public var `self`: String?
+    public var hasVoted: Bool?
+}
+
+public struct Subtask: Codable {
+    
+}
+
+public struct IssueProgress: Codable {
+    public var progress: Int?
+    public var total: Int?
 }
 
 public struct IssueType: Codable {
@@ -65,7 +171,7 @@ public struct EditMeta: Codable {
     public var fields: FieldMeta?
 }
 
-public struct Changelog: Codable {
+public struct IssueChangelog: Codable {
     public var startAt: Int?
     public var maxResults: Int?
     public var total: Int?

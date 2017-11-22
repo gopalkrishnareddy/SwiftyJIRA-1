@@ -2,11 +2,12 @@ import Foundation
 
 public struct User: Codable {
     public var `self`: String?
+    public var fields: [String: String?]
     public var key: String?
     public var accountId: String?
     public var name: String?
     public var emailAddress: String?
-    public var avatarUrls: [String]?
+    public var avatarUrls: [AvatarURL]?
     public var displayName: String?
     public var active: Bool?
     public var timeZone: String?
@@ -27,3 +28,7 @@ public struct Group: Codable {
     public var `self`: String?
 }
 
+public struct AvatarURL: Codable {
+    public var size: String?
+    public var url: String?
+}

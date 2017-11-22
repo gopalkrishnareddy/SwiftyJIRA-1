@@ -35,14 +35,14 @@ public struct JIRAIssueFields: Codable {
     public var components: [String]?
     public var timetracking: [String: String?]?
     public var votes: JIRAIssueVotes?
-    public var labels: [JIRAIssueLabel]?
+    public var labels: [String]?
     public var workratio: Int?
     public var description: String?
     public var updated: String
     public var issuetype: JIRAIssueType?
     public var watches: JIRAIssueWatches?
     public var environment: String?
-    public var comment: JIRAIssueComment?
+    public var comment: JIRAIssueComments?
     public var timespent: String?
     public var priority: JIRAIssuePriority?
     public var project: JIRAProject?
@@ -57,7 +57,15 @@ public struct JIRAIssueFields: Codable {
 }
 
 public struct JIRAIssueAttachment: Codable {
-    
+    public var content: String?
+    public var author: JIRAUser?
+    public var size: Int?
+    public var id: String?
+    public var created: String?
+    public var `self`: String?
+    public var mimeType: String?
+    public var filename: String?
+    public var thumbnail: String?
 }
 
 public struct JIRAIssueStatus: Codable {
@@ -70,11 +78,19 @@ public struct JIRAIssueStatus: Codable {
 }
 
 public struct JIRAIssueLink: Codable {
-    
+    public var `self`: String?
+    public var id: String?
+    public var inwardIssue: JIRAIssue?
+    public var type: JIRAIssueType?
 }
 
 public struct JIRAVersion: Codable {
-    
+    public var description: String?
+    public var `self`: String?
+    public var archived: Bool?
+    public var id: String?
+    public var released: Bool?
+    public var name: String?
 }
 
 public struct JIRAIssuePriority: Codable {
@@ -84,21 +100,27 @@ public struct JIRAIssuePriority: Codable {
     public var id: String?
 }
 
-public struct JIRAIssueComment: Codable {
-    public var comments: [String]?
+public struct JIRAIssueComments: Codable {
+    public var comments: [JIRAIssueComment]?
     public var startAt: Int?
     public var maxResults: Int?
     public var total: Int?
+}
+
+public struct JIRAIssueComment: Codable {
+    public var author: JIRAUser?
+    public var id: String?
+    public var created: String?
+    public var updateAuthor: JIRAUser?
+    public var updated: String?
+    public var `self`: String?
+    public var body: String?
 }
 
 public struct JIRAIssueWatches: Codable {
     public var `self`: String?
     public var watchCount: Int?
     public var isWatching: Bool?
-}
-
-public struct JIRAIssueLabel: Codable {
-    
 }
 
 public struct JIRAIssueVotes: Codable {
@@ -108,6 +130,9 @@ public struct JIRAIssueVotes: Codable {
 }
 
 public struct JIRAIssueSubtask: Codable {
+    public var `self`: String?
+    public var id: String?
+    public var fields: JIRAIssueFields?
     
 }
 

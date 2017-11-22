@@ -1,6 +1,6 @@
 import Foundation
 
-public struct WorkflowSchemee: Codable {
+public struct JIRAWorkflowScheme: Codable {
     public var id: Int?
     public var name: String?
     public var defaultWorkflow: String?
@@ -8,9 +8,9 @@ public struct WorkflowSchemee: Codable {
     public var originalDefaultWorkflow: String?
     public var originalIssueTypeMappings: [String: String]?
     public var draft: Bool?
-    public var lastModifiedUser: User?
+    public var lastModifiedUser: JIRAUser?
     public var lastModified: String?
     public var `self`: String?
     public var updateDraftIfNeeded: Bool?
-    public var issueTypes: [IssueType]?
+    public var issueTypes: [JIRAIssueType]?
 }

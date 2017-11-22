@@ -1,130 +1,122 @@
 import Foundation
 
-public struct Issue: Codable {
+public struct JIRAIssue: Codable {
     public var expand: String?
     public var id: String?
     public var `self`: String?
     public var key: String?
-    public var fields: Fields?
+    public var fields: JIRAIssueFields?
     public var renderedFields: [String]?
     public var properties: [String]?
     public var names: [String]?
     public var schema: [String]?
-    public var transitions: [Transition]?
-    public var operations: [Opsbar]?
-    public var editmeta: EditMeta?
-    public var changelog: IssueChangelog?
+    public var transitions: [JIRAIssueTransition]?
+    public var operations: [JIRAOpsbar]?
+    public var editmeta: JIRAIssueEditMeta?
+    public var changelog: JIRAIssueChangelog?
     public var versionedRepresentations: [String: String]?
-    public var fieldsToInclude: [Field]?
+    public var fieldsToInclude: [JIRAIssueField]?
 }
 
-public struct Fields: Codable {
-    public var creator: User?
-    public var aggregateprogress: IssueProgress?
-    public var reporter: User?
-    public var subtasks: [Subtask]?
+public struct JIRAIssueFields: Codable {
+    public var creator: JIRAUser?
+    public var aggregateprogress: JIRAIssueProgress?
+    public var reporter: JIRAUser?
+    public var subtasks: [JIRAIssueSubtask]?
     public var aggregatetimeoriginalestimate: String?
-    public var assignee: User?
+    public var assignee: JIRAUser?
     public var lastViewed: String?
     public var timeestimate: String?
     public var timeoriginalestimate: String?
     public var aggregatetimeestimate: String?
-    public var progress: IssueProgress?
+    public var progress: JIRAIssueProgress?
     public var created: String?
     public var versions: [String]?
     public var components: [String]?
     public var timetracking: [String: String?]?
-    public var votes: Votes?
-    public var labels: [Label]?
+    public var votes: JIRAIssueVotes?
+    public var labels: [JIRAIssueLabel]?
     public var workratio: Int?
     public var description: String?
     public var updated: String
-    public var issuetype: IssueType?
-    public var watches: Watches?
+    public var issuetype: JIRAIssueType?
+    public var watches: JIRAIssueWatches?
     public var environment: String?
-    public var comment: Comment?
+    public var comment: JIRAIssueComment?
     public var timespent: String?
-    public var priority: Priority?
-    public var project: Project?
-    public var fixVersions: [Version]?
-    public var issueLinks: [IssueLink]?
+    public var priority: JIRAIssuePriority?
+    public var project: JIRAProject?
+    public var fixVersions: [JIRAVersion]?
+    public var issueLinks: [JIRAIssueLink]?
     public var resolution: String?
-    public var status: IssueStatus?
+    public var status: JIRAIssueStatus?
     public var summary: String?
-    public var attachment: [Attachment]?
+    public var attachment: [JIRAIssueAttachment]?
     public var duedate: String?
     public var security: String?
 }
 
-public struct Attachment: Codable {
+public struct JIRAIssueAttachment: Codable {
     
 }
 
-public struct IssueStatus: Codable {
+public struct JIRAIssueStatus: Codable {
     public var `self`: String?
     public var description: String?
     public var name: String?
-    public var statusCategory: StatusCategory?
+    public var statusCategory: JIRAIssueStatusCategory?
     public var iconUrl: String?
     public var id: String?
 }
 
-public struct IssueLink: Codable {
+public struct JIRAIssueLink: Codable {
     
 }
 
-public struct Version: Codable {
+public struct JIRAVersion: Codable {
     
 }
 
-public struct Project: Codable {
-    public var `self`: String?
-    public var name: String?
-    public var avatarUrls: [String: String]?
-    public var id: String?
-    public var key: String?
-}
-
-public struct Priority: Codable {
+public struct JIRAIssuePriority: Codable {
     public var `self`: String?
     public var name: String?
     public var iconUrl: String?
     public var id: String?
 }
 
-public struct Comment: Codable {
+public struct JIRAIssueComment: Codable {
     public var comments: [String]?
     public var startAt: Int?
     public var maxResults: Int?
     public var total: Int?
 }
 
-public struct Watches: Codable {
+public struct JIRAIssueWatches: Codable {
     public var `self`: String?
     public var watchCount: Int?
     public var isWatching: Bool?
 }
 
-public struct Label: Codable {
+public struct JIRAIssueLabel: Codable {
     
 }
 
-public struct Votes: Codable {
+public struct JIRAIssueVotes: Codable {
     public var votes: Int?
     public var `self`: String?
     public var hasVoted: Bool?
 }
 
-public struct Subtask: Codable {
+public struct JIRAIssueSubtask: Codable {
     
 }
 
-public struct IssueProgress: Codable {
+public struct JIRAIssueProgress: Codable {
     public var progress: Int?
     public var total: Int?
 }
 
-public struct IssueType: Codable {
+public struct JIRAIssueType: Codable {
     public var `self`: String?
     public var id: String?
     public var description: String?
@@ -134,28 +126,28 @@ public struct IssueType: Codable {
     public var avatarId: Int?
 }
 
-public struct Transition: Codable {
+public struct JIRAIssueTransition: Codable {
     public var id: String?
     public var name: String?
-    public var to: Status?
+    public var to: JIRAStatus?
     public var hasScreen: Bool?
     public var isGlobal: Bool?
     public var isInitial: Bool?
     public var isConditional: Bool?
-    public var fields: [FieldMeta]?
+    public var fields: [JIRAIssueFieldMeta]?
 }
 
-public struct Status: Codable {
+public struct JIRAStatus: Codable {
     public var `self`: String
     public var statusColor: String?
     public var description: String?
     public var iconUrl: String?
     public var name: String?
     public var id: String
-    public var statusCategory: StatusCategory?
+    public var statusCategory: JIRAIssueStatusCategory?
 }
 
-public struct StatusCategory: Codable {
+public struct JIRAIssueStatusCategory: Codable {
     public var `self`: String?
     public var id: Int?
     public var key: String?
@@ -163,28 +155,28 @@ public struct StatusCategory: Codable {
     public var name: String?
 }
 
-public struct Opsbar: Codable {
-    public var linkGroups: [LinkGroup]?
+public struct JIRAOpsbar: Codable {
+    public var linkGroups: [JIRAIssueLinkGroup]?
 }
 
-public struct EditMeta: Codable {
-    public var fields: FieldMeta?
+public struct JIRAIssueEditMeta: Codable {
+    public var fields: JIRAIssueFieldMeta?
 }
 
-public struct IssueChangelog: Codable {
+public struct JIRAIssueChangelog: Codable {
     public var startAt: Int?
     public var maxResults: Int?
     public var total: Int?
-    public var histories: [ChangeHistory]?
+    public var histories: [JIRAIssueChangeHistory]?
 }
 
-public struct Field: Codable {
+public struct JIRAIssueField: Codable {
     
 }
 
-public struct FieldMeta: Codable {
+public struct JIRAIssueFieldMeta: Codable {
     public var required: Bool?
-    public var schema: Schema?
+    public var schema: JIRASchema?
     public var name: String?
     public var key: String?
     public var autoCompleteUrl: String?
@@ -193,16 +185,16 @@ public struct FieldMeta: Codable {
 //    public var allowedValues: [String]?
 }
 
-public struct LinkGroup: Codable {
+public struct JIRAIssueLinkGroup: Codable {
     public var id: String?
     public var styleClass: String?
-    public var header: SimpleLink?
+    public var header: JIRAIssueSimpleLink?
     public var weight: Int?
-    public var links: [SimpleLink]?
-    public var groups: [LinkGroup]?
+    public var links: [JIRAIssueSimpleLink]?
+    public var groups: [JIRAIssueLinkGroup]?
 }
 
-public struct SimpleLink: Codable {
+public struct JIRAIssueSimpleLink: Codable {
     public var id: String?
     public var styleClass: String?
     public var iconClass: String?
@@ -212,19 +204,19 @@ public struct SimpleLink: Codable {
     public var weight: Int?
 }
 
-public struct Schema: Codable {
+public struct JIRASchema: Codable {
     
 }
 
-public struct ChangeHistory: Codable {
+public struct JIRAIssueChangeHistory: Codable {
     public var id: String?
-    public var author: User?
+    public var author: JIRAUser?
     public var created: String?
-    public var items: [ChangeItem]?
-    public var historyMetadata: HistoryMetadata?
+    public var items: [JIRAIssueChangeItem]?
+    public var historyMetadata: JIRAIssueHistoryMetadata?
 }
 
-public struct ChangeItem: Codable {
+public struct JIRAIssueChangeItem: Codable {
     public var field: String?
     public var fieldType: String?
     public var fieldId: String?
@@ -234,7 +226,7 @@ public struct ChangeItem: Codable {
     public var toString: String?
 }
 
-public struct HistoryMetadata: Codable {
+public struct JIRAIssueHistoryMetadata: Codable {
     public var type: String?
     public var description: String?
     public var descriptionKey: String?
@@ -242,13 +234,13 @@ public struct HistoryMetadata: Codable {
     public var activityDescriptionKey: String?
     public var emailDescription: String?
     public var emailDescriptionKey: String?
-    public var actor: HistoryMetadataParticipant?
-    public var generator: HistoryMetadataParticipant?
-    public var cause: HistoryMetadataParticipant?
+    public var actor: JIRAIssueHistoryMetadataParticipant?
+    public var generator: JIRAIssueHistoryMetadataParticipant?
+    public var cause: JIRAIssueHistoryMetadataParticipant?
 //    public var extraData: [String]?
 }
 
-public struct HistoryMetadataParticipant: Codable {
+public struct JIRAIssueHistoryMetadataParticipant: Codable {
     public var id: String?
     public var displayName: String?
     public var displayNameKey: String?

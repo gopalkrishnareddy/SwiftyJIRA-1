@@ -6,12 +6,13 @@ import Alamofire
 
 public class IssuesController {
 
-    private let queue = DispatchQueue(label: "SwiftyJIRA")
-    let user: String
-    let password: String
     public var owner: String?
     public var repo: String?
     public var org: String?
+    
+    private let queue = DispatchQueue(label: "com.polka.cat.SwiftyJIRA")
+    private let user: String
+    private let password: String
     
     public init(user: String, password: String, owner: String? = nil, repo: String? = nil, org: String? = nil) {
         self.user = user
@@ -23,7 +24,7 @@ public class IssuesController {
 
     public func getIssue(
         number: Int,
-        completion: @escaping (Issue?) -> Void)
+        completion: @escaping (JIRAIssue?) -> Void)
     {
         guard let owner = owner, let repo = repo else {
             completion(nil)
@@ -41,7 +42,7 @@ public class IssuesController {
                 completion(nil)
                 return
             }
-            completion(try? JSONDecoder().decode(Issue.self, from: data))
+            completion(try? JSONDecoder().decode(JIRAIssue.self, from: data))
         }
     }
 
@@ -51,7 +52,7 @@ public class IssuesController {
         milestone: String? = nil,
         labels: [String]? = nil,
         assignees: [String]? = nil,
-        completion: @escaping (Issue?) -> Void)
+        completion: @escaping (JIRAIssue?) -> Void)
     {
         guard let owner = owner, let repo = repo else {
             completion(nil)
@@ -84,7 +85,7 @@ public class IssuesController {
                 completion(nil)
                 return
             }
-            completion(try? JSONDecoder().decode(Issue.self, from: data))
+            completion(try? JSONDecoder().decode(JIRAIssue.self, from: data))
         }
     }
 
@@ -96,7 +97,7 @@ public class IssuesController {
         milestone: MilestoneModification? = nil,
         labels: [String]? = nil,
         assignees: [String]? = nil,
-        completion: @escaping (Issue?) -> Void)
+        completion: @escaping (JIRAIssue?) -> Void)
     {
         guard let owner = owner, let repo = repo else {
             completion(nil)
@@ -133,7 +134,7 @@ public class IssuesController {
                 completion(nil)
                 return
             }
-            completion(try? JSONDecoder().decode(Issue.self, from: data))
+            completion(try? JSONDecoder().decode(JIRAIssue.self, from: data))
         }
     }
 

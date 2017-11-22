@@ -16,7 +16,7 @@
 		OBJ_67 /* JIRAIssuesController.swift in Sources */ = {isa = PBXBuildFile; fileRef = OBJ_10 /* JIRAIssuesController.swift */; };
 		OBJ_68 /* Array+ParameterEncoding.swift in Sources */ = {isa = PBXBuildFile; fileRef = OBJ_12 /* Array+ParameterEncoding.swift */; };
 		OBJ_69 /* Date+IS08601.swift in Sources */ = {isa = PBXBuildFile; fileRef = OBJ_13 /* Date+IS08601.swift */; };
-		OBJ_70 /* Globals.swift in Sources */ = {isa = PBXBuildFile; fileRef = OBJ_14 /* Globals.swift */; };
+		OBJ_70 /* JIRAGlobals.swift in Sources */ = {isa = PBXBuildFile; fileRef = OBJ_14 /* JIRAGlobals.swift */; };
 		OBJ_71 /* HexColor.swift in Sources */ = {isa = PBXBuildFile; fileRef = OBJ_15 /* HexColor.swift */; };
 		OBJ_72 /* JIRAEvents.swift in Sources */ = {isa = PBXBuildFile; fileRef = OBJ_17 /* JIRAEvents.swift */; };
 		OBJ_73 /* JIRAIssue.swift in Sources */ = {isa = PBXBuildFile; fileRef = OBJ_18 /* JIRAIssue.swift */; };
@@ -24,7 +24,7 @@
 		OBJ_75 /* JIRAProject.swift in Sources */ = {isa = PBXBuildFile; fileRef = OBJ_20 /* JIRAProject.swift */; };
 		OBJ_76 /* JIRAUser.swift in Sources */ = {isa = PBXBuildFile; fileRef = OBJ_21 /* JIRAUser.swift */; };
 		OBJ_77 /* JIRAWorkflowScheme.swift in Sources */ = {isa = PBXBuildFile; fileRef = OBJ_22 /* JIRAWorkflowScheme.swift */; };
-		OBJ_78 /* IssuesRouter.swift in Sources */ = {isa = PBXBuildFile; fileRef = OBJ_24 /* IssuesRouter.swift */; };
+		OBJ_78 /* JIRAIssuesRouter.swift in Sources */ = {isa = PBXBuildFile; fileRef = OBJ_24 /* JIRAIssuesRouter.swift */; };
 		OBJ_80 /* Alamofire.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = "Alamofire::Alamofire::Product" /* Alamofire.framework */; };
 		OBJ_87 /* AFError.swift in Sources */ = {isa = PBXBuildFile; fileRef = OBJ_30 /* AFError.swift */; };
 		OBJ_88 /* Alamofire.swift in Sources */ = {isa = PBXBuildFile; fileRef = OBJ_31 /* Alamofire.swift */; };
@@ -56,7 +56,7 @@
 		OBJ_10 /* JIRAIssuesController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = JIRAIssuesController.swift; sourceTree = "<group>"; };
 		OBJ_12 /* Array+ParameterEncoding.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Array+ParameterEncoding.swift"; sourceTree = "<group>"; };
 		OBJ_13 /* Date+IS08601.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Date+IS08601.swift"; sourceTree = "<group>"; };
-		OBJ_14 /* Globals.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Globals.swift; sourceTree = "<group>"; };
+		OBJ_14 /* JIRAGlobals.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = JIRAGlobals.swift; sourceTree = "<group>"; };
 		OBJ_15 /* HexColor.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HexColor.swift; sourceTree = "<group>"; };
 		OBJ_17 /* JIRAEvents.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = JIRAEvents.swift; sourceTree = "<group>"; };
 		OBJ_18 /* JIRAIssue.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = JIRAIssue.swift; sourceTree = "<group>"; };
@@ -64,7 +64,7 @@
 		OBJ_20 /* JIRAProject.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = JIRAProject.swift; sourceTree = "<group>"; };
 		OBJ_21 /* JIRAUser.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = JIRAUser.swift; sourceTree = "<group>"; };
 		OBJ_22 /* JIRAWorkflowScheme.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = JIRAWorkflowScheme.swift; sourceTree = "<group>"; };
-		OBJ_24 /* IssuesRouter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = IssuesRouter.swift; sourceTree = "<group>"; };
+		OBJ_24 /* JIRAIssuesRouter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = JIRAIssuesRouter.swift; sourceTree = "<group>"; };
 		OBJ_26 /* script */ = {isa = PBXFileReference; lastKnownFileType = folder; path = script; sourceTree = SOURCE_ROOT; };
 		OBJ_29 /* Package.swift */ = {isa = PBXFileReference; explicitFileType = sourcecode.swift; name = Package.swift; path = "/Users/goodle/github/BugHub/SwiftyJIRA/.build/checkouts/Alamofire.git-1442282756688770939/Package.swift"; sourceTree = "<group>"; };
 		OBJ_30 /* AFError.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AFError.swift; sourceTree = "<group>"; };
@@ -132,7 +132,7 @@
 		OBJ_23 /* Routers */ = {
 			isa = PBXGroup;
 			children = (
-				OBJ_24 /* IssuesRouter.swift */,
+				OBJ_24 /* JIRAIssuesRouter.swift */,
 			);
 			path = Routers;
 			sourceTree = "<group>";
@@ -204,7 +204,7 @@
 			children = (
 				OBJ_8 /* Controllers */,
 				OBJ_11 /* Extensions */,
-				OBJ_14 /* Globals.swift */,
+				OBJ_14 /* JIRAGlobals.swift */,
 				OBJ_15 /* HexColor.swift */,
 				OBJ_16 /* Models */,
 				OBJ_23 /* Routers */,
@@ -344,7 +344,7 @@
 				OBJ_67 /* JIRAIssuesController.swift in Sources */,
 				OBJ_68 /* Array+ParameterEncoding.swift in Sources */,
 				OBJ_69 /* Date+IS08601.swift in Sources */,
-				OBJ_70 /* Globals.swift in Sources */,
+				OBJ_70 /* JIRAGlobals.swift in Sources */,
 				OBJ_71 /* HexColor.swift in Sources */,
 				OBJ_72 /* JIRAEvents.swift in Sources */,
 				OBJ_73 /* JIRAIssue.swift in Sources */,
@@ -352,7 +352,7 @@
 				OBJ_75 /* JIRAProject.swift in Sources */,
 				OBJ_76 /* JIRAUser.swift in Sources */,
 				OBJ_77 /* JIRAWorkflowScheme.swift in Sources */,
-				OBJ_78 /* IssuesRouter.swift in Sources */,
+				OBJ_78 /* JIRAIssuesRouter.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

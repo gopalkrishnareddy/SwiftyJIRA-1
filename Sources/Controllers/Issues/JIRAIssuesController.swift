@@ -30,7 +30,7 @@ public class JIRAIssuesController {
             completion(nil)
             return
         }
-        let request = IssuesRouter(user: user,
+        let request = JIRAIssuesRouter(user: user,
                                    password: password,
                                    owner: owner,
                                    repo: repo,
@@ -73,7 +73,7 @@ public class JIRAIssuesController {
         if let assignees = assignees {
             parameters["assignees"] = assignees
         }
-        let request = IssuesRouter(user: user,
+        let request = JIRAIssuesRouter(user: user,
                                    password: password,
                                    owner: owner,
                                    repo: repo,
@@ -122,7 +122,7 @@ public class JIRAIssuesController {
         if let assignees = assignees {
             parameters["assignees"] = assignees
         }
-        let request = IssuesRouter(user: user,
+        let request = JIRAIssuesRouter(user: user,
                                    password: password,
                                    owner: owner,
                                    repo: repo,
@@ -146,7 +146,7 @@ public class JIRAIssuesController {
             completion(false)
             return
         }
-        let request = IssuesRouter(user: user,
+        let request = JIRAIssuesRouter(user: user,
                                    password: password,
                                    owner: owner,
                                    repo: repo,
@@ -173,7 +173,7 @@ public class JIRAIssuesController {
             completion(false)
             return
         }
-        let request = IssuesRouter(user: user,
+        let request = JIRAIssuesRouter(user: user,
                                    password: password,
                                    owner: owner,
                                    repo: repo,

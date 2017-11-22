@@ -1,7 +1,7 @@
 import Foundation
 import Alamofire
 
-struct IssuesRouter: URLRequestConvertible {
+struct JIRAIssuesRouter: URLRequestConvertible {
     
     enum Action {
         case createIssue(params: Parameters)

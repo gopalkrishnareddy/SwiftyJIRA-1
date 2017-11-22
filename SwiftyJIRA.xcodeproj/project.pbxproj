@@ -13,7 +13,7 @@
 		OBJ_103 /* Validation.swift in Sources */ = {isa = PBXBuildFile; fileRef = OBJ_46 /* Validation.swift */; };
 		OBJ_55 /* Package.swift in Sources */ = {isa = PBXBuildFile; fileRef = OBJ_6 /* Package.swift */; };
 		OBJ_61 /* Package.swift in Sources */ = {isa = PBXBuildFile; fileRef = OBJ_29 /* Package.swift */; };
-		OBJ_67 /* IssuesController.swift in Sources */ = {isa = PBXBuildFile; fileRef = OBJ_10 /* IssuesController.swift */; };
+		OBJ_67 /* JIRAIssuesController.swift in Sources */ = {isa = PBXBuildFile; fileRef = OBJ_10 /* JIRAIssuesController.swift */; };
 		OBJ_68 /* Array+ParameterEncoding.swift in Sources */ = {isa = PBXBuildFile; fileRef = OBJ_12 /* Array+ParameterEncoding.swift */; };
 		OBJ_69 /* Date+IS08601.swift in Sources */ = {isa = PBXBuildFile; fileRef = OBJ_13 /* Date+IS08601.swift */; };
 		OBJ_70 /* Globals.swift in Sources */ = {isa = PBXBuildFile; fileRef = OBJ_14 /* Globals.swift */; };
@@ -53,7 +53,7 @@
 
 /* Begin PBXFileReference section */
 		"Alamofire::Alamofire::Product" /* Alamofire.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; path = Alamofire.framework; sourceTree = BUILT_PRODUCTS_DIR; };
-		OBJ_10 /* IssuesController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = IssuesController.swift; sourceTree = "<group>"; };
+		OBJ_10 /* JIRAIssuesController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = JIRAIssuesController.swift; sourceTree = "<group>"; };
 		OBJ_12 /* Array+ParameterEncoding.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Array+ParameterEncoding.swift"; sourceTree = "<group>"; };
 		OBJ_13 /* Date+IS08601.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Date+IS08601.swift"; sourceTree = "<group>"; };
 		OBJ_14 /* Globals.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Globals.swift; sourceTree = "<group>"; };
@@ -187,7 +187,7 @@
 			name = Products;
 			sourceTree = BUILT_PRODUCTS_DIR;
 		};
-		OBJ_5 /*  */ = {
+		OBJ_5 = {
 			isa = PBXGroup;
 			children = (
 				OBJ_6 /* Package.swift */,
@@ -197,7 +197,6 @@
 				OBJ_27 /* Dependencies */,
 				OBJ_47 /* Products */,
 			);
-			name = "";
 			sourceTree = "<group>";
 		};
 		OBJ_7 /* Sources */ = {
@@ -224,7 +223,7 @@
 		OBJ_9 /* Issues */ = {
 			isa = PBXGroup;
 			children = (
-				OBJ_10 /* IssuesController.swift */,
+				OBJ_10 /* JIRAIssuesController.swift */,
 			);
 			path = Issues;
 			sourceTree = "<group>";
@@ -308,7 +307,7 @@
 			knownRegions = (
 				en,
 			);
-			mainGroup = OBJ_5 /*  */;
+			mainGroup = OBJ_5;
 			productRefGroup = OBJ_47 /* Products */;
 			projectDirPath = "";
 			projectRoot = "";
@@ -342,7 +341,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 0;
 			files = (
-				OBJ_67 /* IssuesController.swift in Sources */,
+				OBJ_67 /* JIRAIssuesController.swift in Sources */,
 				OBJ_68 /* Array+ParameterEncoding.swift in Sources */,
 				OBJ_69 /* Date+IS08601.swift in Sources */,
 				OBJ_70 /* Globals.swift in Sources */,

@@ -4,7 +4,7 @@ import Alamofire
 
 // MARK: - General
 
-public class IssuesController {
+public class JIRAIssuesController {
 
     public var owner: String?
     public var repo: String?

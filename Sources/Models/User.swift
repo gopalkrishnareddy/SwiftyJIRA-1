@@ -6,7 +6,7 @@ public struct User: Codable {
     public var accountId: String?
     public var name: String?
     public var emailAddress: String?
-    public var avatarUrls: [AvatarURL]?
+    public var avatarUrls: [String: String]?
     public var displayName: String?
     public var active: Bool?
     public var timeZone: String?

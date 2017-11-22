@@ -15,7 +15,7 @@ public struct JIRAIssue: Codable {
     public var editmeta: JIRAIssueEditMeta?
     public var changelog: JIRAIssueChangelog?
     public var versionedRepresentations: [String: String]?
-    public var fieldsToInclude: [JIRAIssueField]?
+    public var fieldsToInclude: [String]?
 }
 
 public struct JIRAIssueFields: Codable {
@@ -193,10 +193,6 @@ public struct JIRAIssueChangelog: Codable {
     public var maxResults: Int?
     public var total: Int?
     public var histories: [JIRAIssueChangeHistory]?
-}
-
-public struct JIRAIssueField: Codable {
-    
 }
 
 public struct JIRAIssueFieldMeta: Codable {

@@ -27,7 +27,8 @@ public struct Group: Codable {
     public var `self`: String?
 }
 
-public struct AvatarURL: Codable {
-    public var size: String?
-    public var url: String?
-}
+//public struct AvatarURL: Codable {
+//    public var size: String?
+//    public var url: String?
+//}
+

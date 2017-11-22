@@ -80,7 +80,7 @@ public struct Version: Codable {
 public struct Project: Codable {
     public var `self`: String?
     public var name: String?
-    public var avatarUrls: [AvatarURL]?
+    public var avatarUrls: [String: String]?
     public var id: String?
     public var key: String?
 }

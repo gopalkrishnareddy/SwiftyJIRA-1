@@ -34,7 +34,7 @@ public struct Fields: Codable {
     public var versions: [String]?
     public var components: [String]?
     public var timetracking: [String: String?]?
-    public var votes: [Vote]?
+    public var votes: Votes?
     public var labels: [Label]?
     public var workratio: Int?
     public var description: String?
@@ -109,7 +109,7 @@ public struct Label: Codable {
     
 }
 
-public struct Vote: Codable {
+public struct Votes: Codable {
     public var votes: Int?
     public var `self`: String?
     public var hasVoted: Bool?

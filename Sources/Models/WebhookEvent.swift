@@ -10,6 +10,16 @@ public struct WebhookEvent: Codable {
 }
 
 public struct WebhookEventChangelog: Codable {
-    public var items: [[String: String?]]?
+    public var items: [WebhookChangelogItem]?
     public var id: String?
+}
+
+public struct WebhookChangelogItem: Codable {
+    public var from: String?
+    public var field: String?
+    public var toString: String?
+    public var fieldtype: String?
+    public var fieldId: String?
+    public var to: String?
+    public var fromString: String?
 }

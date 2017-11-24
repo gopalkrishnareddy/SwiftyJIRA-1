@@ -47,7 +47,7 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
-		C605F7FE1FC6207C00A3891F /* PBXContainerItemProxy */ = {
+		C697E4F41FC89A3500F36300 /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
 			containerPortal = OBJ_1 /* Project object */;
 			proxyType = 1;
@@ -407,7 +407,7 @@
 		OBJ_91 /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
 			target = "Alamofire::Alamofire" /* Alamofire */;
-			targetProxy = C605F7FE1FC6207C00A3891F /* PBXContainerItemProxy */;
+			targetProxy = C697E4F41FC89A3500F36300 /* PBXContainerItemProxy */;
 		};
 /* End PBXTargetDependency section */
 

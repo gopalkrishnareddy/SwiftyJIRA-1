@@ -3,5 +3,5 @@ author: Joe DeCapo
 author_url: polka.cat
 github_url: https://github.com/JrGoodle/SwiftyJIRA
 exclude: ["script"]
-xcodebuild_arguments: [-scheme,JIRA-Package]
+xcodebuild_arguments: [-scheme,SwiftyJIRA-Package]
 swift_version: 4.0

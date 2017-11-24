@@ -11,7 +11,7 @@ if [ "$1" == 'website' ]; then
     echo 'Update Jazzy Docs'
     jazzy
     rm -rf "$GH_PAGES_DIR/docs" || exit 1
-    cp -R 'docs' "$GH_PAGES_DIR/" || exit 1
+    cp -R 'docs/jazzy' "$GH_PAGES_DIR/docs" || exit 1
 
     cd "$GH_PAGES_DIR" || exit 1
     git add README.md docs || exit 1

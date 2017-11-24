@@ -1,0 +1,1516 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <title>Structures  Reference</title>
+    <link rel="stylesheet" type="text/css" href="css/jazzy.css" />
+    <link rel="stylesheet" type="text/css" href="css/highlight.css" />
+    <meta charset='utf-8'>
+    <script src="js/jquery.min.js" defer></script>
+    <script src="js/jazzy.js" defer></script>
+    
+  </head>
+  <body>
+    <a title="Structures  Reference"></a>
+    <header>
+      <div class="content-wrapper">
+        <p><a href="index.html">SwiftyJIRA Docs</a> (0% documented)</p>
+        <p class="header-right"><a href="https://github.com/JrGoodle/SwiftyJIRA"><img src="img/gh.png"/>View on GitHub</a></p>
+      </div>
+    </header>
+    <div class="content-wrapper">
+      <p id="breadcrumbs">
+        <a href="index.html">SwiftyJIRA Reference</a>
+        <img id="carat" src="img/carat.png" />
+        Structures  Reference
+      </p>
+    </div>
+    <div class="content-wrapper">
+      <nav class="sidebar">
+        <ul class="nav-groups">
+          <li class="nav-group-name">
+            <a href="Classes.html">Classes</a>
+            <ul class="nav-group-tasks">
+              <li class="nav-group-task">
+                <a href="Classes/JIRAIssuesController.html">JIRAIssuesController</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="Classes/JIRAIssuesController/Filter.html">– Filter</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="Classes/JIRAIssuesController/State.html">– State</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="Classes/JIRAIssuesController/MilestoneModification.html">– MilestoneModification</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="Classes/JIRAIssuesController/SortIssues.html">– SortIssues</a>
+              </li>
+            </ul>
+          </li>
+          <li class="nav-group-name">
+            <a href="Global Variables.html">Global Variables</a>
+            <ul class="nav-group-tasks">
+              <li class="nav-group-task">
+                <a href="Global Variables.html#/s:10SwiftyJIRA4baseSSv">base</a>
+              </li>
+            </ul>
+          </li>
+          <li class="nav-group-name">
+            <a href="Enums.html">Enumerations</a>
+            <ul class="nav-group-tasks">
+              <li class="nav-group-task">
+                <a href="Enums/Direction.html">Direction</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="Enums/JIRAAttachmentEvent.html">JIRAAttachmentEvent</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="Enums/JIRACommentEvent.html">JIRACommentEvent</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="Enums/JIRAIssueEvent.html">JIRAIssueEvent</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="Enums/JIRAIssueLinkEvent.html">JIRAIssueLinkEvent</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="Enums/JIRASprintEvent.html">JIRASprintEvent</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="Enums/JIRAWorklogEvent.html">JIRAWorklogEvent</a>
+              </li>
+            </ul>
+          </li>
+          <li class="nav-group-name">
+            <a href="Structs.html">Structures</a>
+            <ul class="nav-group-tasks">
+              <li class="nav-group-task">
+                <a href="Structs/HexColor.html">HexColor</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="Structs/JIRAAttachmentWebhookEvent.html">JIRAAttachmentWebhookEvent</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="Structs/JIRACommentWebhookEvent.html">JIRACommentWebhookEvent</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="Structs/JIRAGroup.html">JIRAGroup</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="Structs/JIRAIssue.html">JIRAIssue</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="Structs/JIRAIssueAttachment.html">JIRAIssueAttachment</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="Structs/JIRAIssueChangeHistory.html">JIRAIssueChangeHistory</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="Structs/JIRAIssueChangeItem.html">JIRAIssueChangeItem</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="Structs/JIRAIssueChangelog.html">JIRAIssueChangelog</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="Structs/JIRAIssueComment.html">JIRAIssueComment</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="Structs/JIRAIssueComments.html">JIRAIssueComments</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="Structs/JIRAIssueEditMeta.html">JIRAIssueEditMeta</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="Structs/JIRAIssueFieldMeta.html">JIRAIssueFieldMeta</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="Structs/JIRAIssueFields.html">JIRAIssueFields</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="Structs/JIRAIssueHistoryMetadata.html">JIRAIssueHistoryMetadata</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="Structs/JIRAIssueHistoryMetadataParticipant.html">JIRAIssueHistoryMetadataParticipant</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="Structs/JIRAIssueLink.html">JIRAIssueLink</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="Structs/JIRAIssueLinkEventLink.html">JIRAIssueLinkEventLink</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="Structs/JIRAIssueLinkGroup.html">JIRAIssueLinkGroup</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="Structs/JIRAIssueLinkType.html">JIRAIssueLinkType</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="Structs/JIRAIssuePriority.html">JIRAIssuePriority</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="Structs/JIRAIssueProgress.html">JIRAIssueProgress</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="Structs/JIRAIssueSimpleLink.html">JIRAIssueSimpleLink</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="Structs/JIRAIssueStatus.html">JIRAIssueStatus</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="Structs/JIRAIssueStatusCategory.html">JIRAIssueStatusCategory</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="Structs/JIRAIssueSubtask.html">JIRAIssueSubtask</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="Structs/JIRAIssueTransition.html">JIRAIssueTransition</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="Structs/JIRAIssueType.html">JIRAIssueType</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="Structs/JIRAIssueVotes.html">JIRAIssueVotes</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="Structs/JIRAIssueWatches.html">JIRAIssueWatches</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="Structs/JIRAIssueWebhookChangelogItem.html">JIRAIssueWebhookChangelogItem</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="Structs/JIRAIssueWebhookEvent.html">JIRAIssueWebhookEvent</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="Structs/JIRAIssueWebhookEventChangelog.html">JIRAIssueWebhookEventChangelog</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="Structs/JIRAIssuelinkWebhookEvent.html">JIRAIssuelinkWebhookEvent</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="Structs/JIRAOpsbar.html">JIRAOpsbar</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="Structs/JIRAProject.html">JIRAProject</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="Structs.html#/s:10SwiftyJIRA10JIRASchemaV">JIRASchema</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="Structs/JIRASimpleListWrapper.html">JIRASimpleListWrapper</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="Structs/JIRASprintWebhookEvent.html">JIRASprintWebhookEvent</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="Structs/JIRAStatus.html">JIRAStatus</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="Structs/JIRAUser.html">JIRAUser</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="Structs/JIRAVersion.html">JIRAVersion</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="Structs/JIRAWorkflowScheme.html">JIRAWorkflowScheme</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="Structs/JIRAWorklogWebhookEvent.html">JIRAWorklogWebhookEvent</a>
+              </li>
+            </ul>
+          </li>
+        </ul>
+      </nav>
+      <article class="main-content">
+        <section>
+          <section class="section">
+            <h1>Structures</h1>
+            <p>The following structures are available globally.</p>
+
+          </section>
+          <section class="section task-group-section">
+            <div class="task-group">
+              <ul>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/s:10SwiftyJIRA8HexColorV"></a>
+                    <a name="//apple_ref/swift/Struct/HexColor" class="dashAnchor"></a>
+                    <a class="token" href="#/s:10SwiftyJIRA8HexColorV">HexColor</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>Undocumented</p>
+
+                        <a href="Structs/HexColor.html" class="slightly-smaller">See more</a>
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight"><code><span class="kd">public</span> <span class="kd">struct</span> <span class="kt">HexColor</span></code></pre>
+
+                        </div>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+              </ul>
+            </div>
+            <div class="task-group">
+              <ul>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/s:10SwiftyJIRA26JIRAAttachmentWebhookEventV"></a>
+                    <a name="//apple_ref/swift/Struct/JIRAAttachmentWebhookEvent" class="dashAnchor"></a>
+                    <a class="token" href="#/s:10SwiftyJIRA26JIRAAttachmentWebhookEventV">JIRAAttachmentWebhookEvent</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>Undocumented</p>
+
+                        <a href="Structs/JIRAAttachmentWebhookEvent.html" class="slightly-smaller">See more</a>
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight"><code><span class="kd">public</span> <span class="kd">struct</span> <span class="kt">JIRAAttachmentWebhookEvent</span><span class="p">:</span> <span class="kt">Codable</span></code></pre>
+
+                        </div>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+              </ul>
+            </div>
+            <div class="task-group">
+              <ul>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/s:10SwiftyJIRA23JIRACommentWebhookEventV"></a>
+                    <a name="//apple_ref/swift/Struct/JIRACommentWebhookEvent" class="dashAnchor"></a>
+                    <a class="token" href="#/s:10SwiftyJIRA23JIRACommentWebhookEventV">JIRACommentWebhookEvent</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>Undocumented</p>
+
+                        <a href="Structs/JIRACommentWebhookEvent.html" class="slightly-smaller">See more</a>
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight"><code><span class="kd">public</span> <span class="kd">struct</span> <span class="kt">JIRACommentWebhookEvent</span><span class="p">:</span> <span class="kt">Codable</span></code></pre>
+
+                        </div>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+              </ul>
+            </div>
+            <div class="task-group">
+              <ul>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/s:10SwiftyJIRA9JIRAIssueV"></a>
+                    <a name="//apple_ref/swift/Struct/JIRAIssue" class="dashAnchor"></a>
+                    <a class="token" href="#/s:10SwiftyJIRA9JIRAIssueV">JIRAIssue</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>Undocumented</p>
+
+                        <a href="Structs/JIRAIssue.html" class="slightly-smaller">See more</a>
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight"><code><span class="kd">public</span> <span class="kd">struct</span> <span class="kt">JIRAIssue</span><span class="p">:</span> <span class="kt">Codable</span></code></pre>
+
+                        </div>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/s:10SwiftyJIRA15JIRAIssueFieldsV"></a>
+                    <a name="//apple_ref/swift/Struct/JIRAIssueFields" class="dashAnchor"></a>
+                    <a class="token" href="#/s:10SwiftyJIRA15JIRAIssueFieldsV">JIRAIssueFields</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>Undocumented</p>
+
+                        <a href="Structs/JIRAIssueFields.html" class="slightly-smaller">See more</a>
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight"><code><span class="kd">public</span> <span class="kd">struct</span> <span class="kt">JIRAIssueFields</span><span class="p">:</span> <span class="kt">Codable</span></code></pre>
+
+                        </div>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/s:10SwiftyJIRA19JIRAIssueAttachmentV"></a>
+                    <a name="//apple_ref/swift/Struct/JIRAIssueAttachment" class="dashAnchor"></a>
+                    <a class="token" href="#/s:10SwiftyJIRA19JIRAIssueAttachmentV">JIRAIssueAttachment</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>Undocumented</p>
+
+                        <a href="Structs/JIRAIssueAttachment.html" class="slightly-smaller">See more</a>
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight"><code><span class="kd">public</span> <span class="kd">struct</span> <span class="kt">JIRAIssueAttachment</span><span class="p">:</span> <span class="kt">Codable</span></code></pre>
+
+                        </div>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/s:10SwiftyJIRA15JIRAIssueStatusV"></a>
+                    <a name="//apple_ref/swift/Struct/JIRAIssueStatus" class="dashAnchor"></a>
+                    <a class="token" href="#/s:10SwiftyJIRA15JIRAIssueStatusV">JIRAIssueStatus</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>Undocumented</p>
+
+                        <a href="Structs/JIRAIssueStatus.html" class="slightly-smaller">See more</a>
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight"><code><span class="kd">public</span> <span class="kd">struct</span> <span class="kt">JIRAIssueStatus</span><span class="p">:</span> <span class="kt">Codable</span></code></pre>
+
+                        </div>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/s:10SwiftyJIRA13JIRAIssueLinkV"></a>
+                    <a name="//apple_ref/swift/Struct/JIRAIssueLink" class="dashAnchor"></a>
+                    <a class="token" href="#/s:10SwiftyJIRA13JIRAIssueLinkV">JIRAIssueLink</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>Undocumented</p>
+
+                        <a href="Structs/JIRAIssueLink.html" class="slightly-smaller">See more</a>
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight"><code><span class="kd">public</span> <span class="kd">struct</span> <span class="kt">JIRAIssueLink</span><span class="p">:</span> <span class="kt">Codable</span></code></pre>
+
+                        </div>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/s:10SwiftyJIRA11JIRAVersionV"></a>
+                    <a name="//apple_ref/swift/Struct/JIRAVersion" class="dashAnchor"></a>
+                    <a class="token" href="#/s:10SwiftyJIRA11JIRAVersionV">JIRAVersion</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>Undocumented</p>
+
+                        <a href="Structs/JIRAVersion.html" class="slightly-smaller">See more</a>
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight"><code><span class="kd">public</span> <span class="kd">struct</span> <span class="kt">JIRAVersion</span><span class="p">:</span> <span class="kt">Codable</span></code></pre>
+
+                        </div>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/s:10SwiftyJIRA17JIRAIssuePriorityV"></a>
+                    <a name="//apple_ref/swift/Struct/JIRAIssuePriority" class="dashAnchor"></a>
+                    <a class="token" href="#/s:10SwiftyJIRA17JIRAIssuePriorityV">JIRAIssuePriority</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>Undocumented</p>
+
+                        <a href="Structs/JIRAIssuePriority.html" class="slightly-smaller">See more</a>
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight"><code><span class="kd">public</span> <span class="kd">struct</span> <span class="kt">JIRAIssuePriority</span><span class="p">:</span> <span class="kt">Codable</span></code></pre>
+
+                        </div>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/s:10SwiftyJIRA17JIRAIssueCommentsV"></a>
+                    <a name="//apple_ref/swift/Struct/JIRAIssueComments" class="dashAnchor"></a>
+                    <a class="token" href="#/s:10SwiftyJIRA17JIRAIssueCommentsV">JIRAIssueComments</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>Undocumented</p>
+
+                        <a href="Structs/JIRAIssueComments.html" class="slightly-smaller">See more</a>
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight"><code><span class="kd">public</span> <span class="kd">struct</span> <span class="kt">JIRAIssueComments</span><span class="p">:</span> <span class="kt">Codable</span></code></pre>
+
+                        </div>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/s:10SwiftyJIRA16JIRAIssueCommentV"></a>
+                    <a name="//apple_ref/swift/Struct/JIRAIssueComment" class="dashAnchor"></a>
+                    <a class="token" href="#/s:10SwiftyJIRA16JIRAIssueCommentV">JIRAIssueComment</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>Undocumented</p>
+
+                        <a href="Structs/JIRAIssueComment.html" class="slightly-smaller">See more</a>
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight"><code><span class="kd">public</span> <span class="kd">struct</span> <span class="kt">JIRAIssueComment</span><span class="p">:</span> <span class="kt">Codable</span></code></pre>
+
+                        </div>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/s:10SwiftyJIRA16JIRAIssueWatchesV"></a>
+                    <a name="//apple_ref/swift/Struct/JIRAIssueWatches" class="dashAnchor"></a>
+                    <a class="token" href="#/s:10SwiftyJIRA16JIRAIssueWatchesV">JIRAIssueWatches</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>Undocumented</p>
+
+                        <a href="Structs/JIRAIssueWatches.html" class="slightly-smaller">See more</a>
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight"><code><span class="kd">public</span> <span class="kd">struct</span> <span class="kt">JIRAIssueWatches</span><span class="p">:</span> <span class="kt">Codable</span></code></pre>
+
+                        </div>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/s:10SwiftyJIRA14JIRAIssueVotesV"></a>
+                    <a name="//apple_ref/swift/Struct/JIRAIssueVotes" class="dashAnchor"></a>
+                    <a class="token" href="#/s:10SwiftyJIRA14JIRAIssueVotesV">JIRAIssueVotes</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>Undocumented</p>
+
+                        <a href="Structs/JIRAIssueVotes.html" class="slightly-smaller">See more</a>
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight"><code><span class="kd">public</span> <span class="kd">struct</span> <span class="kt">JIRAIssueVotes</span><span class="p">:</span> <span class="kt">Codable</span></code></pre>
+
+                        </div>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/s:10SwiftyJIRA16JIRAIssueSubtaskV"></a>
+                    <a name="//apple_ref/swift/Struct/JIRAIssueSubtask" class="dashAnchor"></a>
+                    <a class="token" href="#/s:10SwiftyJIRA16JIRAIssueSubtaskV">JIRAIssueSubtask</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>Undocumented</p>
+
+                        <a href="Structs/JIRAIssueSubtask.html" class="slightly-smaller">See more</a>
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight"><code><span class="kd">public</span> <span class="kd">struct</span> <span class="kt">JIRAIssueSubtask</span><span class="p">:</span> <span class="kt">Codable</span></code></pre>
+
+                        </div>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/s:10SwiftyJIRA17JIRAIssueProgressV"></a>
+                    <a name="//apple_ref/swift/Struct/JIRAIssueProgress" class="dashAnchor"></a>
+                    <a class="token" href="#/s:10SwiftyJIRA17JIRAIssueProgressV">JIRAIssueProgress</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>Undocumented</p>
+
+                        <a href="Structs/JIRAIssueProgress.html" class="slightly-smaller">See more</a>
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight"><code><span class="kd">public</span> <span class="kd">struct</span> <span class="kt">JIRAIssueProgress</span><span class="p">:</span> <span class="kt">Codable</span></code></pre>
+
+                        </div>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/s:10SwiftyJIRA13JIRAIssueTypeV"></a>
+                    <a name="//apple_ref/swift/Struct/JIRAIssueType" class="dashAnchor"></a>
+                    <a class="token" href="#/s:10SwiftyJIRA13JIRAIssueTypeV">JIRAIssueType</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>Undocumented</p>
+
+                        <a href="Structs/JIRAIssueType.html" class="slightly-smaller">See more</a>
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight"><code><span class="kd">public</span> <span class="kd">struct</span> <span class="kt">JIRAIssueType</span><span class="p">:</span> <span class="kt">Codable</span></code></pre>
+
+                        </div>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/s:10SwiftyJIRA19JIRAIssueTransitionV"></a>
+                    <a name="//apple_ref/swift/Struct/JIRAIssueTransition" class="dashAnchor"></a>
+                    <a class="token" href="#/s:10SwiftyJIRA19JIRAIssueTransitionV">JIRAIssueTransition</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>Undocumented</p>
+
+                        <a href="Structs/JIRAIssueTransition.html" class="slightly-smaller">See more</a>
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight"><code><span class="kd">public</span> <span class="kd">struct</span> <span class="kt">JIRAIssueTransition</span><span class="p">:</span> <span class="kt">Codable</span></code></pre>
+
+                        </div>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/s:10SwiftyJIRA10JIRAStatusV"></a>
+                    <a name="//apple_ref/swift/Struct/JIRAStatus" class="dashAnchor"></a>
+                    <a class="token" href="#/s:10SwiftyJIRA10JIRAStatusV">JIRAStatus</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>Undocumented</p>
+
+                        <a href="Structs/JIRAStatus.html" class="slightly-smaller">See more</a>
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight"><code><span class="kd">public</span> <span class="kd">struct</span> <span class="kt">JIRAStatus</span><span class="p">:</span> <span class="kt">Codable</span></code></pre>
+
+                        </div>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/s:10SwiftyJIRA23JIRAIssueStatusCategoryV"></a>
+                    <a name="//apple_ref/swift/Struct/JIRAIssueStatusCategory" class="dashAnchor"></a>
+                    <a class="token" href="#/s:10SwiftyJIRA23JIRAIssueStatusCategoryV">JIRAIssueStatusCategory</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>Undocumented</p>
+
+                        <a href="Structs/JIRAIssueStatusCategory.html" class="slightly-smaller">See more</a>
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight"><code><span class="kd">public</span> <span class="kd">struct</span> <span class="kt">JIRAIssueStatusCategory</span><span class="p">:</span> <span class="kt">Codable</span></code></pre>
+
+                        </div>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/s:10SwiftyJIRA10JIRAOpsbarV"></a>
+                    <a name="//apple_ref/swift/Struct/JIRAOpsbar" class="dashAnchor"></a>
+                    <a class="token" href="#/s:10SwiftyJIRA10JIRAOpsbarV">JIRAOpsbar</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>Undocumented</p>
+
+                        <a href="Structs/JIRAOpsbar.html" class="slightly-smaller">See more</a>
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight"><code><span class="kd">public</span> <span class="kd">struct</span> <span class="kt">JIRAOpsbar</span><span class="p">:</span> <span class="kt">Codable</span></code></pre>
+
+                        </div>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/s:10SwiftyJIRA17JIRAIssueEditMetaV"></a>
+                    <a name="//apple_ref/swift/Struct/JIRAIssueEditMeta" class="dashAnchor"></a>
+                    <a class="token" href="#/s:10SwiftyJIRA17JIRAIssueEditMetaV">JIRAIssueEditMeta</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>Undocumented</p>
+
+                        <a href="Structs/JIRAIssueEditMeta.html" class="slightly-smaller">See more</a>
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight"><code><span class="kd">public</span> <span class="kd">struct</span> <span class="kt">JIRAIssueEditMeta</span><span class="p">:</span> <span class="kt">Codable</span></code></pre>
+
+                        </div>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/s:10SwiftyJIRA18JIRAIssueChangelogV"></a>
+                    <a name="//apple_ref/swift/Struct/JIRAIssueChangelog" class="dashAnchor"></a>
+                    <a class="token" href="#/s:10SwiftyJIRA18JIRAIssueChangelogV">JIRAIssueChangelog</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>Undocumented</p>
+
+                        <a href="Structs/JIRAIssueChangelog.html" class="slightly-smaller">See more</a>
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight"><code><span class="kd">public</span> <span class="kd">struct</span> <span class="kt">JIRAIssueChangelog</span><span class="p">:</span> <span class="kt">Codable</span></code></pre>
+
+                        </div>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/s:10SwiftyJIRA18JIRAIssueFieldMetaV"></a>
+                    <a name="//apple_ref/swift/Struct/JIRAIssueFieldMeta" class="dashAnchor"></a>
+                    <a class="token" href="#/s:10SwiftyJIRA18JIRAIssueFieldMetaV">JIRAIssueFieldMeta</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>Undocumented</p>
+
+                        <a href="Structs/JIRAIssueFieldMeta.html" class="slightly-smaller">See more</a>
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight"><code><span class="kd">public</span> <span class="kd">struct</span> <span class="kt">JIRAIssueFieldMeta</span><span class="p">:</span> <span class="kt">Codable</span></code></pre>
+
+                        </div>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/s:10SwiftyJIRA18JIRAIssueLinkGroupV"></a>
+                    <a name="//apple_ref/swift/Struct/JIRAIssueLinkGroup" class="dashAnchor"></a>
+                    <a class="token" href="#/s:10SwiftyJIRA18JIRAIssueLinkGroupV">JIRAIssueLinkGroup</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>Undocumented</p>
+
+                        <a href="Structs/JIRAIssueLinkGroup.html" class="slightly-smaller">See more</a>
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight"><code><span class="kd">public</span> <span class="kd">struct</span> <span class="kt">JIRAIssueLinkGroup</span><span class="p">:</span> <span class="kt">Codable</span></code></pre>
+
+                        </div>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/s:10SwiftyJIRA19JIRAIssueSimpleLinkV"></a>
+                    <a name="//apple_ref/swift/Struct/JIRAIssueSimpleLink" class="dashAnchor"></a>
+                    <a class="token" href="#/s:10SwiftyJIRA19JIRAIssueSimpleLinkV">JIRAIssueSimpleLink</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>Undocumented</p>
+
+                        <a href="Structs/JIRAIssueSimpleLink.html" class="slightly-smaller">See more</a>
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight"><code><span class="kd">public</span> <span class="kd">struct</span> <span class="kt">JIRAIssueSimpleLink</span><span class="p">:</span> <span class="kt">Codable</span></code></pre>
+
+                        </div>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/s:10SwiftyJIRA10JIRASchemaV"></a>
+                    <a name="//apple_ref/swift/Struct/JIRASchema" class="dashAnchor"></a>
+                    <a class="token" href="#/s:10SwiftyJIRA10JIRASchemaV">JIRASchema</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>Undocumented</p>
+
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight"><code><span class="kd">public</span> <span class="kd">struct</span> <span class="kt">JIRASchema</span><span class="p">:</span> <span class="kt">Codable</span></code></pre>
+
+                        </div>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/s:10SwiftyJIRA22JIRAIssueChangeHistoryV"></a>
+                    <a name="//apple_ref/swift/Struct/JIRAIssueChangeHistory" class="dashAnchor"></a>
+                    <a class="token" href="#/s:10SwiftyJIRA22JIRAIssueChangeHistoryV">JIRAIssueChangeHistory</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>Undocumented</p>
+
+                        <a href="Structs/JIRAIssueChangeHistory.html" class="slightly-smaller">See more</a>
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight"><code><span class="kd">public</span> <span class="kd">struct</span> <span class="kt">JIRAIssueChangeHistory</span><span class="p">:</span> <span class="kt">Codable</span></code></pre>
+
+                        </div>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/s:10SwiftyJIRA19JIRAIssueChangeItemV"></a>
+                    <a name="//apple_ref/swift/Struct/JIRAIssueChangeItem" class="dashAnchor"></a>
+                    <a class="token" href="#/s:10SwiftyJIRA19JIRAIssueChangeItemV">JIRAIssueChangeItem</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>Undocumented</p>
+
+                        <a href="Structs/JIRAIssueChangeItem.html" class="slightly-smaller">See more</a>
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight"><code><span class="kd">public</span> <span class="kd">struct</span> <span class="kt">JIRAIssueChangeItem</span><span class="p">:</span> <span class="kt">Codable</span></code></pre>
+
+                        </div>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/s:10SwiftyJIRA24JIRAIssueHistoryMetadataV"></a>
+                    <a name="//apple_ref/swift/Struct/JIRAIssueHistoryMetadata" class="dashAnchor"></a>
+                    <a class="token" href="#/s:10SwiftyJIRA24JIRAIssueHistoryMetadataV">JIRAIssueHistoryMetadata</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>Undocumented</p>
+
+                        <a href="Structs/JIRAIssueHistoryMetadata.html" class="slightly-smaller">See more</a>
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight"><code><span class="kd">public</span> <span class="kd">struct</span> <span class="kt">JIRAIssueHistoryMetadata</span><span class="p">:</span> <span class="kt">Codable</span></code></pre>
+
+                        </div>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/s:10SwiftyJIRA35JIRAIssueHistoryMetadataParticipantV"></a>
+                    <a name="//apple_ref/swift/Struct/JIRAIssueHistoryMetadataParticipant" class="dashAnchor"></a>
+                    <a class="token" href="#/s:10SwiftyJIRA35JIRAIssueHistoryMetadataParticipantV">JIRAIssueHistoryMetadataParticipant</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>Undocumented</p>
+
+                        <a href="Structs/JIRAIssueHistoryMetadataParticipant.html" class="slightly-smaller">See more</a>
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight"><code><span class="kd">public</span> <span class="kd">struct</span> <span class="kt">JIRAIssueHistoryMetadataParticipant</span><span class="p">:</span> <span class="kt">Codable</span></code></pre>
+
+                        </div>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+              </ul>
+            </div>
+            <div class="task-group">
+              <ul>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/s:10SwiftyJIRA21JIRAIssueWebhookEventV"></a>
+                    <a name="//apple_ref/swift/Struct/JIRAIssueWebhookEvent" class="dashAnchor"></a>
+                    <a class="token" href="#/s:10SwiftyJIRA21JIRAIssueWebhookEventV">JIRAIssueWebhookEvent</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>Undocumented</p>
+
+                        <a href="Structs/JIRAIssueWebhookEvent.html" class="slightly-smaller">See more</a>
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight"><code><span class="kd">public</span> <span class="kd">struct</span> <span class="kt">JIRAIssueWebhookEvent</span><span class="p">:</span> <span class="kt">Codable</span></code></pre>
+
+                        </div>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/s:10SwiftyJIRA30JIRAIssueWebhookEventChangelogV"></a>
+                    <a name="//apple_ref/swift/Struct/JIRAIssueWebhookEventChangelog" class="dashAnchor"></a>
+                    <a class="token" href="#/s:10SwiftyJIRA30JIRAIssueWebhookEventChangelogV">JIRAIssueWebhookEventChangelog</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>Undocumented</p>
+
+                        <a href="Structs/JIRAIssueWebhookEventChangelog.html" class="slightly-smaller">See more</a>
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight"><code><span class="kd">public</span> <span class="kd">struct</span> <span class="kt">JIRAIssueWebhookEventChangelog</span><span class="p">:</span> <span class="kt">Codable</span></code></pre>
+
+                        </div>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/s:10SwiftyJIRA29JIRAIssueWebhookChangelogItemV"></a>
+                    <a name="//apple_ref/swift/Struct/JIRAIssueWebhookChangelogItem" class="dashAnchor"></a>
+                    <a class="token" href="#/s:10SwiftyJIRA29JIRAIssueWebhookChangelogItemV">JIRAIssueWebhookChangelogItem</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>Undocumented</p>
+
+                        <a href="Structs/JIRAIssueWebhookChangelogItem.html" class="slightly-smaller">See more</a>
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight"><code><span class="kd">public</span> <span class="kd">struct</span> <span class="kt">JIRAIssueWebhookChangelogItem</span><span class="p">:</span> <span class="kt">Codable</span></code></pre>
+
+                        </div>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+              </ul>
+            </div>
+            <div class="task-group">
+              <ul>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/s:10SwiftyJIRA25JIRAIssuelinkWebhookEventV"></a>
+                    <a name="//apple_ref/swift/Struct/JIRAIssuelinkWebhookEvent" class="dashAnchor"></a>
+                    <a class="token" href="#/s:10SwiftyJIRA25JIRAIssuelinkWebhookEventV">JIRAIssuelinkWebhookEvent</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>Undocumented</p>
+
+                        <a href="Structs/JIRAIssuelinkWebhookEvent.html" class="slightly-smaller">See more</a>
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight"><code><span class="kd">public</span> <span class="kd">struct</span> <span class="kt">JIRAIssuelinkWebhookEvent</span><span class="p">:</span> <span class="kt">Codable</span></code></pre>
+
+                        </div>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/s:10SwiftyJIRA018JIRAIssueLinkEventD0V"></a>
+                    <a name="//apple_ref/swift/Struct/JIRAIssueLinkEventLink" class="dashAnchor"></a>
+                    <a class="token" href="#/s:10SwiftyJIRA018JIRAIssueLinkEventD0V">JIRAIssueLinkEventLink</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>Undocumented</p>
+
+                        <a href="Structs/JIRAIssueLinkEventLink.html" class="slightly-smaller">See more</a>
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight"><code><span class="kd">public</span> <span class="kd">struct</span> <span class="kt">JIRAIssueLinkEventLink</span><span class="p">:</span> <span class="kt">Codable</span></code></pre>
+
+                        </div>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/s:10SwiftyJIRA17JIRAIssueLinkTypeV"></a>
+                    <a name="//apple_ref/swift/Struct/JIRAIssueLinkType" class="dashAnchor"></a>
+                    <a class="token" href="#/s:10SwiftyJIRA17JIRAIssueLinkTypeV">JIRAIssueLinkType</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>Undocumented</p>
+
+                        <a href="Structs/JIRAIssueLinkType.html" class="slightly-smaller">See more</a>
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight"><code><span class="kd">public</span> <span class="kd">struct</span> <span class="kt">JIRAIssueLinkType</span><span class="p">:</span> <span class="kt">Codable</span></code></pre>
+
+                        </div>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+              </ul>
+            </div>
+            <div class="task-group">
+              <ul>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/s:10SwiftyJIRA11JIRAProjectV"></a>
+                    <a name="//apple_ref/swift/Struct/JIRAProject" class="dashAnchor"></a>
+                    <a class="token" href="#/s:10SwiftyJIRA11JIRAProjectV">JIRAProject</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>Undocumented</p>
+
+                        <a href="Structs/JIRAProject.html" class="slightly-smaller">See more</a>
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight"><code><span class="kd">public</span> <span class="kd">struct</span> <span class="kt">JIRAProject</span><span class="p">:</span> <span class="kt">Codable</span></code></pre>
+
+                        </div>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+              </ul>
+            </div>
+            <div class="task-group">
+              <ul>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/s:10SwiftyJIRA22JIRASprintWebhookEventV"></a>
+                    <a name="//apple_ref/swift/Struct/JIRASprintWebhookEvent" class="dashAnchor"></a>
+                    <a class="token" href="#/s:10SwiftyJIRA22JIRASprintWebhookEventV">JIRASprintWebhookEvent</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>Undocumented</p>
+
+                        <a href="Structs/JIRASprintWebhookEvent.html" class="slightly-smaller">See more</a>
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight"><code><span class="kd">public</span> <span class="kd">struct</span> <span class="kt">JIRASprintWebhookEvent</span><span class="p">:</span> <span class="kt">Codable</span></code></pre>
+
+                        </div>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+              </ul>
+            </div>
+            <div class="task-group">
+              <ul>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/s:10SwiftyJIRA8JIRAUserV"></a>
+                    <a name="//apple_ref/swift/Struct/JIRAUser" class="dashAnchor"></a>
+                    <a class="token" href="#/s:10SwiftyJIRA8JIRAUserV">JIRAUser</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>Undocumented</p>
+
+                        <a href="Structs/JIRAUser.html" class="slightly-smaller">See more</a>
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight"><code><span class="kd">public</span> <span class="kd">struct</span> <span class="kt">JIRAUser</span><span class="p">:</span> <span class="kt">Codable</span></code></pre>
+
+                        </div>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/s:10SwiftyJIRA21JIRASimpleListWrapperV"></a>
+                    <a name="//apple_ref/swift/Struct/JIRASimpleListWrapper" class="dashAnchor"></a>
+                    <a class="token" href="#/s:10SwiftyJIRA21JIRASimpleListWrapperV">JIRASimpleListWrapper</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>Undocumented</p>
+
+                        <a href="Structs/JIRASimpleListWrapper.html" class="slightly-smaller">See more</a>
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight"><code><span class="kd">public</span> <span class="kd">struct</span> <span class="kt">JIRASimpleListWrapper</span><span class="p">:</span> <span class="kt">Codable</span></code></pre>
+
+                        </div>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/s:10SwiftyJIRA9JIRAGroupV"></a>
+                    <a name="//apple_ref/swift/Struct/JIRAGroup" class="dashAnchor"></a>
+                    <a class="token" href="#/s:10SwiftyJIRA9JIRAGroupV">JIRAGroup</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>Undocumented</p>
+
+                        <a href="Structs/JIRAGroup.html" class="slightly-smaller">See more</a>
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight"><code><span class="kd">public</span> <span class="kd">struct</span> <span class="kt">JIRAGroup</span><span class="p">:</span> <span class="kt">Codable</span></code></pre>
+
+                        </div>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+              </ul>
+            </div>
+            <div class="task-group">
+              <ul>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/s:10SwiftyJIRA18JIRAWorkflowSchemeV"></a>
+                    <a name="//apple_ref/swift/Struct/JIRAWorkflowScheme" class="dashAnchor"></a>
+                    <a class="token" href="#/s:10SwiftyJIRA18JIRAWorkflowSchemeV">JIRAWorkflowScheme</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>Undocumented</p>
+
+                        <a href="Structs/JIRAWorkflowScheme.html" class="slightly-smaller">See more</a>
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight"><code><span class="kd">public</span> <span class="kd">struct</span> <span class="kt">JIRAWorkflowScheme</span><span class="p">:</span> <span class="kt">Codable</span></code></pre>
+
+                        </div>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+              </ul>
+            </div>
+            <div class="task-group">
+              <ul>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/s:10SwiftyJIRA23JIRAWorklogWebhookEventV"></a>
+                    <a name="//apple_ref/swift/Struct/JIRAWorklogWebhookEvent" class="dashAnchor"></a>
+                    <a class="token" href="#/s:10SwiftyJIRA23JIRAWorklogWebhookEventV">JIRAWorklogWebhookEvent</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>Undocumented</p>
+
+                        <a href="Structs/JIRAWorklogWebhookEvent.html" class="slightly-smaller">See more</a>
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight"><code><span class="kd">public</span> <span class="kd">struct</span> <span class="kt">JIRAWorklogWebhookEvent</span><span class="p">:</span> <span class="kt">Codable</span></code></pre>
+
+                        </div>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+              </ul>
+            </div>
+          </section>
+        </section>
+        <section id="footer">
+          <p>&copy; 2017 <a class="link" href="polka.cat" target="_blank" rel="external">Joe DeCapo</a>. All rights reserved. (Last updated: 2017-11-24)</p>
+          <p>Generated by <a class="link" href="https://github.com/realm/jazzy" target="_blank" rel="external">jazzy ♪♫ v0.9.0</a>, a <a class="link" href="http://realm.io" target="_blank" rel="external">Realm</a> project.</p>
+        </section>
+      </article>
+    </div>
+  </body>
+</div>
+</html>

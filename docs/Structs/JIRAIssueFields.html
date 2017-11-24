@@ -1,0 +1,1197 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <title>JIRAIssueFields Structure Reference</title>
+    <link rel="stylesheet" type="text/css" href="../css/jazzy.css" />
+    <link rel="stylesheet" type="text/css" href="../css/highlight.css" />
+    <meta charset='utf-8'>
+    <script src="../js/jquery.min.js" defer></script>
+    <script src="../js/jazzy.js" defer></script>
+    
+  </head>
+  <body>
+    <a name="//apple_ref/swift/Struct/JIRAIssueFields" class="dashAnchor"></a>
+    <a title="JIRAIssueFields Structure Reference"></a>
+    <header>
+      <div class="content-wrapper">
+        <p><a href="../index.html">SwiftyJIRA Docs</a> (0% documented)</p>
+        <p class="header-right"><a href="https://github.com/JrGoodle/SwiftyJIRA"><img src="../img/gh.png"/>View on GitHub</a></p>
+      </div>
+    </header>
+    <div class="content-wrapper">
+      <p id="breadcrumbs">
+        <a href="../index.html">SwiftyJIRA Reference</a>
+        <img id="carat" src="../img/carat.png" />
+        JIRAIssueFields Structure Reference
+      </p>
+    </div>
+    <div class="content-wrapper">
+      <nav class="sidebar">
+        <ul class="nav-groups">
+          <li class="nav-group-name">
+            <a href="../Classes.html">Classes</a>
+            <ul class="nav-group-tasks">
+              <li class="nav-group-task">
+                <a href="../Classes/JIRAIssuesController.html">JIRAIssuesController</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Classes/JIRAIssuesController/Filter.html">– Filter</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Classes/JIRAIssuesController/State.html">– State</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Classes/JIRAIssuesController/MilestoneModification.html">– MilestoneModification</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Classes/JIRAIssuesController/SortIssues.html">– SortIssues</a>
+              </li>
+            </ul>
+          </li>
+          <li class="nav-group-name">
+            <a href="../Global Variables.html">Global Variables</a>
+            <ul class="nav-group-tasks">
+              <li class="nav-group-task">
+                <a href="../Global Variables.html#/s:10SwiftyJIRA4baseSSv">base</a>
+              </li>
+            </ul>
+          </li>
+          <li class="nav-group-name">
+            <a href="../Enums.html">Enumerations</a>
+            <ul class="nav-group-tasks">
+              <li class="nav-group-task">
+                <a href="../Enums/Direction.html">Direction</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Enums/JIRAAttachmentEvent.html">JIRAAttachmentEvent</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Enums/JIRACommentEvent.html">JIRACommentEvent</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Enums/JIRAIssueEvent.html">JIRAIssueEvent</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Enums/JIRAIssueLinkEvent.html">JIRAIssueLinkEvent</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Enums/JIRASprintEvent.html">JIRASprintEvent</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Enums/JIRAWorklogEvent.html">JIRAWorklogEvent</a>
+              </li>
+            </ul>
+          </li>
+          <li class="nav-group-name">
+            <a href="../Structs.html">Structures</a>
+            <ul class="nav-group-tasks">
+              <li class="nav-group-task">
+                <a href="../Structs/HexColor.html">HexColor</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Structs/JIRAAttachmentWebhookEvent.html">JIRAAttachmentWebhookEvent</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Structs/JIRACommentWebhookEvent.html">JIRACommentWebhookEvent</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Structs/JIRAGroup.html">JIRAGroup</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Structs/JIRAIssue.html">JIRAIssue</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Structs/JIRAIssueAttachment.html">JIRAIssueAttachment</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Structs/JIRAIssueChangeHistory.html">JIRAIssueChangeHistory</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Structs/JIRAIssueChangeItem.html">JIRAIssueChangeItem</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Structs/JIRAIssueChangelog.html">JIRAIssueChangelog</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Structs/JIRAIssueComment.html">JIRAIssueComment</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Structs/JIRAIssueComments.html">JIRAIssueComments</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Structs/JIRAIssueEditMeta.html">JIRAIssueEditMeta</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Structs/JIRAIssueFieldMeta.html">JIRAIssueFieldMeta</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Structs/JIRAIssueFields.html">JIRAIssueFields</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Structs/JIRAIssueHistoryMetadata.html">JIRAIssueHistoryMetadata</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Structs/JIRAIssueHistoryMetadataParticipant.html">JIRAIssueHistoryMetadataParticipant</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Structs/JIRAIssueLink.html">JIRAIssueLink</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Structs/JIRAIssueLinkEventLink.html">JIRAIssueLinkEventLink</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Structs/JIRAIssueLinkGroup.html">JIRAIssueLinkGroup</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Structs/JIRAIssueLinkType.html">JIRAIssueLinkType</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Structs/JIRAIssuePriority.html">JIRAIssuePriority</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Structs/JIRAIssueProgress.html">JIRAIssueProgress</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Structs/JIRAIssueSimpleLink.html">JIRAIssueSimpleLink</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Structs/JIRAIssueStatus.html">JIRAIssueStatus</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Structs/JIRAIssueStatusCategory.html">JIRAIssueStatusCategory</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Structs/JIRAIssueSubtask.html">JIRAIssueSubtask</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Structs/JIRAIssueTransition.html">JIRAIssueTransition</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Structs/JIRAIssueType.html">JIRAIssueType</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Structs/JIRAIssueVotes.html">JIRAIssueVotes</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Structs/JIRAIssueWatches.html">JIRAIssueWatches</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Structs/JIRAIssueWebhookChangelogItem.html">JIRAIssueWebhookChangelogItem</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Structs/JIRAIssueWebhookEvent.html">JIRAIssueWebhookEvent</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Structs/JIRAIssueWebhookEventChangelog.html">JIRAIssueWebhookEventChangelog</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Structs/JIRAIssuelinkWebhookEvent.html">JIRAIssuelinkWebhookEvent</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Structs/JIRAOpsbar.html">JIRAOpsbar</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Structs/JIRAProject.html">JIRAProject</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Structs.html#/s:10SwiftyJIRA10JIRASchemaV">JIRASchema</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Structs/JIRASimpleListWrapper.html">JIRASimpleListWrapper</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Structs/JIRASprintWebhookEvent.html">JIRASprintWebhookEvent</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Structs/JIRAStatus.html">JIRAStatus</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Structs/JIRAUser.html">JIRAUser</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Structs/JIRAVersion.html">JIRAVersion</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Structs/JIRAWorkflowScheme.html">JIRAWorkflowScheme</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Structs/JIRAWorklogWebhookEvent.html">JIRAWorklogWebhookEvent</a>
+              </li>
+            </ul>
+          </li>
+        </ul>
+      </nav>
+      <article class="main-content">
+        <section>
+          <section class="section">
+            <h1>JIRAIssueFields</h1>
+              <div class="declaration">
+                <div class="language">
+                  <pre class="highlight"><code><span class="kd">public</span> <span class="kd">struct</span> <span class="kt">JIRAIssueFields</span><span class="p">:</span> <span class="kt">Codable</span></code></pre>
+
+                </div>
+              </div>
+            <p>Undocumented</p>
+
+          </section>
+          <section class="section task-group-section">
+            <div class="task-group">
+              <ul>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/s:10SwiftyJIRA15JIRAIssueFieldsV7creatorAA8JIRAUserVSgv"></a>
+                    <a name="//apple_ref/swift/Property/creator" class="dashAnchor"></a>
+                    <a class="token" href="#/s:10SwiftyJIRA15JIRAIssueFieldsV7creatorAA8JIRAUserVSgv">creator</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>Undocumented</p>
+
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight"><code><span class="kd">public</span> <span class="k">var</span> <span class="nv">creator</span><span class="p">:</span> <span class="kt"><a href="../Structs/JIRAUser.html">JIRAUser</a></span><span class="p">?</span></code></pre>
+
+                        </div>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/s:10SwiftyJIRA15JIRAIssueFieldsV17aggregateprogressAA0C8ProgressVSgv"></a>
+                    <a name="//apple_ref/swift/Property/aggregateprogress" class="dashAnchor"></a>
+                    <a class="token" href="#/s:10SwiftyJIRA15JIRAIssueFieldsV17aggregateprogressAA0C8ProgressVSgv">aggregateprogress</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>Undocumented</p>
+
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight"><code><span class="kd">public</span> <span class="k">var</span> <span class="nv">aggregateprogress</span><span class="p">:</span> <span class="kt"><a href="../Structs/JIRAIssueProgress.html">JIRAIssueProgress</a></span><span class="p">?</span></code></pre>
+
+                        </div>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/s:10SwiftyJIRA15JIRAIssueFieldsV8reporterAA8JIRAUserVSgv"></a>
+                    <a name="//apple_ref/swift/Property/reporter" class="dashAnchor"></a>
+                    <a class="token" href="#/s:10SwiftyJIRA15JIRAIssueFieldsV8reporterAA8JIRAUserVSgv">reporter</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>Undocumented</p>
+
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight"><code><span class="kd">public</span> <span class="k">var</span> <span class="nv">reporter</span><span class="p">:</span> <span class="kt"><a href="../Structs/JIRAUser.html">JIRAUser</a></span><span class="p">?</span></code></pre>
+
+                        </div>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/s:10SwiftyJIRA15JIRAIssueFieldsV8subtasksSayAA0C7SubtaskVGSgv"></a>
+                    <a name="//apple_ref/swift/Property/subtasks" class="dashAnchor"></a>
+                    <a class="token" href="#/s:10SwiftyJIRA15JIRAIssueFieldsV8subtasksSayAA0C7SubtaskVGSgv">subtasks</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>Undocumented</p>
+
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight"><code><span class="kd">public</span> <span class="k">var</span> <span class="nv">subtasks</span><span class="p">:</span> <span class="p">[</span><span class="kt"><a href="../Structs/JIRAIssueSubtask.html">JIRAIssueSubtask</a></span><span class="p">]?</span></code></pre>
+
+                        </div>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/s:10SwiftyJIRA15JIRAIssueFieldsV29aggregatetimeoriginalestimateSSSgv"></a>
+                    <a name="//apple_ref/swift/Property/aggregatetimeoriginalestimate" class="dashAnchor"></a>
+                    <a class="token" href="#/s:10SwiftyJIRA15JIRAIssueFieldsV29aggregatetimeoriginalestimateSSSgv">aggregatetimeoriginalestimate</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>Undocumented</p>
+
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight"><code><span class="kd">public</span> <span class="k">var</span> <span class="nv">aggregatetimeoriginalestimate</span><span class="p">:</span> <span class="kt">String</span><span class="p">?</span></code></pre>
+
+                        </div>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/s:10SwiftyJIRA15JIRAIssueFieldsV8assigneeAA8JIRAUserVSgv"></a>
+                    <a name="//apple_ref/swift/Property/assignee" class="dashAnchor"></a>
+                    <a class="token" href="#/s:10SwiftyJIRA15JIRAIssueFieldsV8assigneeAA8JIRAUserVSgv">assignee</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>Undocumented</p>
+
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight"><code><span class="kd">public</span> <span class="k">var</span> <span class="nv">assignee</span><span class="p">:</span> <span class="kt"><a href="../Structs/JIRAUser.html">JIRAUser</a></span><span class="p">?</span></code></pre>
+
+                        </div>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/s:10SwiftyJIRA15JIRAIssueFieldsV10lastViewedSSSgv"></a>
+                    <a name="//apple_ref/swift/Property/lastViewed" class="dashAnchor"></a>
+                    <a class="token" href="#/s:10SwiftyJIRA15JIRAIssueFieldsV10lastViewedSSSgv">lastViewed</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>Undocumented</p>
+
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight"><code><span class="kd">public</span> <span class="k">var</span> <span class="nv">lastViewed</span><span class="p">:</span> <span class="kt">String</span><span class="p">?</span></code></pre>
+
+                        </div>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/s:10SwiftyJIRA15JIRAIssueFieldsV12timeestimateSSSgv"></a>
+                    <a name="//apple_ref/swift/Property/timeestimate" class="dashAnchor"></a>
+                    <a class="token" href="#/s:10SwiftyJIRA15JIRAIssueFieldsV12timeestimateSSSgv">timeestimate</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>Undocumented</p>
+
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight"><code><span class="kd">public</span> <span class="k">var</span> <span class="nv">timeestimate</span><span class="p">:</span> <span class="kt">String</span><span class="p">?</span></code></pre>
+
+                        </div>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/s:10SwiftyJIRA15JIRAIssueFieldsV20timeoriginalestimateSSSgv"></a>
+                    <a name="//apple_ref/swift/Property/timeoriginalestimate" class="dashAnchor"></a>
+                    <a class="token" href="#/s:10SwiftyJIRA15JIRAIssueFieldsV20timeoriginalestimateSSSgv">timeoriginalestimate</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>Undocumented</p>
+
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight"><code><span class="kd">public</span> <span class="k">var</span> <span class="nv">timeoriginalestimate</span><span class="p">:</span> <span class="kt">String</span><span class="p">?</span></code></pre>
+
+                        </div>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/s:10SwiftyJIRA15JIRAIssueFieldsV21aggregatetimeestimateSSSgv"></a>
+                    <a name="//apple_ref/swift/Property/aggregatetimeestimate" class="dashAnchor"></a>
+                    <a class="token" href="#/s:10SwiftyJIRA15JIRAIssueFieldsV21aggregatetimeestimateSSSgv">aggregatetimeestimate</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>Undocumented</p>
+
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight"><code><span class="kd">public</span> <span class="k">var</span> <span class="nv">aggregatetimeestimate</span><span class="p">:</span> <span class="kt">String</span><span class="p">?</span></code></pre>
+
+                        </div>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/s:10SwiftyJIRA15JIRAIssueFieldsV8progressAA0C8ProgressVSgv"></a>
+                    <a name="//apple_ref/swift/Property/progress" class="dashAnchor"></a>
+                    <a class="token" href="#/s:10SwiftyJIRA15JIRAIssueFieldsV8progressAA0C8ProgressVSgv">progress</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>Undocumented</p>
+
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight"><code><span class="kd">public</span> <span class="k">var</span> <span class="nv">progress</span><span class="p">:</span> <span class="kt"><a href="../Structs/JIRAIssueProgress.html">JIRAIssueProgress</a></span><span class="p">?</span></code></pre>
+
+                        </div>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/s:10SwiftyJIRA15JIRAIssueFieldsV7createdSSSgv"></a>
+                    <a name="//apple_ref/swift/Property/created" class="dashAnchor"></a>
+                    <a class="token" href="#/s:10SwiftyJIRA15JIRAIssueFieldsV7createdSSSgv">created</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>Undocumented</p>
+
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight"><code><span class="kd">public</span> <span class="k">var</span> <span class="nv">created</span><span class="p">:</span> <span class="kt">String</span><span class="p">?</span></code></pre>
+
+                        </div>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/s:10SwiftyJIRA15JIRAIssueFieldsV8versionsSaySSGSgv"></a>
+                    <a name="//apple_ref/swift/Property/versions" class="dashAnchor"></a>
+                    <a class="token" href="#/s:10SwiftyJIRA15JIRAIssueFieldsV8versionsSaySSGSgv">versions</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>Undocumented</p>
+
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight"><code><span class="kd">public</span> <span class="k">var</span> <span class="nv">versions</span><span class="p">:</span> <span class="p">[</span><span class="kt">String</span><span class="p">]?</span></code></pre>
+
+                        </div>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/s:10SwiftyJIRA15JIRAIssueFieldsV10componentsSaySSGSgv"></a>
+                    <a name="//apple_ref/swift/Property/components" class="dashAnchor"></a>
+                    <a class="token" href="#/s:10SwiftyJIRA15JIRAIssueFieldsV10componentsSaySSGSgv">components</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>Undocumented</p>
+
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight"><code><span class="kd">public</span> <span class="k">var</span> <span class="nv">components</span><span class="p">:</span> <span class="p">[</span><span class="kt">String</span><span class="p">]?</span></code></pre>
+
+                        </div>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/s:10SwiftyJIRA15JIRAIssueFieldsV12timetrackings10DictionaryVyS2SSgGSgv"></a>
+                    <a name="//apple_ref/swift/Property/timetracking" class="dashAnchor"></a>
+                    <a class="token" href="#/s:10SwiftyJIRA15JIRAIssueFieldsV12timetrackings10DictionaryVyS2SSgGSgv">timetracking</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>Undocumented</p>
+
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight"><code><span class="kd">public</span> <span class="k">var</span> <span class="nv">timetracking</span><span class="p">:</span> <span class="p">[</span><span class="kt">String</span><span class="p">:</span> <span class="kt">String</span><span class="p">?]?</span></code></pre>
+
+                        </div>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/s:10SwiftyJIRA15JIRAIssueFieldsV5votesAA0C5VotesVSgv"></a>
+                    <a name="//apple_ref/swift/Property/votes" class="dashAnchor"></a>
+                    <a class="token" href="#/s:10SwiftyJIRA15JIRAIssueFieldsV5votesAA0C5VotesVSgv">votes</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>Undocumented</p>
+
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight"><code><span class="kd">public</span> <span class="k">var</span> <span class="nv">votes</span><span class="p">:</span> <span class="kt"><a href="../Structs/JIRAIssueVotes.html">JIRAIssueVotes</a></span><span class="p">?</span></code></pre>
+
+                        </div>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/s:10SwiftyJIRA15JIRAIssueFieldsV6labelsSaySSGSgv"></a>
+                    <a name="//apple_ref/swift/Property/labels" class="dashAnchor"></a>
+                    <a class="token" href="#/s:10SwiftyJIRA15JIRAIssueFieldsV6labelsSaySSGSgv">labels</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>Undocumented</p>
+
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight"><code><span class="kd">public</span> <span class="k">var</span> <span class="nv">labels</span><span class="p">:</span> <span class="p">[</span><span class="kt">String</span><span class="p">]?</span></code></pre>
+
+                        </div>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/s:10SwiftyJIRA15JIRAIssueFieldsV9workratioSiSgv"></a>
+                    <a name="//apple_ref/swift/Property/workratio" class="dashAnchor"></a>
+                    <a class="token" href="#/s:10SwiftyJIRA15JIRAIssueFieldsV9workratioSiSgv">workratio</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>Undocumented</p>
+
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight"><code><span class="kd">public</span> <span class="k">var</span> <span class="nv">workratio</span><span class="p">:</span> <span class="kt">Int</span><span class="p">?</span></code></pre>
+
+                        </div>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/s:10SwiftyJIRA15JIRAIssueFieldsV11descriptionSSSgv"></a>
+                    <a name="//apple_ref/swift/Property/description" class="dashAnchor"></a>
+                    <a class="token" href="#/s:10SwiftyJIRA15JIRAIssueFieldsV11descriptionSSSgv">description</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>Undocumented</p>
+
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight"><code><span class="kd">public</span> <span class="k">var</span> <span class="nv">description</span><span class="p">:</span> <span class="kt">String</span><span class="p">?</span></code></pre>
+
+                        </div>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/s:10SwiftyJIRA15JIRAIssueFieldsV7updatedSSv"></a>
+                    <a name="//apple_ref/swift/Property/updated" class="dashAnchor"></a>
+                    <a class="token" href="#/s:10SwiftyJIRA15JIRAIssueFieldsV7updatedSSv">updated</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>Undocumented</p>
+
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight"><code><span class="kd">public</span> <span class="k">var</span> <span class="nv">updated</span><span class="p">:</span> <span class="kt">String</span></code></pre>
+
+                        </div>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/s:10SwiftyJIRA15JIRAIssueFieldsV9issuetypeAA0C4TypeVSgv"></a>
+                    <a name="//apple_ref/swift/Property/issuetype" class="dashAnchor"></a>
+                    <a class="token" href="#/s:10SwiftyJIRA15JIRAIssueFieldsV9issuetypeAA0C4TypeVSgv">issuetype</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>Undocumented</p>
+
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight"><code><span class="kd">public</span> <span class="k">var</span> <span class="nv">issuetype</span><span class="p">:</span> <span class="kt"><a href="../Structs/JIRAIssueType.html">JIRAIssueType</a></span><span class="p">?</span></code></pre>
+
+                        </div>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/s:10SwiftyJIRA15JIRAIssueFieldsV7watchesAA0C7WatchesVSgv"></a>
+                    <a name="//apple_ref/swift/Property/watches" class="dashAnchor"></a>
+                    <a class="token" href="#/s:10SwiftyJIRA15JIRAIssueFieldsV7watchesAA0C7WatchesVSgv">watches</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>Undocumented</p>
+
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight"><code><span class="kd">public</span> <span class="k">var</span> <span class="nv">watches</span><span class="p">:</span> <span class="kt"><a href="../Structs/JIRAIssueWatches.html">JIRAIssueWatches</a></span><span class="p">?</span></code></pre>
+
+                        </div>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/s:10SwiftyJIRA15JIRAIssueFieldsV11environmentSSSgv"></a>
+                    <a name="//apple_ref/swift/Property/environment" class="dashAnchor"></a>
+                    <a class="token" href="#/s:10SwiftyJIRA15JIRAIssueFieldsV11environmentSSSgv">environment</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>Undocumented</p>
+
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight"><code><span class="kd">public</span> <span class="k">var</span> <span class="nv">environment</span><span class="p">:</span> <span class="kt">String</span><span class="p">?</span></code></pre>
+
+                        </div>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/s:10SwiftyJIRA15JIRAIssueFieldsV7commentAA0C8CommentsVSgv"></a>
+                    <a name="//apple_ref/swift/Property/comment" class="dashAnchor"></a>
+                    <a class="token" href="#/s:10SwiftyJIRA15JIRAIssueFieldsV7commentAA0C8CommentsVSgv">comment</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>Undocumented</p>
+
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight"><code><span class="kd">public</span> <span class="k">var</span> <span class="nv">comment</span><span class="p">:</span> <span class="kt"><a href="../Structs/JIRAIssueComments.html">JIRAIssueComments</a></span><span class="p">?</span></code></pre>
+
+                        </div>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/s:10SwiftyJIRA15JIRAIssueFieldsV9timespentSSSgv"></a>
+                    <a name="//apple_ref/swift/Property/timespent" class="dashAnchor"></a>
+                    <a class="token" href="#/s:10SwiftyJIRA15JIRAIssueFieldsV9timespentSSSgv">timespent</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>Undocumented</p>
+
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight"><code><span class="kd">public</span> <span class="k">var</span> <span class="nv">timespent</span><span class="p">:</span> <span class="kt">String</span><span class="p">?</span></code></pre>
+
+                        </div>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/s:10SwiftyJIRA15JIRAIssueFieldsV8priorityAA0C8PriorityVSgv"></a>
+                    <a name="//apple_ref/swift/Property/priority" class="dashAnchor"></a>
+                    <a class="token" href="#/s:10SwiftyJIRA15JIRAIssueFieldsV8priorityAA0C8PriorityVSgv">priority</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>Undocumented</p>
+
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight"><code><span class="kd">public</span> <span class="k">var</span> <span class="nv">priority</span><span class="p">:</span> <span class="kt"><a href="../Structs/JIRAIssuePriority.html">JIRAIssuePriority</a></span><span class="p">?</span></code></pre>
+
+                        </div>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/s:10SwiftyJIRA15JIRAIssueFieldsV7projectAA11JIRAProjectVSgv"></a>
+                    <a name="//apple_ref/swift/Property/project" class="dashAnchor"></a>
+                    <a class="token" href="#/s:10SwiftyJIRA15JIRAIssueFieldsV7projectAA11JIRAProjectVSgv">project</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>Undocumented</p>
+
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight"><code><span class="kd">public</span> <span class="k">var</span> <span class="nv">project</span><span class="p">:</span> <span class="kt"><a href="../Structs/JIRAProject.html">JIRAProject</a></span><span class="p">?</span></code></pre>
+
+                        </div>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/s:10SwiftyJIRA15JIRAIssueFieldsV11fixVersionsSayAA11JIRAVersionVGSgv"></a>
+                    <a name="//apple_ref/swift/Property/fixVersions" class="dashAnchor"></a>
+                    <a class="token" href="#/s:10SwiftyJIRA15JIRAIssueFieldsV11fixVersionsSayAA11JIRAVersionVGSgv">fixVersions</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>Undocumented</p>
+
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight"><code><span class="kd">public</span> <span class="k">var</span> <span class="nv">fixVersions</span><span class="p">:</span> <span class="p">[</span><span class="kt"><a href="../Structs/JIRAVersion.html">JIRAVersion</a></span><span class="p">]?</span></code></pre>
+
+                        </div>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/s:10SwiftyJIRA15JIRAIssueFieldsV10issueLinksSayAA0C4LinkVGSgv"></a>
+                    <a name="//apple_ref/swift/Property/issueLinks" class="dashAnchor"></a>
+                    <a class="token" href="#/s:10SwiftyJIRA15JIRAIssueFieldsV10issueLinksSayAA0C4LinkVGSgv">issueLinks</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>Undocumented</p>
+
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight"><code><span class="kd">public</span> <span class="k">var</span> <span class="nv">issueLinks</span><span class="p">:</span> <span class="p">[</span><span class="kt"><a href="../Structs/JIRAIssueLink.html">JIRAIssueLink</a></span><span class="p">]?</span></code></pre>
+
+                        </div>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/s:10SwiftyJIRA15JIRAIssueFieldsV10resolutionSSSgv"></a>
+                    <a name="//apple_ref/swift/Property/resolution" class="dashAnchor"></a>
+                    <a class="token" href="#/s:10SwiftyJIRA15JIRAIssueFieldsV10resolutionSSSgv">resolution</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>Undocumented</p>
+
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight"><code><span class="kd">public</span> <span class="k">var</span> <span class="nv">resolution</span><span class="p">:</span> <span class="kt">String</span><span class="p">?</span></code></pre>
+
+                        </div>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/s:10SwiftyJIRA15JIRAIssueFieldsV6statusAA0C6StatusVSgv"></a>
+                    <a name="//apple_ref/swift/Property/status" class="dashAnchor"></a>
+                    <a class="token" href="#/s:10SwiftyJIRA15JIRAIssueFieldsV6statusAA0C6StatusVSgv">status</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>Undocumented</p>
+
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight"><code><span class="kd">public</span> <span class="k">var</span> <span class="nv">status</span><span class="p">:</span> <span class="kt"><a href="../Structs/JIRAIssueStatus.html">JIRAIssueStatus</a></span><span class="p">?</span></code></pre>
+
+                        </div>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/s:10SwiftyJIRA15JIRAIssueFieldsV7summarySSSgv"></a>
+                    <a name="//apple_ref/swift/Property/summary" class="dashAnchor"></a>
+                    <a class="token" href="#/s:10SwiftyJIRA15JIRAIssueFieldsV7summarySSSgv">summary</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>Undocumented</p>
+
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight"><code><span class="kd">public</span> <span class="k">var</span> <span class="nv">summary</span><span class="p">:</span> <span class="kt">String</span><span class="p">?</span></code></pre>
+
+                        </div>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/s:10SwiftyJIRA15JIRAIssueFieldsV10attachmentSayAA0C10AttachmentVGSgv"></a>
+                    <a name="//apple_ref/swift/Property/attachment" class="dashAnchor"></a>
+                    <a class="token" href="#/s:10SwiftyJIRA15JIRAIssueFieldsV10attachmentSayAA0C10AttachmentVGSgv">attachment</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>Undocumented</p>
+
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight"><code><span class="kd">public</span> <span class="k">var</span> <span class="nv">attachment</span><span class="p">:</span> <span class="p">[</span><span class="kt"><a href="../Structs/JIRAIssueAttachment.html">JIRAIssueAttachment</a></span><span class="p">]?</span></code></pre>
+
+                        </div>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/s:10SwiftyJIRA15JIRAIssueFieldsV7duedateSSSgv"></a>
+                    <a name="//apple_ref/swift/Property/duedate" class="dashAnchor"></a>
+                    <a class="token" href="#/s:10SwiftyJIRA15JIRAIssueFieldsV7duedateSSSgv">duedate</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>Undocumented</p>
+
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight"><code><span class="kd">public</span> <span class="k">var</span> <span class="nv">duedate</span><span class="p">:</span> <span class="kt">String</span><span class="p">?</span></code></pre>
+
+                        </div>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/s:10SwiftyJIRA15JIRAIssueFieldsV8securitySSSgv"></a>
+                    <a name="//apple_ref/swift/Property/security" class="dashAnchor"></a>
+                    <a class="token" href="#/s:10SwiftyJIRA15JIRAIssueFieldsV8securitySSSgv">security</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>Undocumented</p>
+
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight"><code><span class="kd">public</span> <span class="k">var</span> <span class="nv">security</span><span class="p">:</span> <span class="kt">String</span><span class="p">?</span></code></pre>
+
+                        </div>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+              </ul>
+            </div>
+          </section>
+        </section>
+        <section id="footer">
+          <p>&copy; 2017 <a class="link" href="polka.cat" target="_blank" rel="external">Joe DeCapo</a>. All rights reserved. (Last updated: 2017-11-24)</p>
+          <p>Generated by <a class="link" href="https://github.com/realm/jazzy" target="_blank" rel="external">jazzy ♪♫ v0.9.0</a>, a <a class="link" href="http://realm.io" target="_blank" rel="external">Realm</a> project.</p>
+        </section>
+      </article>
+    </div>
+  </body>
+</div>
+</html>

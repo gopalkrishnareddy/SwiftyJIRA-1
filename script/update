@@ -1,7 +1,29 @@
 #!/usr/bin/env bash
 
-cd "$( cd "$( dirname "${BASH_SOURCE[0]}" )" && pwd )" || exit 1
+cd "$( cd "$( dirname "${BASH_SOURCE[0]}" )" && pwd )/.." || exit 1
 
-cd ..
+if [ "$1" == 'website' ]; then
+    GH_PAGES_DIR="$( cd .. && pwd)/gh-pages/SwiftyJIRA"
+
+    echo 'Update REAMDE.md'
+    tail -n+2 "README.md" > "$GH_PAGES_DIR/README.md" || exit 1
+
+    echo 'Update Jazzy Docs'
+    jazzy
+    rm -rf "$GH_PAGES_DIR/docs" || exit 1
+    cp -R 'docs' "$GH_PAGES_DIR/" || exit 1
+
+    cd "$GH_PAGES_DIR" || exit 1
+    git add README.md docs || exit 1
+    git commit -m 'Update web site from latest in master branch' || exit 1
+    git push || exit 1
+    exit
+fi
+
+if [ "$1" == 'docs' ]; then
+    jazzy
+    exit
+fi
+
 swift package update
 swift package generate-xcodeproj

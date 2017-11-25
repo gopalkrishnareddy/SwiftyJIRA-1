@@ -1,5 +1,13 @@
+//
+//  JIRAWorkflowScheme.swift
+//  SwiftyJIRA
+//
+//  Created by Joe DeCapo on 11/16/17.
+//
+
 import Foundation
 
+/// JIRA Workflow Scheme
 public struct JIRAWorkflowScheme: Codable {
     public var id: Int?
     public var name: String?

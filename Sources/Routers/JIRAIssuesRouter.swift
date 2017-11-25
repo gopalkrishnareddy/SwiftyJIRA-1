@@ -140,7 +140,7 @@ struct JIRAIssuesRouter: URLRequestConvertible {
         }
         
         let url: URL = {
-            var url = URL(string: "\(base)/repos/\(owner)/\(repo)/issue")!
+            var url = URL(string: "\(jiraBaseURL)/repos/\(owner)/\(repo)/issue")!
             if let relativePath = relativePath {
                 url = url.appendingPathComponent(relativePath)
             }

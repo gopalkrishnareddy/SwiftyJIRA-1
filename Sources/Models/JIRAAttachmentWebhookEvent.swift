@@ -1,3 +1,10 @@
+//
+//  JIRAAttachmentWebhookEvent.swift
+//  SwiftyJIRA
+//
+//  Created by Joe DeCapo on 11/16/17.
+//
+
 import Foundation
 
 public struct JIRAAttachmentWebhookEvent: Codable {

@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		C6EFE5651FC9368800B04F7D /* JIRAEnums.swift in Sources */ = {isa = PBXBuildFile; fileRef = C6EFE5631FC9367900B04F7D /* JIRAEnums.swift */; };
 		OBJ_100 /* MultipartFormData.swift in Sources */ = {isa = PBXBuildFile; fileRef = OBJ_38 /* MultipartFormData.swift */; };
 		OBJ_101 /* NetworkReachabilityManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = OBJ_39 /* NetworkReachabilityManager.swift */; };
 		OBJ_102 /* Notifications.swift in Sources */ = {isa = PBXBuildFile; fileRef = OBJ_40 /* Notifications.swift */; };
@@ -58,6 +59,7 @@
 
 /* Begin PBXFileReference section */
 		"Alamofire::Alamofire::Product" /* Alamofire.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; path = Alamofire.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		C6EFE5631FC9367900B04F7D /* JIRAEnums.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = JIRAEnums.swift; sourceTree = "<group>"; };
 		OBJ_10 /* JIRAIssuesController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = JIRAIssuesController.swift; sourceTree = "<group>"; };
 		OBJ_12 /* Array+ParameterEncoding.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Array+ParameterEncoding.swift"; sourceTree = "<group>"; };
 		OBJ_13 /* Date+IS08601.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Date+IS08601.swift"; sourceTree = "<group>"; };
@@ -140,6 +142,7 @@
 				OBJ_25 /* JIRAUser.swift */,
 				OBJ_26 /* JIRAWorkflowScheme.swift */,
 				OBJ_27 /* JIRAWorklogWebhookEvent.swift */,
+				C6EFE5631FC9367900B04F7D /* JIRAEnums.swift */,
 			);
 			path = Models;
 			sourceTree = "<group>";
@@ -193,7 +196,7 @@
 			path = ".build/checkouts/Alamofire.git-1442282756688770939/Source";
 			sourceTree = SOURCE_ROOT;
 		};
-		OBJ_5 /*  */ = {
+		OBJ_5 = {
 			isa = PBXGroup;
 			children = (
 				OBJ_6 /* Package.swift */,
@@ -203,7 +206,6 @@
 				OBJ_32 /* Dependencies */,
 				OBJ_52 /* Products */,
 			);
-			name = "";
 			sourceTree = "<group>";
 		};
 		OBJ_52 /* Products */ = {
@@ -323,7 +325,7 @@
 			knownRegions = (
 				en,
 			);
-			mainGroup = OBJ_5 /*  */;
+			mainGroup = OBJ_5;
 			productRefGroup = OBJ_52 /* Products */;
 			projectDirPath = "";
 			projectRoot = "";
@@ -361,6 +363,7 @@
 				OBJ_73 /* Array+ParameterEncoding.swift in Sources */,
 				OBJ_74 /* Date+IS08601.swift in Sources */,
 				OBJ_75 /* HexColor.swift in Sources */,
+				C6EFE5651FC9368800B04F7D /* JIRAEnums.swift in Sources */,
 				OBJ_76 /* JIRAGlobals.swift in Sources */,
 				OBJ_77 /* JIRAAttachmentWebhookEvent.swift in Sources */,
 				OBJ_78 /* JIRACommentWebhookEvent.swift in Sources */,

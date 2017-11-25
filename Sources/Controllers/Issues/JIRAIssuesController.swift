@@ -1,9 +1,15 @@
+//
+//  JIRAIssuesController.swift
+//  SwiftyJIRA
+//
+//  Created by Joe DeCapo on 11/16/17.
+//
+
 import Foundation
 import Dispatch
 import Alamofire
 
-// MARK: - General
-
+/// The controller class for the JIRA issues REST API
 public class JIRAIssuesController {
 
     public var owner: String?

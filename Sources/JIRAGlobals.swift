@@ -1,8 +1,11 @@
+//
+//  JIRAGlobals.swift
+//  SwiftyJIRA
+//
+//  Created by Joe DeCapo on 11/16/17.
+//
+
 import Foundation
 
-public let base = "https://jira.atlassian.com/rest/api/2"
-
-public enum Direction: String {
-    case asc
-    case desc
-}
+/// JIRA API base url
+public let jiraBaseURL = "https://jira.atlassian.com/rest/api/2"

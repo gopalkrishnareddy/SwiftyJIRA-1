@@ -2,51 +2,184 @@
   "warnings": [
     {
       "file": "/Users/goodle/github/BugHub/SwiftyJIRA/Sources/Controllers/Issues/JIRAIssuesController.swift",
-      "line": 90,
-      "symbol": "JIRACreateIssueBody",
-      "symbol_kind": "source.lang.swift.decl.struct",
-      "warning": "undocumented"
-    },
-    {
-      "file": "/Users/goodle/github/BugHub/SwiftyJIRA/Sources/Controllers/Issues/JIRAIssuesController.swift",
-      "line": 91,
-      "symbol": "JIRACreateIssueBody.update",
+      "line": 15,
+      "symbol": "JIRAIssuesController.owner",
       "symbol_kind": "source.lang.swift.decl.var.instance",
       "warning": "undocumented"
     },
     {
       "file": "/Users/goodle/github/BugHub/SwiftyJIRA/Sources/Controllers/Issues/JIRAIssuesController.swift",
-      "line": 92,
-      "symbol": "JIRACreateIssueBody.fields",
+      "line": 16,
+      "symbol": "JIRAIssuesController.repo",
       "symbol_kind": "source.lang.swift.decl.var.instance",
       "warning": "undocumented"
     },
     {
       "file": "/Users/goodle/github/BugHub/SwiftyJIRA/Sources/Controllers/Issues/JIRAIssuesController.swift",
-      "line": 95,
-      "symbol": "JIRAWorklog",
-      "symbol_kind": "source.lang.swift.decl.struct",
-      "warning": "undocumented"
-    },
-    {
-      "file": "/Users/goodle/github/BugHub/SwiftyJIRA/Sources/Controllers/Issues/JIRAIssuesController.swift",
-      "line": 96,
-      "symbol": "JIRAWorklog.worklog",
+      "line": 17,
+      "symbol": "JIRAIssuesController.org",
       "symbol_kind": "source.lang.swift.decl.var.instance",
       "warning": "undocumented"
     },
     {
       "file": "/Users/goodle/github/BugHub/SwiftyJIRA/Sources/Controllers/Issues/JIRAIssuesController.swift",
-      "line": 99,
-      "symbol": "JIRAWorklogItems",
-      "symbol_kind": "source.lang.swift.decl.struct",
+      "line": 23,
+      "symbol": "JIRAIssuesController.init(user:password:owner:repo:org:)",
+      "symbol_kind": "source.lang.swift.decl.function.method.instance",
       "warning": "undocumented"
     },
     {
       "file": "/Users/goodle/github/BugHub/SwiftyJIRA/Sources/Controllers/Issues/JIRAIssuesController.swift",
-      "line": 100,
-      "symbol": "JIRAWorklogItems.add",
-      "symbol_kind": "source.lang.swift.decl.var.instance",
+      "line": 31,
+      "symbol": "JIRAIssuesController.getIssue(number:completion:)",
+      "symbol_kind": "source.lang.swift.decl.function.method.instance",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/goodle/github/BugHub/SwiftyJIRA/Sources/Controllers/Issues/JIRAIssuesController.swift",
+      "line": 55,
+      "symbol": "JIRAIssuesController.createIssue(title:body:milestone:labels:assignees:completion:)",
+      "symbol_kind": "source.lang.swift.decl.function.method.instance",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/goodle/github/BugHub/SwiftyJIRA/Sources/Controllers/Issues/JIRAIssuesController.swift",
+      "line": 98,
+      "symbol": "JIRAIssuesController.editIssue(number:title:body:state:milestone:labels:assignees:completion:)",
+      "symbol_kind": "source.lang.swift.decl.function.method.instance",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/goodle/github/BugHub/SwiftyJIRA/Sources/Controllers/Issues/JIRAIssuesController.swift",
+      "line": 147,
+      "symbol": "JIRAIssuesController.lockIssue(number:completion:)",
+      "symbol_kind": "source.lang.swift.decl.function.method.instance",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/goodle/github/BugHub/SwiftyJIRA/Sources/Controllers/Issues/JIRAIssuesController.swift",
+      "line": 174,
+      "symbol": "JIRAIssuesController.unlockIssue(number:completion:)",
+      "symbol_kind": "source.lang.swift.decl.function.method.instance",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/goodle/github/BugHub/SwiftyJIRA/Sources/Controllers/Issues/JIRAIssuesController.swift",
+      "line": 201,
+      "symbol": "JIRAIssuesController.Filter",
+      "symbol_kind": "source.lang.swift.decl.enum",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/goodle/github/BugHub/SwiftyJIRA/Sources/Controllers/Issues/JIRAIssuesController.swift",
+      "line": 202,
+      "symbol": "JIRAIssuesController.Filter.assigned",
+      "symbol_kind": "source.lang.swift.decl.enumelement",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/goodle/github/BugHub/SwiftyJIRA/Sources/Controllers/Issues/JIRAIssuesController.swift",
+      "line": 203,
+      "symbol": "JIRAIssuesController.Filter.created",
+      "symbol_kind": "source.lang.swift.decl.enumelement",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/goodle/github/BugHub/SwiftyJIRA/Sources/Controllers/Issues/JIRAIssuesController.swift",
+      "line": 204,
+      "symbol": "JIRAIssuesController.Filter.mentioned",
+      "symbol_kind": "source.lang.swift.decl.enumelement",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/goodle/github/BugHub/SwiftyJIRA/Sources/Controllers/Issues/JIRAIssuesController.swift",
+      "line": 205,
+      "symbol": "JIRAIssuesController.Filter.subscribed",
+      "symbol_kind": "source.lang.swift.decl.enumelement",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/goodle/github/BugHub/SwiftyJIRA/Sources/Controllers/Issues/JIRAIssuesController.swift",
+      "line": 206,
+      "symbol": "JIRAIssuesController.Filter.all",
+      "symbol_kind": "source.lang.swift.decl.enumelement",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/goodle/github/BugHub/SwiftyJIRA/Sources/Controllers/Issues/JIRAIssuesController.swift",
+      "line": 209,
+      "symbol": "JIRAIssuesController.State",
+      "symbol_kind": "source.lang.swift.decl.enum",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/goodle/github/BugHub/SwiftyJIRA/Sources/Controllers/Issues/JIRAIssuesController.swift",
+      "line": 210,
+      "symbol": "JIRAIssuesController.State.open",
+      "symbol_kind": "source.lang.swift.decl.enumelement",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/goodle/github/BugHub/SwiftyJIRA/Sources/Controllers/Issues/JIRAIssuesController.swift",
+      "line": 211,
+      "symbol": "JIRAIssuesController.State.closed",
+      "symbol_kind": "source.lang.swift.decl.enumelement",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/goodle/github/BugHub/SwiftyJIRA/Sources/Controllers/Issues/JIRAIssuesController.swift",
+      "line": 212,
+      "symbol": "JIRAIssuesController.State.all",
+      "symbol_kind": "source.lang.swift.decl.enumelement",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/goodle/github/BugHub/SwiftyJIRA/Sources/Controllers/Issues/JIRAIssuesController.swift",
+      "line": 215,
+      "symbol": "JIRAIssuesController.MilestoneModification",
+      "symbol_kind": "source.lang.swift.decl.enum",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/goodle/github/BugHub/SwiftyJIRA/Sources/Controllers/Issues/JIRAIssuesController.swift",
+      "line": 216,
+      "symbol": "JIRAIssuesController.MilestoneModification.number",
+      "symbol_kind": "source.lang.swift.decl.enumelement",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/goodle/github/BugHub/SwiftyJIRA/Sources/Controllers/Issues/JIRAIssuesController.swift",
+      "line": 217,
+      "symbol": "JIRAIssuesController.MilestoneModification.remove",
+      "symbol_kind": "source.lang.swift.decl.enumelement",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/goodle/github/BugHub/SwiftyJIRA/Sources/Controllers/Issues/JIRAIssuesController.swift",
+      "line": 229,
+      "symbol": "JIRAIssuesController.SortIssues",
+      "symbol_kind": "source.lang.swift.decl.enum",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/goodle/github/BugHub/SwiftyJIRA/Sources/Controllers/Issues/JIRAIssuesController.swift",
+      "line": 230,
+      "symbol": "JIRAIssuesController.SortIssues.created",
+      "symbol_kind": "source.lang.swift.decl.enumelement",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/goodle/github/BugHub/SwiftyJIRA/Sources/Controllers/Issues/JIRAIssuesController.swift",
+      "line": 231,
+      "symbol": "JIRAIssuesController.SortIssues.updated",
+      "symbol_kind": "source.lang.swift.decl.enumelement",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/goodle/github/BugHub/SwiftyJIRA/Sources/Controllers/Issues/JIRAIssuesController.swift",
+      "line": 232,
+      "symbol": "JIRAIssuesController.SortIssues.comments",
+      "symbol_kind": "source.lang.swift.decl.enumelement",
       "warning": "undocumented"
     },
     {

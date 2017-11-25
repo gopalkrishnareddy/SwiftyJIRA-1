@@ -11,13 +11,18 @@ matrix:
 
 install:
   - eval "$(curl -sL https://swiftenv.fuller.li/install.sh)"
+  - sudo pip install codecov
   - if [ "$TRAVIS_OS_NAME" = "osx" ]; then sudo gem install jazzy; fi
 
 before_script: script/update
 
-script: swift build
+script:
+  - swift build
+  - swift test
 
-after_success: if [ "$TRAVIS_OS_NAME" = "osx" ]; then jazzy; fi
+after_success:
+  - if [ "$TRAVIS_OS_NAME" = "osx" ]; then jazzy; fi
+  - bash <(curl -s https://codecov.io/bash)
 
 branches:
   only: # whitelist

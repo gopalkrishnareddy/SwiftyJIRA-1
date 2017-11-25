@@ -11,7 +11,8 @@ let package = Package(
         .package(url: "https://github.com/JrGoodle/Alamofire.git", .branch("linux"))
     ],
     targets: [
-        .target(name: "SwiftyJIRA", dependencies: ["Alamofire"], path: "Sources")
+        .target(name: "SwiftyJIRA", dependencies: ["Alamofire"], path: "Sources"),
+        .testTarget(name: "SwiftyJIRATests", dependencies: ["SwiftyJIRA""])
     ]
 )
 

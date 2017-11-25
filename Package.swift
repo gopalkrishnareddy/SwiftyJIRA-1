@@ -12,7 +12,7 @@ let package = Package(
     ],
     targets: [
         .target(name: "SwiftyJIRA", dependencies: ["Alamofire"], path: "Sources"),
-        .testTarget(name: "SwiftyJIRATests", dependencies: ["SwiftyJIRA""])
+        .testTarget(name: "SwiftyJIRATests", dependencies: ["SwiftyJIRA"])
     ]
 )
 

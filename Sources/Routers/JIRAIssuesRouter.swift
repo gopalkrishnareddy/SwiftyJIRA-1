@@ -32,8 +32,6 @@ struct JIRAIssuesRouter: URLRequestConvertible {
     
     let user: String
     let password: String
-    let owner: String
-    let repo: String
     let action: Action
     
     func asURLRequest() throws -> URLRequest {
@@ -140,7 +138,7 @@ struct JIRAIssuesRouter: URLRequestConvertible {
         }
         
         let url: URL = {
-            var url = URL(string: "\(jiraBaseURL)/repos/\(owner)/\(repo)/issue")!
+            var url = URL(string: "\(jiraBaseURL)/rest/api/2/issue")!
             if let relativePath = relativePath {
                 url = url.appendingPathComponent(relativePath)
             }

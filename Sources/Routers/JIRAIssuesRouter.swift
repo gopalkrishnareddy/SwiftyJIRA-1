@@ -4,7 +4,7 @@ import Alamofire
 struct JIRAIssuesRouter: URLRequestConvertible {
     
     enum Action {
-        case createIssue(params: Parameters)
+        case createIssue(body: JIRACreateIssueBody, params: Parameters)
         case createIssues(params: Parameters)
         case getIssue(issueIdOrKey: String, params: Parameters)
         case deleteIssue(issueIdOrKey: String, params: Parameters)
@@ -38,11 +38,13 @@ struct JIRAIssuesRouter: URLRequestConvertible {
         var relativePath: String?
         let method: HTTPMethod
         var parameters: Parameters?
+        var bodyData: Data?
         
         switch self.action {
-        case .createIssue(let params):
+        case .createIssue(let body, let params):
             method = .post
             parameters = params
+            bodyData = try JSONEncoder().encode(body)
         case .createIssues(let params):
             method = .post
             relativePath = "bulk"
@@ -160,6 +162,10 @@ struct JIRAIssuesRouter: URLRequestConvertible {
                 return JSONEncoding.default
             }
         }()
-        return try encoding.encode(urlRequest, with: parameters)
+        var request = try encoding.encode(urlRequest, with: parameters)
+        if let bodyData = bodyData {
+            request.httpBody = bodyData
+        }
+        return request
     }
 }

@@ -334,3 +334,15 @@ public struct JIRARemoteEntityLinkJSONBean: Codable {
     public var name: String?
     public var `self`: String?
 }
+
+public struct JIRAIssueQueryFields: Codable {
+    public var fields: JIRAIssueQueryField?
+}
+
+public enum JIRAIssueQueryField: String, Codable {
+    case all
+    case navigable
+    case summaryComment
+    case noComment
+    case allComment
+}

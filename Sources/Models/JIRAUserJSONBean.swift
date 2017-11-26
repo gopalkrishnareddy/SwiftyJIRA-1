@@ -8,7 +8,7 @@
 import Foundation
 
 /// JIRA User
-public struct JIRAUser: Codable {
+public struct JIRAUserJSONBean: Codable {
     public var `self`: String?
     public var key: String?
     public var accountId: String?
@@ -28,11 +28,11 @@ public struct JIRAUser: Codable {
 public struct JIRASimpleListWrapper: Codable {
     public var size: Int?
     public var max_results: Int?
-    public var items: [JIRAGroup]?
+    public var items: [JIRAGroupJSONBean]?
 }
 
-/// JIRA Group
-public struct JIRAGroup: Codable {
+/// JIRA Group JSON Bean
+public struct JIRAGroupJSONBean: Codable {
     public var name: String?
     public var `self`: String?
 }

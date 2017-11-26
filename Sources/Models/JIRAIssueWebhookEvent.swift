@@ -13,7 +13,7 @@ public struct JIRAIssueWebhookEvent: Codable {
     public var webhookEvent: String?
     public var issue_event_type_name: JIRAIssueEvent?
     public var timestamp: Int?
-    public var user: JIRAUser?
+    public var user: JIRAUserJSONBean?
     public var issue: JIRAIssue?
 }
 

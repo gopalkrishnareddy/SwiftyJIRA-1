@@ -43,6 +43,16 @@
       language = ""
       shouldUseLaunchSchemeArgsEnv = "YES">
       <Testables>
+         <TestableReference
+            skipped = "NO">
+            <BuildableReference
+               BuildableIdentifier = "primary"
+               BlueprintIdentifier = "SwiftyJIRA::SwiftyJIRATests"
+               BuildableName = "SwiftyJIRATests.xctest"
+               BlueprintName = "SwiftyJIRATests"
+               ReferencedContainer = "container:SwiftyJIRA.xcodeproj">
+            </BuildableReference>
+         </TestableReference>
       </Testables>
       <AdditionalOptions>
       </AdditionalOptions>

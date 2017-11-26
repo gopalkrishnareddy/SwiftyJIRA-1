@@ -10,7 +10,7 @@ import Foundation
 /// JIRA Issue Attachment Webhook Event
 public struct JIRACommentWebhookEvent: Codable {
     /// The content of the comment
-    public var comment: JIRAIssueComment?
+    public var comment: JIRACommentJSONBean?
     /// The timestamp of the event
     public var timestamp: Int?
     /// The type of the comment webhook event

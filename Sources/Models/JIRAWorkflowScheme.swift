@@ -16,7 +16,7 @@ public struct JIRAWorkflowScheme: Codable {
     public var originalDefaultWorkflow: String?
     public var originalIssueTypeMappings: [String: String]?
     public var draft: Bool?
-    public var lastModifiedUser: JIRAUser?
+    public var lastModifiedUser: JIRAUserJSONBean?
     public var lastModified: String?
     public var `self`: String?
     public var updateDraftIfNeeded: Bool?

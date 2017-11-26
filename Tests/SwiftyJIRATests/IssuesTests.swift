@@ -9,6 +9,9 @@ import XCTest
 @testable import SwiftyJIRA
 
 class IssuesTests: XCTestCase {
+    static var allTests = [
+        ("testGetIssue", testGetIssue),
+    ]
 
     func testGetIssue() throws {
         print("TODO: Implement tests")

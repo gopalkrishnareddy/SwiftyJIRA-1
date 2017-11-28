@@ -1,282 +1,765 @@
 {
   "warnings": [
     {
+      "file": "/Users/goodle/github/BugHub/SwiftyJIRA/Sources/Controllers/Issues/JIRAIssuesController+IssueType.swift",
+      "line": 31,
+      "symbol": "JIRAIssuesController.createIssueType()",
+      "symbol_kind": "source.lang.swift.decl.function.method.instance",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/goodle/github/BugHub/SwiftyJIRA/Sources/Controllers/Issues/JIRAIssuesController+IssueType.swift",
+      "line": 35,
+      "symbol": "JIRAIssuesController.getIssueType(id:completion:)",
+      "symbol_kind": "source.lang.swift.decl.function.method.instance",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/goodle/github/BugHub/SwiftyJIRA/Sources/Controllers/Issues/JIRAIssuesController+IssueType.swift",
+      "line": 53,
+      "symbol": "JIRAIssuesController.deleteIssueType()",
+      "symbol_kind": "source.lang.swift.decl.function.method.instance",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/goodle/github/BugHub/SwiftyJIRA/Sources/Controllers/Issues/JIRAIssuesController+IssueType.swift",
+      "line": 57,
+      "symbol": "JIRAIssuesController.updateIssueType()",
+      "symbol_kind": "source.lang.swift.decl.function.method.instance",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/goodle/github/BugHub/SwiftyJIRA/Sources/Controllers/Issues/JIRAIssuesController+IssueType.swift",
+      "line": 61,
+      "symbol": "JIRAIssuesController.getAlternativeIssueTypes()",
+      "symbol_kind": "source.lang.swift.decl.function.method.instance",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/goodle/github/BugHub/SwiftyJIRA/Sources/Controllers/Issues/JIRAIssuesController+IssueType.swift",
+      "line": 65,
+      "symbol": "JIRAIssuesController.createAvatar()",
+      "symbol_kind": "source.lang.swift.decl.function.method.instance",
+      "warning": "undocumented"
+    },
+    {
       "file": "/Users/goodle/github/BugHub/SwiftyJIRA/Sources/Controllers/Issues/JIRAIssuesController.swift",
-      "line": 90,
+      "line": 143,
+      "symbol": "JIRAIssuesController.deleteIssue()",
+      "symbol_kind": "source.lang.swift.decl.function.method.instance",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/goodle/github/BugHub/SwiftyJIRA/Sources/Controllers/Issues/JIRAIssuesController.swift",
+      "line": 147,
+      "symbol": "JIRAIssuesController.editIssue()",
+      "symbol_kind": "source.lang.swift.decl.function.method.instance",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/goodle/github/BugHub/SwiftyJIRA/Sources/Controllers/Issues/JIRAIssuesController.swift",
+      "line": 151,
+      "symbol": "JIRAIssuesController.assignIssue()",
+      "symbol_kind": "source.lang.swift.decl.function.method.instance",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/goodle/github/BugHub/SwiftyJIRA/Sources/Controllers/Issues/JIRAIssuesController.swift",
+      "line": 155,
+      "symbol": "JIRAIssuesController.getEditIssueMetadata()",
+      "symbol_kind": "source.lang.swift.decl.function.method.instance",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/goodle/github/BugHub/SwiftyJIRA/Sources/Controllers/Issues/JIRAIssuesController.swift",
+      "line": 159,
+      "symbol": "JIRAIssuesController.notifyUsers()",
+      "symbol_kind": "source.lang.swift.decl.function.method.instance",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/goodle/github/BugHub/SwiftyJIRA/Sources/Controllers/Issues/JIRAIssuesController.swift",
+      "line": 163,
+      "symbol": "JIRAIssuesController.getRemoteIssueLinks()",
+      "symbol_kind": "source.lang.swift.decl.function.method.instance",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/goodle/github/BugHub/SwiftyJIRA/Sources/Controllers/Issues/JIRAIssuesController.swift",
+      "line": 167,
+      "symbol": "JIRAIssuesController.createUpdateRemoteIssueLink()",
+      "symbol_kind": "source.lang.swift.decl.function.method.instance",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/goodle/github/BugHub/SwiftyJIRA/Sources/Controllers/Issues/JIRAIssuesController.swift",
+      "line": 171,
+      "symbol": "JIRAIssuesController.deleteRemoteIssueLinkByGlobalID()",
+      "symbol_kind": "source.lang.swift.decl.function.method.instance",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/goodle/github/BugHub/SwiftyJIRA/Sources/Controllers/Issues/JIRAIssuesController.swift",
+      "line": 175,
+      "symbol": "JIRAIssuesController.getRemoteIssueLinkByID()",
+      "symbol_kind": "source.lang.swift.decl.function.method.instance",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/goodle/github/BugHub/SwiftyJIRA/Sources/Controllers/Issues/JIRAIssuesController.swift",
+      "line": 179,
+      "symbol": "JIRAIssuesController.updateRemoteIssueLink()",
+      "symbol_kind": "source.lang.swift.decl.function.method.instance",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/goodle/github/BugHub/SwiftyJIRA/Sources/Controllers/Issues/JIRAIssuesController.swift",
+      "line": 183,
+      "symbol": "JIRAIssuesController.deleteRemoteIssueLinkByID()",
+      "symbol_kind": "source.lang.swift.decl.function.method.instance",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/goodle/github/BugHub/SwiftyJIRA/Sources/Controllers/Issues/JIRAIssuesController.swift",
+      "line": 187,
+      "symbol": "JIRAIssuesController.doTransition()",
+      "symbol_kind": "source.lang.swift.decl.function.method.instance",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/goodle/github/BugHub/SwiftyJIRA/Sources/Controllers/Issues/JIRAIssuesController.swift",
+      "line": 223,
+      "symbol": "JIRAIssuesController.removeVote()",
+      "symbol_kind": "source.lang.swift.decl.function.method.instance",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/goodle/github/BugHub/SwiftyJIRA/Sources/Controllers/Issues/JIRAIssuesController.swift",
+      "line": 227,
+      "symbol": "JIRAIssuesController.addVote()",
+      "symbol_kind": "source.lang.swift.decl.function.method.instance",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/goodle/github/BugHub/SwiftyJIRA/Sources/Controllers/Issues/JIRAIssuesController.swift",
+      "line": 231,
+      "symbol": "JIRAIssuesController.getVotes()",
+      "symbol_kind": "source.lang.swift.decl.function.method.instance",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/goodle/github/BugHub/SwiftyJIRA/Sources/Controllers/Issues/JIRAIssuesController.swift",
+      "line": 235,
+      "symbol": "JIRAIssuesController.getIssueWatchers()",
+      "symbol_kind": "source.lang.swift.decl.function.method.instance",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/goodle/github/BugHub/SwiftyJIRA/Sources/Controllers/Issues/JIRAIssuesController.swift",
+      "line": 239,
+      "symbol": "JIRAIssuesController.addWatcher()",
+      "symbol_kind": "source.lang.swift.decl.function.method.instance",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/goodle/github/BugHub/SwiftyJIRA/Sources/Controllers/Issues/JIRAIssuesController.swift",
+      "line": 243,
+      "symbol": "JIRAIssuesController.removeWatcher()",
+      "symbol_kind": "source.lang.swift.decl.function.method.instance",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/goodle/github/BugHub/SwiftyJIRA/Sources/Controllers/Issues/JIRAIssuesController.swift",
+      "line": 247,
+      "symbol": "JIRAIssuesController.getCreateIssueMetadata()",
+      "symbol_kind": "source.lang.swift.decl.function.method.instance",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/goodle/github/BugHub/SwiftyJIRA/Sources/Controllers/Issues/JIRAIssuesController.swift",
+      "line": 251,
+      "symbol": "JIRAIssuesController.getIssuePickerResource()",
+      "symbol_kind": "source.lang.swift.decl.function.method.instance",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/goodle/github/BugHub/SwiftyJIRA/Sources/Controllers/Issues/JIRAIssuesController.swift",
+      "line": 297,
+      "symbol": "JIRAPropertyParameter.stringValue()",
+      "symbol_kind": "source.lang.swift.decl.function.method.instance",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/goodle/github/BugHub/SwiftyJIRA/Sources/Controllers/Issues/JIRAIssuesController.swift",
+      "line": 311,
       "symbol": "JIRACreateIssueBody",
       "symbol_kind": "source.lang.swift.decl.struct",
       "warning": "undocumented"
     },
     {
       "file": "/Users/goodle/github/BugHub/SwiftyJIRA/Sources/Controllers/Issues/JIRAIssuesController.swift",
-      "line": 91,
+      "line": 312,
       "symbol": "JIRACreateIssueBody.update",
       "symbol_kind": "source.lang.swift.decl.var.instance",
       "warning": "undocumented"
     },
     {
       "file": "/Users/goodle/github/BugHub/SwiftyJIRA/Sources/Controllers/Issues/JIRAIssuesController.swift",
-      "line": 92,
+      "line": 313,
       "symbol": "JIRACreateIssueBody.fields",
       "symbol_kind": "source.lang.swift.decl.var.instance",
       "warning": "undocumented"
     },
     {
       "file": "/Users/goodle/github/BugHub/SwiftyJIRA/Sources/Controllers/Issues/JIRAIssuesController.swift",
-      "line": 95,
+      "line": 314,
+      "symbol": "JIRACreateIssueBody.historyMetadata",
+      "symbol_kind": "source.lang.swift.decl.var.instance",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/goodle/github/BugHub/SwiftyJIRA/Sources/Controllers/Issues/JIRAIssuesController.swift",
+      "line": 315,
+      "symbol": "JIRACreateIssueBody.properties",
+      "symbol_kind": "source.lang.swift.decl.var.instance",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/goodle/github/BugHub/SwiftyJIRA/Sources/Controllers/Issues/JIRAIssuesController.swift",
+      "line": 316,
+      "symbol": "JIRACreateIssueBody.transition",
+      "symbol_kind": "source.lang.swift.decl.var.instance",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/goodle/github/BugHub/SwiftyJIRA/Sources/Controllers/Issues/JIRAIssuesController.swift",
+      "line": 319,
+      "symbol": "JIRACreateIssuesBody",
+      "symbol_kind": "source.lang.swift.decl.struct",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/goodle/github/BugHub/SwiftyJIRA/Sources/Controllers/Issues/JIRAIssuesController.swift",
+      "line": 320,
+      "symbol": "JIRACreateIssuesBody.issueUpdates",
+      "symbol_kind": "source.lang.swift.decl.var.instance",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/goodle/github/BugHub/SwiftyJIRA/Sources/Controllers/Issues/JIRAIssuesController.swift",
+      "line": 323,
       "symbol": "JIRAWorklog",
       "symbol_kind": "source.lang.swift.decl.struct",
       "warning": "undocumented"
     },
     {
       "file": "/Users/goodle/github/BugHub/SwiftyJIRA/Sources/Controllers/Issues/JIRAIssuesController.swift",
-      "line": 96,
+      "line": 324,
       "symbol": "JIRAWorklog.worklog",
       "symbol_kind": "source.lang.swift.decl.var.instance",
       "warning": "undocumented"
     },
     {
       "file": "/Users/goodle/github/BugHub/SwiftyJIRA/Sources/Controllers/Issues/JIRAIssuesController.swift",
-      "line": 99,
+      "line": 327,
       "symbol": "JIRAWorklogItems",
       "symbol_kind": "source.lang.swift.decl.struct",
       "warning": "undocumented"
     },
     {
       "file": "/Users/goodle/github/BugHub/SwiftyJIRA/Sources/Controllers/Issues/JIRAIssuesController.swift",
-      "line": 100,
+      "line": 328,
       "symbol": "JIRAWorklogItems.add",
       "symbol_kind": "source.lang.swift.decl.var.instance",
       "warning": "undocumented"
     },
     {
-      "file": "/Users/goodle/github/BugHub/SwiftyJIRA/Sources/Models/JIRAAttachmentWebhookEvent.swift",
-      "line": 10,
-      "symbol": "JIRAAttachmentWebhookEvent",
-      "symbol_kind": "source.lang.swift.decl.struct",
+      "file": "/Users/goodle/github/BugHub/SwiftyJIRA/Sources/Controllers/Projects/JIRAProjectsController.swift",
+      "line": 31,
+      "symbol": "JIRAProjectsController.createProject()",
+      "symbol_kind": "source.lang.swift.decl.function.method.instance",
       "warning": "undocumented"
     },
     {
-      "file": "/Users/goodle/github/BugHub/SwiftyJIRA/Sources/Models/JIRAAttachmentWebhookEvent.swift",
-      "line": 11,
-      "symbol": "JIRAAttachmentWebhookEvent.timestamp",
-      "symbol_kind": "source.lang.swift.decl.var.instance",
+      "file": "/Users/goodle/github/BugHub/SwiftyJIRA/Sources/Controllers/Projects/JIRAProjectsController.swift",
+      "line": 67,
+      "symbol": "JIRAProjectsController.updateProject()",
+      "symbol_kind": "source.lang.swift.decl.function.method.instance",
       "warning": "undocumented"
     },
     {
-      "file": "/Users/goodle/github/BugHub/SwiftyJIRA/Sources/Models/JIRAAttachmentWebhookEvent.swift",
-      "line": 12,
-      "symbol": "JIRAAttachmentWebhookEvent.webhookEvent",
-      "symbol_kind": "source.lang.swift.decl.var.instance",
+      "file": "/Users/goodle/github/BugHub/SwiftyJIRA/Sources/Controllers/Projects/JIRAProjectsController.swift",
+      "line": 71,
+      "symbol": "JIRAProjectsController.deleteProject()",
+      "symbol_kind": "source.lang.swift.decl.function.method.instance",
       "warning": "undocumented"
     },
     {
-      "file": "/Users/goodle/github/BugHub/SwiftyJIRA/Sources/Models/JIRAAttachmentWebhookEvent.swift",
+      "file": "/Users/goodle/github/BugHub/SwiftyJIRA/Sources/Controllers/Projects/JIRAProjectsController.swift",
+      "line": 104,
+      "symbol": "JIRAProjectsController.updateProjectAvatar()",
+      "symbol_kind": "source.lang.swift.decl.function.method.instance",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/goodle/github/BugHub/SwiftyJIRA/Sources/Controllers/Projects/JIRAProjectsController.swift",
+      "line": 108,
+      "symbol": "JIRAProjectsController.deleteAvatar()",
+      "symbol_kind": "source.lang.swift.decl.function.method.instance",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/goodle/github/BugHub/SwiftyJIRA/Sources/Controllers/Projects/JIRAProjectsController.swift",
+      "line": 112,
+      "symbol": "JIRAProjectsController.createAvatar()",
+      "symbol_kind": "source.lang.swift.decl.function.method.instance",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/goodle/github/BugHub/SwiftyJIRA/Sources/Controllers/Projects/JIRAProjectsController.swift",
+      "line": 116,
+      "symbol": "JIRAProjectsController.getAllAvatars()",
+      "symbol_kind": "source.lang.swift.decl.function.method.instance",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/goodle/github/BugHub/SwiftyJIRA/Sources/Controllers/Projects/JIRAProjectsController.swift",
+      "line": 120,
+      "symbol": "JIRAProjectsController.getProjectComponents(paginated:)",
+      "symbol_kind": "source.lang.swift.decl.function.method.instance",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/goodle/github/BugHub/SwiftyJIRA/Sources/Controllers/Projects/JIRAProjectsController.swift",
+      "line": 124,
+      "symbol": "JIRAProjectsController.getAllStatuses()",
+      "symbol_kind": "source.lang.swift.decl.function.method.instance",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/goodle/github/BugHub/SwiftyJIRA/Sources/Controllers/Projects/JIRAProjectsController.swift",
+      "line": 128,
+      "symbol": "JIRAProjectsController.updateProjectType()",
+      "symbol_kind": "source.lang.swift.decl.function.method.instance",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/goodle/github/BugHub/SwiftyJIRA/Sources/Controllers/Projects/JIRAProjectsController.swift",
+      "line": 132,
+      "symbol": "JIRAProjectsController.getProjectVersionsPaginated()",
+      "symbol_kind": "source.lang.swift.decl.function.method.instance",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/goodle/github/BugHub/SwiftyJIRA/Sources/Controllers/Projects/JIRAProjectsController.swift",
+      "line": 136,
+      "symbol": "JIRAProjectsController.getProjectVersions(projectIdOrKey:expand:completion:)",
+      "symbol_kind": "source.lang.swift.decl.function.method.instance",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/goodle/github/BugHub/SwiftyJIRA/Sources/Controllers/Statuses/JIRAStatusesController+StatusCategory.swift",
       "line": 13,
-      "symbol": "JIRAAttachmentWebhookEvent.attachment",
-      "symbol_kind": "source.lang.swift.decl.var.instance",
+      "symbol": "JIRAStatusesController.getStatusCategories(completion:)",
+      "symbol_kind": "source.lang.swift.decl.function.method.instance",
       "warning": "undocumented"
     },
     {
-      "file": "/Users/goodle/github/BugHub/SwiftyJIRA/Sources/Models/JIRACommentWebhookEvent.swift",
-      "line": 10,
-      "symbol": "JIRACommentWebhookEvent",
-      "symbol_kind": "source.lang.swift.decl.struct",
-      "warning": "undocumented"
-    },
-    {
-      "file": "/Users/goodle/github/BugHub/SwiftyJIRA/Sources/Models/JIRACommentWebhookEvent.swift",
-      "line": 11,
-      "symbol": "JIRACommentWebhookEvent.comment",
-      "symbol_kind": "source.lang.swift.decl.var.instance",
-      "warning": "undocumented"
-    },
-    {
-      "file": "/Users/goodle/github/BugHub/SwiftyJIRA/Sources/Models/JIRACommentWebhookEvent.swift",
-      "line": 12,
-      "symbol": "JIRACommentWebhookEvent.timestamp",
-      "symbol_kind": "source.lang.swift.decl.var.instance",
-      "warning": "undocumented"
-    },
-    {
-      "file": "/Users/goodle/github/BugHub/SwiftyJIRA/Sources/Models/JIRACommentWebhookEvent.swift",
-      "line": 13,
-      "symbol": "JIRACommentWebhookEvent.webhookEvent",
-      "symbol_kind": "source.lang.swift.decl.var.instance",
-      "warning": "undocumented"
-    },
-    {
-      "file": "/Users/goodle/github/BugHub/SwiftyJIRA/Sources/Models/JIRAEvents.swift",
-      "line": 10,
-      "symbol": "JIRAIssueEvent",
-      "symbol_kind": "source.lang.swift.decl.enum",
-      "warning": "undocumented"
-    },
-    {
-      "file": "/Users/goodle/github/BugHub/SwiftyJIRA/Sources/Models/JIRAEvents.swift",
-      "line": 11,
-      "symbol": "JIRAIssueEvent.issue_updated",
-      "symbol_kind": "source.lang.swift.decl.enumelement",
-      "warning": "undocumented"
-    },
-    {
-      "file": "/Users/goodle/github/BugHub/SwiftyJIRA/Sources/Models/JIRAEvents.swift",
-      "line": 12,
-      "symbol": "JIRAIssueEvent.issue_created",
-      "symbol_kind": "source.lang.swift.decl.enumelement",
-      "warning": "undocumented"
-    },
-    {
-      "file": "/Users/goodle/github/BugHub/SwiftyJIRA/Sources/Models/JIRAEvents.swift",
-      "line": 13,
-      "symbol": "JIRAIssueEvent.issue_deleted",
-      "symbol_kind": "source.lang.swift.decl.enumelement",
-      "warning": "undocumented"
-    },
-    {
-      "file": "/Users/goodle/github/BugHub/SwiftyJIRA/Sources/Models/JIRAEvents.swift",
-      "line": 14,
-      "symbol": "JIRAIssueEvent.issue_worklog_changed",
-      "symbol_kind": "source.lang.swift.decl.enumelement",
-      "warning": "undocumented"
-    },
-    {
-      "file": "/Users/goodle/github/BugHub/SwiftyJIRA/Sources/Models/JIRAEvents.swift",
-      "line": 17,
-      "symbol": "JIRACommentEvent",
-      "symbol_kind": "source.lang.swift.decl.enum",
-      "warning": "undocumented"
-    },
-    {
-      "file": "/Users/goodle/github/BugHub/SwiftyJIRA/Sources/Models/JIRAEvents.swift",
-      "line": 18,
-      "symbol": "JIRACommentEvent.comment_updated",
-      "symbol_kind": "source.lang.swift.decl.enumelement",
-      "warning": "undocumented"
-    },
-    {
-      "file": "/Users/goodle/github/BugHub/SwiftyJIRA/Sources/Models/JIRAEvents.swift",
-      "line": 19,
-      "symbol": "JIRACommentEvent.comment_created",
-      "symbol_kind": "source.lang.swift.decl.enumelement",
-      "warning": "undocumented"
-    },
-    {
-      "file": "/Users/goodle/github/BugHub/SwiftyJIRA/Sources/Models/JIRAEvents.swift",
-      "line": 20,
-      "symbol": "JIRACommentEvent.comment_deleted",
-      "symbol_kind": "source.lang.swift.decl.enumelement",
-      "warning": "undocumented"
-    },
-    {
-      "file": "/Users/goodle/github/BugHub/SwiftyJIRA/Sources/Models/JIRAEvents.swift",
-      "line": 23,
-      "symbol": "JIRAIssueLinkEvent",
-      "symbol_kind": "source.lang.swift.decl.enum",
-      "warning": "undocumented"
-    },
-    {
-      "file": "/Users/goodle/github/BugHub/SwiftyJIRA/Sources/Models/JIRAEvents.swift",
-      "line": 24,
-      "symbol": "JIRAIssueLinkEvent.issuelink_created",
-      "symbol_kind": "source.lang.swift.decl.enumelement",
-      "warning": "undocumented"
-    },
-    {
-      "file": "/Users/goodle/github/BugHub/SwiftyJIRA/Sources/Models/JIRAEvents.swift",
-      "line": 25,
-      "symbol": "JIRAIssueLinkEvent.issuelink_deleted",
-      "symbol_kind": "source.lang.swift.decl.enumelement",
-      "warning": "undocumented"
-    },
-    {
-      "file": "/Users/goodle/github/BugHub/SwiftyJIRA/Sources/Models/JIRAEvents.swift",
-      "line": 28,
-      "symbol": "JIRAAttachmentEvent",
-      "symbol_kind": "source.lang.swift.decl.enum",
-      "warning": "undocumented"
-    },
-    {
-      "file": "/Users/goodle/github/BugHub/SwiftyJIRA/Sources/Models/JIRAEvents.swift",
-      "line": 29,
-      "symbol": "JIRAAttachmentEvent.attachment_created",
-      "symbol_kind": "source.lang.swift.decl.enumelement",
-      "warning": "undocumented"
-    },
-    {
-      "file": "/Users/goodle/github/BugHub/SwiftyJIRA/Sources/Models/JIRAEvents.swift",
+      "file": "/Users/goodle/github/BugHub/SwiftyJIRA/Sources/Controllers/Statuses/JIRAStatusesController+StatusCategory.swift",
       "line": 30,
-      "symbol": "JIRAAttachmentEvent.attachment_deleted",
-      "symbol_kind": "source.lang.swift.decl.enumelement",
+      "symbol": "JIRAStatusesController.getStatusCategory(idOrKey:completion:)",
+      "symbol_kind": "source.lang.swift.decl.function.method.instance",
       "warning": "undocumented"
     },
     {
-      "file": "/Users/goodle/github/BugHub/SwiftyJIRA/Sources/Models/JIRAEvents.swift",
-      "line": 33,
-      "symbol": "JIRASprintEvent",
-      "symbol_kind": "source.lang.swift.decl.enum",
+      "file": "/Users/goodle/github/BugHub/SwiftyJIRA/Sources/Controllers/Statuses/JIRAStatusesController.swift",
+      "line": 31,
+      "symbol": "JIRAStatusesController.getStatuses(completion:)",
+      "symbol_kind": "source.lang.swift.decl.function.method.instance",
       "warning": "undocumented"
     },
     {
-      "file": "/Users/goodle/github/BugHub/SwiftyJIRA/Sources/Models/JIRAEvents.swift",
-      "line": 34,
-      "symbol": "JIRASprintEvent.sprint_created",
-      "symbol_kind": "source.lang.swift.decl.enumelement",
+      "file": "/Users/goodle/github/BugHub/SwiftyJIRA/Sources/Controllers/Statuses/JIRAStatusesController.swift",
+      "line": 48,
+      "symbol": "JIRAStatusesController.getStatus(idOrName:completion:)",
+      "symbol_kind": "source.lang.swift.decl.function.method.instance",
       "warning": "undocumented"
     },
     {
-      "file": "/Users/goodle/github/BugHub/SwiftyJIRA/Sources/Models/JIRAEvents.swift",
-      "line": 35,
-      "symbol": "JIRASprintEvent.sprint_deleted",
-      "symbol_kind": "source.lang.swift.decl.enumelement",
+      "file": "/Users/goodle/github/BugHub/SwiftyJIRA/Sources/Controllers/Workflows/JIRAWorkflowsController+WorkflowScheme.swift",
+      "line": 13,
+      "symbol": "JIRAWorkflowsController.createScheme()",
+      "symbol_kind": "source.lang.swift.decl.function.method.instance",
       "warning": "undocumented"
     },
     {
-      "file": "/Users/goodle/github/BugHub/SwiftyJIRA/Sources/Models/JIRAEvents.swift",
-      "line": 36,
-      "symbol": "JIRASprintEvent.sprint_updated",
-      "symbol_kind": "source.lang.swift.decl.enumelement",
+      "file": "/Users/goodle/github/BugHub/SwiftyJIRA/Sources/Controllers/Workflows/JIRAWorkflowsController+WorkflowScheme.swift",
+      "line": 17,
+      "symbol": "JIRAWorkflowsController.getByID(id:returnDraftIfExists:completion:)",
+      "symbol_kind": "source.lang.swift.decl.function.method.instance",
       "warning": "undocumented"
     },
     {
-      "file": "/Users/goodle/github/BugHub/SwiftyJIRA/Sources/Models/JIRAEvents.swift",
+      "file": "/Users/goodle/github/BugHub/SwiftyJIRA/Sources/Controllers/Workflows/JIRAWorkflowsController+WorkflowScheme.swift",
       "line": 37,
-      "symbol": "JIRASprintEvent.sprint_started",
-      "symbol_kind": "source.lang.swift.decl.enumelement",
+      "symbol": "JIRAWorkflowsController.deleteScheme()",
+      "symbol_kind": "source.lang.swift.decl.function.method.instance",
       "warning": "undocumented"
     },
     {
-      "file": "/Users/goodle/github/BugHub/SwiftyJIRA/Sources/Models/JIRAEvents.swift",
-      "line": 38,
-      "symbol": "JIRASprintEvent.sprint_closed",
-      "symbol_kind": "source.lang.swift.decl.enumelement",
-      "warning": "undocumented"
-    },
-    {
-      "file": "/Users/goodle/github/BugHub/SwiftyJIRA/Sources/Models/JIRAEvents.swift",
+      "file": "/Users/goodle/github/BugHub/SwiftyJIRA/Sources/Controllers/Workflows/JIRAWorkflowsController+WorkflowScheme.swift",
       "line": 41,
-      "symbol": "JIRAWorklogEvent",
+      "symbol": "JIRAWorkflowsController.update()",
+      "symbol_kind": "source.lang.swift.decl.function.method.instance",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/goodle/github/BugHub/SwiftyJIRA/Sources/Controllers/Workflows/JIRAWorkflowsController+WorkflowScheme.swift",
+      "line": 45,
+      "symbol": "JIRAWorkflowsController.createDraftForParent()",
+      "symbol_kind": "source.lang.swift.decl.function.method.instance",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/goodle/github/BugHub/SwiftyJIRA/Sources/Controllers/Workflows/JIRAWorkflowsController+WorkflowScheme.swift",
+      "line": 49,
+      "symbol": "JIRAWorkflowsController.deleteDefault()",
+      "symbol_kind": "source.lang.swift.decl.function.method.instance",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/goodle/github/BugHub/SwiftyJIRA/Sources/Controllers/Workflows/JIRAWorkflowsController+WorkflowScheme.swift",
+      "line": 53,
+      "symbol": "JIRAWorkflowsController.updateDefault()",
+      "symbol_kind": "source.lang.swift.decl.function.method.instance",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/goodle/github/BugHub/SwiftyJIRA/Sources/Controllers/Workflows/JIRAWorkflowsController+WorkflowScheme.swift",
+      "line": 57,
+      "symbol": "JIRAWorkflowsController.getDefault()",
+      "symbol_kind": "source.lang.swift.decl.function.method.instance",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/goodle/github/BugHub/SwiftyJIRA/Sources/Controllers/Workflows/JIRAWorkflowsController+WorkflowScheme.swift",
+      "line": 61,
+      "symbol": "JIRAWorkflowsController.getDraftByID()",
+      "symbol_kind": "source.lang.swift.decl.function.method.instance",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/goodle/github/BugHub/SwiftyJIRA/Sources/Controllers/Workflows/JIRAWorkflowsController+WorkflowScheme.swift",
+      "line": 65,
+      "symbol": "JIRAWorkflowsController.deleteDraftByID()",
+      "symbol_kind": "source.lang.swift.decl.function.method.instance",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/goodle/github/BugHub/SwiftyJIRA/Sources/Controllers/Workflows/JIRAWorkflowsController+WorkflowScheme.swift",
+      "line": 69,
+      "symbol": "JIRAWorkflowsController.updateDraft()",
+      "symbol_kind": "source.lang.swift.decl.function.method.instance",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/goodle/github/BugHub/SwiftyJIRA/Sources/Controllers/Workflows/JIRAWorkflowsController+WorkflowScheme.swift",
+      "line": 73,
+      "symbol": "JIRAWorkflowsController.getDraftDefault()",
+      "symbol_kind": "source.lang.swift.decl.function.method.instance",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/goodle/github/BugHub/SwiftyJIRA/Sources/Controllers/Workflows/JIRAWorkflowsController+WorkflowScheme.swift",
+      "line": 77,
+      "symbol": "JIRAWorkflowsController.deleteDraftDefault()",
+      "symbol_kind": "source.lang.swift.decl.function.method.instance",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/goodle/github/BugHub/SwiftyJIRA/Sources/Controllers/Workflows/JIRAWorkflowsController+WorkflowScheme.swift",
+      "line": 81,
+      "symbol": "JIRAWorkflowsController.updateDraftDefault()",
+      "symbol_kind": "source.lang.swift.decl.function.method.instance",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/goodle/github/BugHub/SwiftyJIRA/Sources/Controllers/Workflows/JIRAWorkflowsController+WorkflowScheme.swift",
+      "line": 85,
+      "symbol": "JIRAWorkflowsController.getDraftIssueType()",
+      "symbol_kind": "source.lang.swift.decl.function.method.instance",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/goodle/github/BugHub/SwiftyJIRA/Sources/Controllers/Workflows/JIRAWorkflowsController+WorkflowScheme.swift",
+      "line": 89,
+      "symbol": "JIRAWorkflowsController.setDraftIssueType()",
+      "symbol_kind": "source.lang.swift.decl.function.method.instance",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/goodle/github/BugHub/SwiftyJIRA/Sources/Controllers/Workflows/JIRAWorkflowsController+WorkflowScheme.swift",
+      "line": 93,
+      "symbol": "JIRAWorkflowsController.getDraftWorkflow()",
+      "symbol_kind": "source.lang.swift.decl.function.method.instance",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/goodle/github/BugHub/SwiftyJIRA/Sources/Controllers/Workflows/JIRAWorkflowsController+WorkflowScheme.swift",
+      "line": 97,
+      "symbol": "JIRAWorkflowsController.deleteDraftWorkflowMapping()",
+      "symbol_kind": "source.lang.swift.decl.function.method.instance",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/goodle/github/BugHub/SwiftyJIRA/Sources/Controllers/Workflows/JIRAWorkflowsController+WorkflowScheme.swift",
+      "line": 101,
+      "symbol": "JIRAWorkflowsController.updateDraftWorkflowMapping()",
+      "symbol_kind": "source.lang.swift.decl.function.method.instance",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/goodle/github/BugHub/SwiftyJIRA/Sources/Controllers/Workflows/JIRAWorkflowsController+WorkflowScheme.swift",
+      "line": 127,
+      "symbol": "JIRAWorkflowsController.deleteIssueType()",
+      "symbol_kind": "source.lang.swift.decl.function.method.instance",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/goodle/github/BugHub/SwiftyJIRA/Sources/Controllers/Workflows/JIRAWorkflowsController+WorkflowScheme.swift",
+      "line": 131,
+      "symbol": "JIRAWorkflowsController.setIssueType()",
+      "symbol_kind": "source.lang.swift.decl.function.method.instance",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/goodle/github/BugHub/SwiftyJIRA/Sources/Controllers/Workflows/JIRAWorkflowsController+WorkflowScheme.swift",
+      "line": 160,
+      "symbol": "JIRAWorkflowsController.deleteWorkflowMapping()",
+      "symbol_kind": "source.lang.swift.decl.function.method.instance",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/goodle/github/BugHub/SwiftyJIRA/Sources/Controllers/Workflows/JIRAWorkflowsController+WorkflowScheme.swift",
+      "line": 164,
+      "symbol": "JIRAWorkflowsController.updateWorkflowMapping()",
+      "symbol_kind": "source.lang.swift.decl.function.method.instance",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/goodle/github/BugHub/SwiftyJIRA/Sources/Controllers/Workflows/JIRAWorkflowsController+WorkflowScheme.swift",
+      "line": 169,
+      "symbol": "JIRAWorkflowMappingFilter",
       "symbol_kind": "source.lang.swift.decl.enum",
       "warning": "undocumented"
     },
     {
-      "file": "/Users/goodle/github/BugHub/SwiftyJIRA/Sources/Models/JIRAEvents.swift",
-      "line": 42,
-      "symbol": "JIRAWorklogEvent.worklog_created",
+      "file": "/Users/goodle/github/BugHub/SwiftyJIRA/Sources/Controllers/Workflows/JIRAWorkflowsController+WorkflowScheme.swift",
+      "line": 170,
+      "symbol": "JIRAWorkflowMappingFilter.workflowName",
       "symbol_kind": "source.lang.swift.decl.enumelement",
       "warning": "undocumented"
     },
     {
-      "file": "/Users/goodle/github/BugHub/SwiftyJIRA/Sources/Models/JIRAEvents.swift",
-      "line": 43,
-      "symbol": "JIRAWorklogEvent.worklog_deleted",
+      "file": "/Users/goodle/github/BugHub/SwiftyJIRA/Sources/Controllers/Workflows/JIRAWorkflowsController+WorkflowScheme.swift",
+      "line": 171,
+      "symbol": "JIRAWorkflowMappingFilter.all",
       "symbol_kind": "source.lang.swift.decl.enumelement",
       "warning": "undocumented"
     },
     {
-      "file": "/Users/goodle/github/BugHub/SwiftyJIRA/Sources/Models/JIRAEvents.swift",
-      "line": 44,
-      "symbol": "JIRAWorklogEvent.worklog_updated",
+      "file": "/Users/goodle/github/BugHub/SwiftyJIRA/Sources/Controllers/Workflows/JIRAWorkflowsController+WorkflowScheme.swift",
+      "line": 173,
+      "symbol": "JIRAWorkflowMappingFilter.queryParameter()",
+      "symbol_kind": "source.lang.swift.decl.function.method.instance",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/goodle/github/BugHub/SwiftyJIRA/Sources/Controllers/Workflows/JIRAWorkflowsController.swift",
+      "line": 31,
+      "symbol": "JIRAWorkflowsController.getAllWorkflows(completion:)",
+      "symbol_kind": "source.lang.swift.decl.function.method.instance",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/goodle/github/BugHub/SwiftyJIRA/Sources/Controllers/Workflows/JIRAWorkflowsController.swift",
+      "line": 48,
+      "symbol": "JIRAWorkflowsController.getWorkflow(workflowName:completion:)",
+      "symbol_kind": "source.lang.swift.decl.function.method.instance",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/goodle/github/BugHub/SwiftyJIRA/Sources/Controllers/Workflows/JIRAWorkflowsController.swift",
+      "line": 67,
+      "symbol": "JIRAWorkflowsController.deleteProperty()",
+      "symbol_kind": "source.lang.swift.decl.function.method.instance",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/goodle/github/BugHub/SwiftyJIRA/Sources/Controllers/Workflows/JIRAWorkflowsController.swift",
+      "line": 71,
+      "symbol": "JIRAWorkflowsController.createProperty()",
+      "symbol_kind": "source.lang.swift.decl.function.method.instance",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/goodle/github/BugHub/SwiftyJIRA/Sources/Controllers/Workflows/JIRAWorkflowsController.swift",
+      "line": 75,
+      "symbol": "JIRAWorkflowsController.updateProperty()",
+      "symbol_kind": "source.lang.swift.decl.function.method.instance",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/goodle/github/BugHub/SwiftyJIRA/Sources/Controllers/Workflows/JIRAWorkflowsController.swift",
+      "line": 79,
+      "symbol": "JIRAWorkflowsController.getProperties()",
+      "symbol_kind": "source.lang.swift.decl.function.method.instance",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/goodle/github/BugHub/SwiftyJIRA/Sources/JIRAGlobals.swift",
+      "line": 13,
+      "symbol": "JIRASortOrder",
+      "symbol_kind": "source.lang.swift.decl.enum",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/goodle/github/BugHub/SwiftyJIRA/Sources/JIRAGlobals.swift",
+      "line": 14,
+      "symbol": "JIRASortOrder.ascending",
+      "symbol_kind": "source.lang.swift.decl.enumelement",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/goodle/github/BugHub/SwiftyJIRA/Sources/JIRAGlobals.swift",
+      "line": 15,
+      "symbol": "JIRASortOrder.descending",
+      "symbol_kind": "source.lang.swift.decl.enumelement",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/goodle/github/BugHub/SwiftyJIRA/Sources/JIRAGlobals.swift",
+      "line": 17,
+      "symbol": "JIRASortOrder.queryParam()",
+      "symbol_kind": "source.lang.swift.decl.function.method.instance",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/goodle/github/BugHub/SwiftyJIRA/Sources/Models/JIRACommentJSONBean.swift",
+      "line": 12,
+      "symbol": "JIRACommentJSONBean.author",
+      "symbol_kind": "source.lang.swift.decl.var.instance",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/goodle/github/BugHub/SwiftyJIRA/Sources/Models/JIRACommentJSONBean.swift",
+      "line": 13,
+      "symbol": "JIRACommentJSONBean.id",
+      "symbol_kind": "source.lang.swift.decl.var.instance",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/goodle/github/BugHub/SwiftyJIRA/Sources/Models/JIRACommentJSONBean.swift",
+      "line": 14,
+      "symbol": "JIRACommentJSONBean.created",
+      "symbol_kind": "source.lang.swift.decl.var.instance",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/goodle/github/BugHub/SwiftyJIRA/Sources/Models/JIRACommentJSONBean.swift",
+      "line": 15,
+      "symbol": "JIRACommentJSONBean.updateAuthor",
+      "symbol_kind": "source.lang.swift.decl.var.instance",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/goodle/github/BugHub/SwiftyJIRA/Sources/Models/JIRACommentJSONBean.swift",
+      "line": 16,
+      "symbol": "JIRACommentJSONBean.updated",
+      "symbol_kind": "source.lang.swift.decl.var.instance",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/goodle/github/BugHub/SwiftyJIRA/Sources/Models/JIRACommentJSONBean.swift",
+      "line": 17,
+      "symbol": "JIRACommentJSONBean.self",
+      "symbol_kind": "source.lang.swift.decl.var.instance",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/goodle/github/BugHub/SwiftyJIRA/Sources/Models/JIRACommentJSONBean.swift",
+      "line": 18,
+      "symbol": "JIRACommentJSONBean.body",
+      "symbol_kind": "source.lang.swift.decl.var.instance",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/goodle/github/BugHub/SwiftyJIRA/Sources/Models/JIRACommentJSONBean.swift",
+      "line": 19,
+      "symbol": "JIRACommentJSONBean.properties",
+      "symbol_kind": "source.lang.swift.decl.var.instance",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/goodle/github/BugHub/SwiftyJIRA/Sources/Models/JIRACommentJSONBean.swift",
+      "line": 20,
+      "symbol": "JIRACommentJSONBean.renderedBody",
+      "symbol_kind": "source.lang.swift.decl.var.instance",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/goodle/github/BugHub/SwiftyJIRA/Sources/Models/JIRACommentJSONBean.swift",
+      "line": 21,
+      "symbol": "JIRACommentJSONBean.visibility",
+      "symbol_kind": "source.lang.swift.decl.var.instance",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/goodle/github/BugHub/SwiftyJIRA/Sources/Models/JIRACommentJSONBean.swift",
+      "line": 24,
+      "symbol": "JIRAEntityPropertyBean",
+      "symbol_kind": "source.lang.swift.decl.struct",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/goodle/github/BugHub/SwiftyJIRA/Sources/Models/JIRACommentJSONBean.swift",
+      "line": 28,
+      "symbol": "JIRAVisibilityJSONBean",
+      "symbol_kind": "source.lang.swift.decl.struct",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/goodle/github/BugHub/SwiftyJIRA/Sources/Models/JIRACommentJSONBean.swift",
+      "line": 29,
+      "symbol": "JIRAVisibilityJSONBean.type",
+      "symbol_kind": "source.lang.swift.decl.var.instance",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/goodle/github/BugHub/SwiftyJIRA/Sources/Models/JIRACommentJSONBean.swift",
+      "line": 30,
+      "symbol": "JIRAVisibilityJSONBean.value",
+      "symbol_kind": "source.lang.swift.decl.var.instance",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/goodle/github/BugHub/SwiftyJIRA/Sources/Models/JIRACommentJSONBean.swift",
+      "line": 33,
+      "symbol": "JIRAVisibilityJSONBeanType",
+      "symbol_kind": "source.lang.swift.decl.enum",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/goodle/github/BugHub/SwiftyJIRA/Sources/Models/JIRACommentJSONBean.swift",
+      "line": 34,
+      "symbol": "JIRAVisibilityJSONBeanType.group",
+      "symbol_kind": "source.lang.swift.decl.enumelement",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/goodle/github/BugHub/SwiftyJIRA/Sources/Models/JIRACommentJSONBean.swift",
+      "line": 35,
+      "symbol": "JIRAVisibilityJSONBeanType.role",
       "symbol_kind": "source.lang.swift.decl.enumelement",
       "warning": "undocumented"
     },
@@ -801,757 +1284,1051 @@
     {
       "file": "/Users/goodle/github/BugHub/SwiftyJIRA/Sources/Models/JIRAIssue.swift",
       "line": 106,
+      "symbol": "JIRAVersion.releaseDate",
+      "symbol_kind": "source.lang.swift.decl.var.instance",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/goodle/github/BugHub/SwiftyJIRA/Sources/Models/JIRAIssue.swift",
+      "line": 107,
+      "symbol": "JIRAVersion.overdue",
+      "symbol_kind": "source.lang.swift.decl.var.instance",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/goodle/github/BugHub/SwiftyJIRA/Sources/Models/JIRAIssue.swift",
+      "line": 108,
+      "symbol": "JIRAVersion.userReleaseDate",
+      "symbol_kind": "source.lang.swift.decl.var.instance",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/goodle/github/BugHub/SwiftyJIRA/Sources/Models/JIRAIssue.swift",
+      "line": 109,
+      "symbol": "JIRAVersion.projectId",
+      "symbol_kind": "source.lang.swift.decl.var.instance",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/goodle/github/BugHub/SwiftyJIRA/Sources/Models/JIRAIssue.swift",
+      "line": 110,
       "symbol": "JIRAVersion.name",
       "symbol_kind": "source.lang.swift.decl.var.instance",
       "warning": "undocumented"
     },
     {
       "file": "/Users/goodle/github/BugHub/SwiftyJIRA/Sources/Models/JIRAIssue.swift",
-      "line": 111,
+      "line": 115,
       "symbol": "JIRAIssuePriority.self",
       "symbol_kind": "source.lang.swift.decl.var.instance",
       "warning": "undocumented"
     },
     {
       "file": "/Users/goodle/github/BugHub/SwiftyJIRA/Sources/Models/JIRAIssue.swift",
-      "line": 112,
+      "line": 116,
       "symbol": "JIRAIssuePriority.name",
       "symbol_kind": "source.lang.swift.decl.var.instance",
       "warning": "undocumented"
     },
     {
       "file": "/Users/goodle/github/BugHub/SwiftyJIRA/Sources/Models/JIRAIssue.swift",
-      "line": 113,
+      "line": 117,
       "symbol": "JIRAIssuePriority.iconUrl",
       "symbol_kind": "source.lang.swift.decl.var.instance",
       "warning": "undocumented"
     },
     {
       "file": "/Users/goodle/github/BugHub/SwiftyJIRA/Sources/Models/JIRAIssue.swift",
-      "line": 114,
+      "line": 118,
       "symbol": "JIRAIssuePriority.id",
       "symbol_kind": "source.lang.swift.decl.var.instance",
       "warning": "undocumented"
     },
     {
       "file": "/Users/goodle/github/BugHub/SwiftyJIRA/Sources/Models/JIRAIssue.swift",
-      "line": 119,
+      "line": 123,
       "symbol": "JIRAIssueComments.comments",
       "symbol_kind": "source.lang.swift.decl.var.instance",
       "warning": "undocumented"
     },
     {
       "file": "/Users/goodle/github/BugHub/SwiftyJIRA/Sources/Models/JIRAIssue.swift",
-      "line": 120,
+      "line": 124,
       "symbol": "JIRAIssueComments.startAt",
       "symbol_kind": "source.lang.swift.decl.var.instance",
       "warning": "undocumented"
     },
     {
       "file": "/Users/goodle/github/BugHub/SwiftyJIRA/Sources/Models/JIRAIssue.swift",
-      "line": 121,
+      "line": 125,
       "symbol": "JIRAIssueComments.maxResults",
       "symbol_kind": "source.lang.swift.decl.var.instance",
       "warning": "undocumented"
     },
     {
       "file": "/Users/goodle/github/BugHub/SwiftyJIRA/Sources/Models/JIRAIssue.swift",
-      "line": 122,
+      "line": 126,
       "symbol": "JIRAIssueComments.total",
       "symbol_kind": "source.lang.swift.decl.var.instance",
       "warning": "undocumented"
     },
     {
       "file": "/Users/goodle/github/BugHub/SwiftyJIRA/Sources/Models/JIRAIssue.swift",
-      "line": 127,
-      "symbol": "JIRAIssueComment.author",
-      "symbol_kind": "source.lang.swift.decl.var.instance",
-      "warning": "undocumented"
-    },
-    {
-      "file": "/Users/goodle/github/BugHub/SwiftyJIRA/Sources/Models/JIRAIssue.swift",
-      "line": 128,
-      "symbol": "JIRAIssueComment.id",
-      "symbol_kind": "source.lang.swift.decl.var.instance",
-      "warning": "undocumented"
-    },
-    {
-      "file": "/Users/goodle/github/BugHub/SwiftyJIRA/Sources/Models/JIRAIssue.swift",
-      "line": 129,
-      "symbol": "JIRAIssueComment.created",
-      "symbol_kind": "source.lang.swift.decl.var.instance",
-      "warning": "undocumented"
-    },
-    {
-      "file": "/Users/goodle/github/BugHub/SwiftyJIRA/Sources/Models/JIRAIssue.swift",
-      "line": 130,
-      "symbol": "JIRAIssueComment.updateAuthor",
-      "symbol_kind": "source.lang.swift.decl.var.instance",
-      "warning": "undocumented"
-    },
-    {
-      "file": "/Users/goodle/github/BugHub/SwiftyJIRA/Sources/Models/JIRAIssue.swift",
       "line": 131,
-      "symbol": "JIRAIssueComment.updated",
-      "symbol_kind": "source.lang.swift.decl.var.instance",
-      "warning": "undocumented"
-    },
-    {
-      "file": "/Users/goodle/github/BugHub/SwiftyJIRA/Sources/Models/JIRAIssue.swift",
-      "line": 132,
-      "symbol": "JIRAIssueComment.self",
-      "symbol_kind": "source.lang.swift.decl.var.instance",
-      "warning": "undocumented"
-    },
-    {
-      "file": "/Users/goodle/github/BugHub/SwiftyJIRA/Sources/Models/JIRAIssue.swift",
-      "line": 133,
-      "symbol": "JIRAIssueComment.body",
-      "symbol_kind": "source.lang.swift.decl.var.instance",
-      "warning": "undocumented"
-    },
-    {
-      "file": "/Users/goodle/github/BugHub/SwiftyJIRA/Sources/Models/JIRAIssue.swift",
-      "line": 138,
       "symbol": "JIRAIssueWatches.self",
       "symbol_kind": "source.lang.swift.decl.var.instance",
       "warning": "undocumented"
     },
     {
       "file": "/Users/goodle/github/BugHub/SwiftyJIRA/Sources/Models/JIRAIssue.swift",
-      "line": 139,
+      "line": 132,
       "symbol": "JIRAIssueWatches.watchCount",
       "symbol_kind": "source.lang.swift.decl.var.instance",
       "warning": "undocumented"
     },
     {
       "file": "/Users/goodle/github/BugHub/SwiftyJIRA/Sources/Models/JIRAIssue.swift",
-      "line": 140,
+      "line": 133,
       "symbol": "JIRAIssueWatches.isWatching",
       "symbol_kind": "source.lang.swift.decl.var.instance",
       "warning": "undocumented"
     },
     {
       "file": "/Users/goodle/github/BugHub/SwiftyJIRA/Sources/Models/JIRAIssue.swift",
-      "line": 145,
+      "line": 138,
       "symbol": "JIRAIssueVotes.votes",
       "symbol_kind": "source.lang.swift.decl.var.instance",
       "warning": "undocumented"
     },
     {
       "file": "/Users/goodle/github/BugHub/SwiftyJIRA/Sources/Models/JIRAIssue.swift",
-      "line": 146,
+      "line": 139,
       "symbol": "JIRAIssueVotes.self",
       "symbol_kind": "source.lang.swift.decl.var.instance",
       "warning": "undocumented"
     },
     {
       "file": "/Users/goodle/github/BugHub/SwiftyJIRA/Sources/Models/JIRAIssue.swift",
-      "line": 147,
+      "line": 140,
       "symbol": "JIRAIssueVotes.hasVoted",
       "symbol_kind": "source.lang.swift.decl.var.instance",
       "warning": "undocumented"
     },
     {
       "file": "/Users/goodle/github/BugHub/SwiftyJIRA/Sources/Models/JIRAIssue.swift",
-      "line": 152,
+      "line": 145,
       "symbol": "JIRAIssueSubtask.self",
       "symbol_kind": "source.lang.swift.decl.var.instance",
       "warning": "undocumented"
     },
     {
       "file": "/Users/goodle/github/BugHub/SwiftyJIRA/Sources/Models/JIRAIssue.swift",
-      "line": 153,
+      "line": 146,
       "symbol": "JIRAIssueSubtask.id",
       "symbol_kind": "source.lang.swift.decl.var.instance",
       "warning": "undocumented"
     },
     {
       "file": "/Users/goodle/github/BugHub/SwiftyJIRA/Sources/Models/JIRAIssue.swift",
-      "line": 154,
+      "line": 147,
       "symbol": "JIRAIssueSubtask.fields",
       "symbol_kind": "source.lang.swift.decl.var.instance",
       "warning": "undocumented"
     },
     {
       "file": "/Users/goodle/github/BugHub/SwiftyJIRA/Sources/Models/JIRAIssue.swift",
-      "line": 159,
+      "line": 152,
       "symbol": "JIRAIssueProgress.progress",
       "symbol_kind": "source.lang.swift.decl.var.instance",
       "warning": "undocumented"
     },
     {
       "file": "/Users/goodle/github/BugHub/SwiftyJIRA/Sources/Models/JIRAIssue.swift",
-      "line": 160,
+      "line": 153,
       "symbol": "JIRAIssueProgress.total",
       "symbol_kind": "source.lang.swift.decl.var.instance",
       "warning": "undocumented"
     },
     {
       "file": "/Users/goodle/github/BugHub/SwiftyJIRA/Sources/Models/JIRAIssue.swift",
-      "line": 165,
+      "line": 156,
+      "symbol": "JIRACreateIssueTypeBody",
+      "symbol_kind": "source.lang.swift.decl.struct",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/goodle/github/BugHub/SwiftyJIRA/Sources/Models/JIRAIssue.swift",
+      "line": 162,
       "symbol": "JIRAIssueType.self",
       "symbol_kind": "source.lang.swift.decl.var.instance",
       "warning": "undocumented"
     },
     {
       "file": "/Users/goodle/github/BugHub/SwiftyJIRA/Sources/Models/JIRAIssue.swift",
-      "line": 166,
+      "line": 163,
       "symbol": "JIRAIssueType.id",
       "symbol_kind": "source.lang.swift.decl.var.instance",
       "warning": "undocumented"
     },
     {
       "file": "/Users/goodle/github/BugHub/SwiftyJIRA/Sources/Models/JIRAIssue.swift",
-      "line": 167,
+      "line": 164,
       "symbol": "JIRAIssueType.description",
       "symbol_kind": "source.lang.swift.decl.var.instance",
       "warning": "undocumented"
     },
     {
       "file": "/Users/goodle/github/BugHub/SwiftyJIRA/Sources/Models/JIRAIssue.swift",
-      "line": 168,
+      "line": 165,
       "symbol": "JIRAIssueType.iconUrl",
       "symbol_kind": "source.lang.swift.decl.var.instance",
       "warning": "undocumented"
     },
     {
       "file": "/Users/goodle/github/BugHub/SwiftyJIRA/Sources/Models/JIRAIssue.swift",
-      "line": 169,
+      "line": 166,
       "symbol": "JIRAIssueType.name",
       "symbol_kind": "source.lang.swift.decl.var.instance",
       "warning": "undocumented"
     },
     {
       "file": "/Users/goodle/github/BugHub/SwiftyJIRA/Sources/Models/JIRAIssue.swift",
-      "line": 170,
+      "line": 167,
       "symbol": "JIRAIssueType.subtask",
       "symbol_kind": "source.lang.swift.decl.var.instance",
       "warning": "undocumented"
     },
     {
       "file": "/Users/goodle/github/BugHub/SwiftyJIRA/Sources/Models/JIRAIssue.swift",
-      "line": 171,
+      "line": 168,
       "symbol": "JIRAIssueType.avatarId",
       "symbol_kind": "source.lang.swift.decl.var.instance",
       "warning": "undocumented"
     },
     {
       "file": "/Users/goodle/github/BugHub/SwiftyJIRA/Sources/Models/JIRAIssue.swift",
-      "line": 176,
-      "symbol": "JIRAIssueTransition.id",
+      "line": 171,
+      "symbol": "JIRAIssueTransitions",
+      "symbol_kind": "source.lang.swift.decl.struct",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/goodle/github/BugHub/SwiftyJIRA/Sources/Models/JIRAIssue.swift",
+      "line": 172,
+      "symbol": "JIRAIssueTransitions.expand",
       "symbol_kind": "source.lang.swift.decl.var.instance",
       "warning": "undocumented"
     },
     {
       "file": "/Users/goodle/github/BugHub/SwiftyJIRA/Sources/Models/JIRAIssue.swift",
-      "line": 177,
-      "symbol": "JIRAIssueTransition.name",
+      "line": 173,
+      "symbol": "JIRAIssueTransitions.transitions",
       "symbol_kind": "source.lang.swift.decl.var.instance",
       "warning": "undocumented"
     },
     {
       "file": "/Users/goodle/github/BugHub/SwiftyJIRA/Sources/Models/JIRAIssue.swift",
       "line": 178,
-      "symbol": "JIRAIssueTransition.to",
+      "symbol": "JIRATransitionBean.id",
       "symbol_kind": "source.lang.swift.decl.var.instance",
       "warning": "undocumented"
     },
     {
       "file": "/Users/goodle/github/BugHub/SwiftyJIRA/Sources/Models/JIRAIssue.swift",
       "line": 179,
-      "symbol": "JIRAIssueTransition.hasScreen",
+      "symbol": "JIRATransitionBean.name",
       "symbol_kind": "source.lang.swift.decl.var.instance",
       "warning": "undocumented"
     },
     {
       "file": "/Users/goodle/github/BugHub/SwiftyJIRA/Sources/Models/JIRAIssue.swift",
       "line": 180,
-      "symbol": "JIRAIssueTransition.isGlobal",
+      "symbol": "JIRATransitionBean.to",
       "symbol_kind": "source.lang.swift.decl.var.instance",
       "warning": "undocumented"
     },
     {
       "file": "/Users/goodle/github/BugHub/SwiftyJIRA/Sources/Models/JIRAIssue.swift",
       "line": 181,
-      "symbol": "JIRAIssueTransition.isInitial",
+      "symbol": "JIRATransitionBean.hasScreen",
       "symbol_kind": "source.lang.swift.decl.var.instance",
       "warning": "undocumented"
     },
     {
       "file": "/Users/goodle/github/BugHub/SwiftyJIRA/Sources/Models/JIRAIssue.swift",
       "line": 182,
-      "symbol": "JIRAIssueTransition.isConditional",
+      "symbol": "JIRATransitionBean.isGlobal",
       "symbol_kind": "source.lang.swift.decl.var.instance",
       "warning": "undocumented"
     },
     {
       "file": "/Users/goodle/github/BugHub/SwiftyJIRA/Sources/Models/JIRAIssue.swift",
       "line": 183,
-      "symbol": "JIRAIssueTransition.fields",
+      "symbol": "JIRATransitionBean.isInitial",
       "symbol_kind": "source.lang.swift.decl.var.instance",
       "warning": "undocumented"
     },
     {
       "file": "/Users/goodle/github/BugHub/SwiftyJIRA/Sources/Models/JIRAIssue.swift",
-      "line": 188,
-      "symbol": "JIRAStatus.self",
+      "line": 184,
+      "symbol": "JIRATransitionBean.isConditional",
       "symbol_kind": "source.lang.swift.decl.var.instance",
       "warning": "undocumented"
     },
     {
       "file": "/Users/goodle/github/BugHub/SwiftyJIRA/Sources/Models/JIRAIssue.swift",
-      "line": 189,
-      "symbol": "JIRAStatus.statusColor",
+      "line": 185,
+      "symbol": "JIRATransitionBean.fields",
       "symbol_kind": "source.lang.swift.decl.var.instance",
       "warning": "undocumented"
     },
     {
       "file": "/Users/goodle/github/BugHub/SwiftyJIRA/Sources/Models/JIRAIssue.swift",
-      "line": 190,
-      "symbol": "JIRAStatus.description",
+      "line": 186,
+      "symbol": "JIRATransitionBean.expand",
       "symbol_kind": "source.lang.swift.decl.var.instance",
       "warning": "undocumented"
     },
     {
       "file": "/Users/goodle/github/BugHub/SwiftyJIRA/Sources/Models/JIRAIssue.swift",
       "line": 191,
-      "symbol": "JIRAStatus.iconUrl",
+      "symbol": "JIRAStatusJSONBean.self",
       "symbol_kind": "source.lang.swift.decl.var.instance",
       "warning": "undocumented"
     },
     {
       "file": "/Users/goodle/github/BugHub/SwiftyJIRA/Sources/Models/JIRAIssue.swift",
       "line": 192,
-      "symbol": "JIRAStatus.name",
+      "symbol": "JIRAStatusJSONBean.statusColor",
       "symbol_kind": "source.lang.swift.decl.var.instance",
       "warning": "undocumented"
     },
     {
       "file": "/Users/goodle/github/BugHub/SwiftyJIRA/Sources/Models/JIRAIssue.swift",
       "line": 193,
-      "symbol": "JIRAStatus.id",
+      "symbol": "JIRAStatusJSONBean.description",
       "symbol_kind": "source.lang.swift.decl.var.instance",
       "warning": "undocumented"
     },
     {
       "file": "/Users/goodle/github/BugHub/SwiftyJIRA/Sources/Models/JIRAIssue.swift",
       "line": 194,
-      "symbol": "JIRAStatus.statusCategory",
+      "symbol": "JIRAStatusJSONBean.iconUrl",
       "symbol_kind": "source.lang.swift.decl.var.instance",
       "warning": "undocumented"
     },
     {
       "file": "/Users/goodle/github/BugHub/SwiftyJIRA/Sources/Models/JIRAIssue.swift",
-      "line": 199,
-      "symbol": "JIRAIssueStatusCategory.self",
+      "line": 195,
+      "symbol": "JIRAStatusJSONBean.name",
       "symbol_kind": "source.lang.swift.decl.var.instance",
       "warning": "undocumented"
     },
     {
       "file": "/Users/goodle/github/BugHub/SwiftyJIRA/Sources/Models/JIRAIssue.swift",
-      "line": 200,
-      "symbol": "JIRAIssueStatusCategory.id",
+      "line": 196,
+      "symbol": "JIRAStatusJSONBean.id",
       "symbol_kind": "source.lang.swift.decl.var.instance",
       "warning": "undocumented"
     },
     {
       "file": "/Users/goodle/github/BugHub/SwiftyJIRA/Sources/Models/JIRAIssue.swift",
-      "line": 201,
-      "symbol": "JIRAIssueStatusCategory.key",
+      "line": 197,
+      "symbol": "JIRAStatusJSONBean.statusCategory",
       "symbol_kind": "source.lang.swift.decl.var.instance",
       "warning": "undocumented"
     },
     {
       "file": "/Users/goodle/github/BugHub/SwiftyJIRA/Sources/Models/JIRAIssue.swift",
       "line": 202,
-      "symbol": "JIRAIssueStatusCategory.colorName",
+      "symbol": "JIRAStatusCategoryJSONBean.self",
       "symbol_kind": "source.lang.swift.decl.var.instance",
       "warning": "undocumented"
     },
     {
       "file": "/Users/goodle/github/BugHub/SwiftyJIRA/Sources/Models/JIRAIssue.swift",
       "line": 203,
-      "symbol": "JIRAIssueStatusCategory.name",
+      "symbol": "JIRAStatusCategoryJSONBean.id",
       "symbol_kind": "source.lang.swift.decl.var.instance",
       "warning": "undocumented"
     },
     {
       "file": "/Users/goodle/github/BugHub/SwiftyJIRA/Sources/Models/JIRAIssue.swift",
-      "line": 208,
+      "line": 204,
+      "symbol": "JIRAStatusCategoryJSONBean.key",
+      "symbol_kind": "source.lang.swift.decl.var.instance",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/goodle/github/BugHub/SwiftyJIRA/Sources/Models/JIRAIssue.swift",
+      "line": 205,
+      "symbol": "JIRAStatusCategoryJSONBean.colorName",
+      "symbol_kind": "source.lang.swift.decl.var.instance",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/goodle/github/BugHub/SwiftyJIRA/Sources/Models/JIRAIssue.swift",
+      "line": 206,
+      "symbol": "JIRAStatusCategoryJSONBean.name",
+      "symbol_kind": "source.lang.swift.decl.var.instance",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/goodle/github/BugHub/SwiftyJIRA/Sources/Models/JIRAIssue.swift",
+      "line": 211,
       "symbol": "JIRAOpsbar.linkGroups",
       "symbol_kind": "source.lang.swift.decl.var.instance",
       "warning": "undocumented"
     },
     {
       "file": "/Users/goodle/github/BugHub/SwiftyJIRA/Sources/Models/JIRAIssue.swift",
-      "line": 213,
+      "line": 216,
       "symbol": "JIRAIssueEditMeta.fields",
       "symbol_kind": "source.lang.swift.decl.var.instance",
       "warning": "undocumented"
     },
     {
       "file": "/Users/goodle/github/BugHub/SwiftyJIRA/Sources/Models/JIRAIssue.swift",
-      "line": 218,
+      "line": 221,
       "symbol": "JIRAIssueChangelog.startAt",
       "symbol_kind": "source.lang.swift.decl.var.instance",
       "warning": "undocumented"
     },
     {
       "file": "/Users/goodle/github/BugHub/SwiftyJIRA/Sources/Models/JIRAIssue.swift",
-      "line": 219,
+      "line": 222,
       "symbol": "JIRAIssueChangelog.maxResults",
       "symbol_kind": "source.lang.swift.decl.var.instance",
       "warning": "undocumented"
     },
     {
       "file": "/Users/goodle/github/BugHub/SwiftyJIRA/Sources/Models/JIRAIssue.swift",
-      "line": 220,
+      "line": 223,
       "symbol": "JIRAIssueChangelog.total",
       "symbol_kind": "source.lang.swift.decl.var.instance",
       "warning": "undocumented"
     },
     {
       "file": "/Users/goodle/github/BugHub/SwiftyJIRA/Sources/Models/JIRAIssue.swift",
-      "line": 221,
+      "line": 224,
       "symbol": "JIRAIssueChangelog.histories",
       "symbol_kind": "source.lang.swift.decl.var.instance",
       "warning": "undocumented"
     },
     {
       "file": "/Users/goodle/github/BugHub/SwiftyJIRA/Sources/Models/JIRAIssue.swift",
-      "line": 226,
-      "symbol": "JIRAIssueFieldMeta.required",
-      "symbol_kind": "source.lang.swift.decl.var.instance",
-      "warning": "undocumented"
-    },
-    {
-      "file": "/Users/goodle/github/BugHub/SwiftyJIRA/Sources/Models/JIRAIssue.swift",
-      "line": 227,
-      "symbol": "JIRAIssueFieldMeta.schema",
-      "symbol_kind": "source.lang.swift.decl.var.instance",
-      "warning": "undocumented"
-    },
-    {
-      "file": "/Users/goodle/github/BugHub/SwiftyJIRA/Sources/Models/JIRAIssue.swift",
-      "line": 228,
-      "symbol": "JIRAIssueFieldMeta.name",
-      "symbol_kind": "source.lang.swift.decl.var.instance",
-      "warning": "undocumented"
-    },
-    {
-      "file": "/Users/goodle/github/BugHub/SwiftyJIRA/Sources/Models/JIRAIssue.swift",
       "line": 229,
-      "symbol": "JIRAIssueFieldMeta.key",
+      "symbol": "JIRAFieldMetaBean.required",
       "symbol_kind": "source.lang.swift.decl.var.instance",
       "warning": "undocumented"
     },
     {
       "file": "/Users/goodle/github/BugHub/SwiftyJIRA/Sources/Models/JIRAIssue.swift",
       "line": 230,
-      "symbol": "JIRAIssueFieldMeta.autoCompleteUrl",
+      "symbol": "JIRAFieldMetaBean.schema",
       "symbol_kind": "source.lang.swift.decl.var.instance",
       "warning": "undocumented"
     },
     {
       "file": "/Users/goodle/github/BugHub/SwiftyJIRA/Sources/Models/JIRAIssue.swift",
       "line": 231,
-      "symbol": "JIRAIssueFieldMeta.hasDefaultValue",
+      "symbol": "JIRAFieldMetaBean.name",
       "symbol_kind": "source.lang.swift.decl.var.instance",
       "warning": "undocumented"
     },
     {
       "file": "/Users/goodle/github/BugHub/SwiftyJIRA/Sources/Models/JIRAIssue.swift",
       "line": 232,
-      "symbol": "JIRAIssueFieldMeta.operations",
+      "symbol": "JIRAFieldMetaBean.key",
       "symbol_kind": "source.lang.swift.decl.var.instance",
       "warning": "undocumented"
     },
     {
       "file": "/Users/goodle/github/BugHub/SwiftyJIRA/Sources/Models/JIRAIssue.swift",
-      "line": 238,
-      "symbol": "JIRAIssueLinkGroup.id",
+      "line": 233,
+      "symbol": "JIRAFieldMetaBean.autoCompleteUrl",
       "symbol_kind": "source.lang.swift.decl.var.instance",
       "warning": "undocumented"
     },
     {
       "file": "/Users/goodle/github/BugHub/SwiftyJIRA/Sources/Models/JIRAIssue.swift",
-      "line": 239,
-      "symbol": "JIRAIssueLinkGroup.styleClass",
+      "line": 234,
+      "symbol": "JIRAFieldMetaBean.hasDefaultValue",
       "symbol_kind": "source.lang.swift.decl.var.instance",
       "warning": "undocumented"
     },
     {
       "file": "/Users/goodle/github/BugHub/SwiftyJIRA/Sources/Models/JIRAIssue.swift",
-      "line": 240,
-      "symbol": "JIRAIssueLinkGroup.header",
+      "line": 235,
+      "symbol": "JIRAFieldMetaBean.operations",
+      "symbol_kind": "source.lang.swift.decl.var.instance",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/goodle/github/BugHub/SwiftyJIRA/Sources/Models/JIRAIssue.swift",
+      "line": 236,
+      "symbol": "JIRAFieldMetaBean.allowedValues",
       "symbol_kind": "source.lang.swift.decl.var.instance",
       "warning": "undocumented"
     },
     {
       "file": "/Users/goodle/github/BugHub/SwiftyJIRA/Sources/Models/JIRAIssue.swift",
       "line": 241,
-      "symbol": "JIRAIssueLinkGroup.weight",
+      "symbol": "JIRAIssueLinkGroup.id",
       "symbol_kind": "source.lang.swift.decl.var.instance",
       "warning": "undocumented"
     },
     {
       "file": "/Users/goodle/github/BugHub/SwiftyJIRA/Sources/Models/JIRAIssue.swift",
       "line": 242,
-      "symbol": "JIRAIssueLinkGroup.links",
+      "symbol": "JIRAIssueLinkGroup.styleClass",
       "symbol_kind": "source.lang.swift.decl.var.instance",
       "warning": "undocumented"
     },
     {
       "file": "/Users/goodle/github/BugHub/SwiftyJIRA/Sources/Models/JIRAIssue.swift",
       "line": 243,
+      "symbol": "JIRAIssueLinkGroup.header",
+      "symbol_kind": "source.lang.swift.decl.var.instance",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/goodle/github/BugHub/SwiftyJIRA/Sources/Models/JIRAIssue.swift",
+      "line": 244,
+      "symbol": "JIRAIssueLinkGroup.weight",
+      "symbol_kind": "source.lang.swift.decl.var.instance",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/goodle/github/BugHub/SwiftyJIRA/Sources/Models/JIRAIssue.swift",
+      "line": 245,
+      "symbol": "JIRAIssueLinkGroup.links",
+      "symbol_kind": "source.lang.swift.decl.var.instance",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/goodle/github/BugHub/SwiftyJIRA/Sources/Models/JIRAIssue.swift",
+      "line": 246,
       "symbol": "JIRAIssueLinkGroup.groups",
       "symbol_kind": "source.lang.swift.decl.var.instance",
       "warning": "undocumented"
     },
     {
       "file": "/Users/goodle/github/BugHub/SwiftyJIRA/Sources/Models/JIRAIssue.swift",
-      "line": 248,
-      "symbol": "JIRAIssueSimpleLink.id",
-      "symbol_kind": "source.lang.swift.decl.var.instance",
-      "warning": "undocumented"
-    },
-    {
-      "file": "/Users/goodle/github/BugHub/SwiftyJIRA/Sources/Models/JIRAIssue.swift",
-      "line": 249,
-      "symbol": "JIRAIssueSimpleLink.styleClass",
-      "symbol_kind": "source.lang.swift.decl.var.instance",
-      "warning": "undocumented"
-    },
-    {
-      "file": "/Users/goodle/github/BugHub/SwiftyJIRA/Sources/Models/JIRAIssue.swift",
-      "line": 250,
-      "symbol": "JIRAIssueSimpleLink.iconClass",
-      "symbol_kind": "source.lang.swift.decl.var.instance",
-      "warning": "undocumented"
-    },
-    {
-      "file": "/Users/goodle/github/BugHub/SwiftyJIRA/Sources/Models/JIRAIssue.swift",
       "line": 251,
-      "symbol": "JIRAIssueSimpleLink.label",
+      "symbol": "JIRASimpleLinkBean.id",
       "symbol_kind": "source.lang.swift.decl.var.instance",
       "warning": "undocumented"
     },
     {
       "file": "/Users/goodle/github/BugHub/SwiftyJIRA/Sources/Models/JIRAIssue.swift",
       "line": 252,
-      "symbol": "JIRAIssueSimpleLink.title",
+      "symbol": "JIRASimpleLinkBean.styleClass",
       "symbol_kind": "source.lang.swift.decl.var.instance",
       "warning": "undocumented"
     },
     {
       "file": "/Users/goodle/github/BugHub/SwiftyJIRA/Sources/Models/JIRAIssue.swift",
       "line": 253,
-      "symbol": "JIRAIssueSimpleLink.href",
+      "symbol": "JIRASimpleLinkBean.iconClass",
       "symbol_kind": "source.lang.swift.decl.var.instance",
       "warning": "undocumented"
     },
     {
       "file": "/Users/goodle/github/BugHub/SwiftyJIRA/Sources/Models/JIRAIssue.swift",
       "line": 254,
-      "symbol": "JIRAIssueSimpleLink.weight",
+      "symbol": "JIRASimpleLinkBean.label",
+      "symbol_kind": "source.lang.swift.decl.var.instance",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/goodle/github/BugHub/SwiftyJIRA/Sources/Models/JIRAIssue.swift",
+      "line": 255,
+      "symbol": "JIRASimpleLinkBean.title",
+      "symbol_kind": "source.lang.swift.decl.var.instance",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/goodle/github/BugHub/SwiftyJIRA/Sources/Models/JIRAIssue.swift",
+      "line": 256,
+      "symbol": "JIRASimpleLinkBean.href",
+      "symbol_kind": "source.lang.swift.decl.var.instance",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/goodle/github/BugHub/SwiftyJIRA/Sources/Models/JIRAIssue.swift",
+      "line": 257,
+      "symbol": "JIRASimpleLinkBean.weight",
+      "symbol_kind": "source.lang.swift.decl.var.instance",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/goodle/github/BugHub/SwiftyJIRA/Sources/Models/JIRAIssue.swift",
+      "line": 262,
+      "symbol": "JIRAJSONTypeBean.custom",
+      "symbol_kind": "source.lang.swift.decl.var.instance",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/goodle/github/BugHub/SwiftyJIRA/Sources/Models/JIRAIssue.swift",
+      "line": 263,
+      "symbol": "JIRAJSONTypeBean.customId",
       "symbol_kind": "source.lang.swift.decl.var.instance",
       "warning": "undocumented"
     },
     {
       "file": "/Users/goodle/github/BugHub/SwiftyJIRA/Sources/Models/JIRAIssue.swift",
       "line": 264,
-      "symbol": "JIRAIssueChangeHistory.id",
+      "symbol": "JIRAJSONTypeBean.items",
       "symbol_kind": "source.lang.swift.decl.var.instance",
       "warning": "undocumented"
     },
     {
       "file": "/Users/goodle/github/BugHub/SwiftyJIRA/Sources/Models/JIRAIssue.swift",
       "line": 265,
-      "symbol": "JIRAIssueChangeHistory.author",
+      "symbol": "JIRAJSONTypeBean.system",
       "symbol_kind": "source.lang.swift.decl.var.instance",
       "warning": "undocumented"
     },
     {
       "file": "/Users/goodle/github/BugHub/SwiftyJIRA/Sources/Models/JIRAIssue.swift",
       "line": 266,
-      "symbol": "JIRAIssueChangeHistory.created",
+      "symbol": "JIRAJSONTypeBean.type",
       "symbol_kind": "source.lang.swift.decl.var.instance",
       "warning": "undocumented"
     },
     {
       "file": "/Users/goodle/github/BugHub/SwiftyJIRA/Sources/Models/JIRAIssue.swift",
-      "line": 267,
-      "symbol": "JIRAIssueChangeHistory.items",
+      "line": 271,
+      "symbol": "JIRAIssueChangeHistory.id",
       "symbol_kind": "source.lang.swift.decl.var.instance",
       "warning": "undocumented"
     },
     {
       "file": "/Users/goodle/github/BugHub/SwiftyJIRA/Sources/Models/JIRAIssue.swift",
-      "line": 268,
-      "symbol": "JIRAIssueChangeHistory.historyMetadata",
+      "line": 272,
+      "symbol": "JIRAIssueChangeHistory.author",
       "symbol_kind": "source.lang.swift.decl.var.instance",
       "warning": "undocumented"
     },
     {
       "file": "/Users/goodle/github/BugHub/SwiftyJIRA/Sources/Models/JIRAIssue.swift",
       "line": 273,
-      "symbol": "JIRAIssueChangeItem.field",
+      "symbol": "JIRAIssueChangeHistory.created",
       "symbol_kind": "source.lang.swift.decl.var.instance",
       "warning": "undocumented"
     },
     {
       "file": "/Users/goodle/github/BugHub/SwiftyJIRA/Sources/Models/JIRAIssue.swift",
       "line": 274,
-      "symbol": "JIRAIssueChangeItem.fieldType",
+      "symbol": "JIRAIssueChangeHistory.items",
       "symbol_kind": "source.lang.swift.decl.var.instance",
       "warning": "undocumented"
     },
     {
       "file": "/Users/goodle/github/BugHub/SwiftyJIRA/Sources/Models/JIRAIssue.swift",
       "line": 275,
+      "symbol": "JIRAIssueChangeHistory.historyMetadata",
+      "symbol_kind": "source.lang.swift.decl.var.instance",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/goodle/github/BugHub/SwiftyJIRA/Sources/Models/JIRAIssue.swift",
+      "line": 280,
+      "symbol": "JIRAIssueChangeItem.field",
+      "symbol_kind": "source.lang.swift.decl.var.instance",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/goodle/github/BugHub/SwiftyJIRA/Sources/Models/JIRAIssue.swift",
+      "line": 281,
+      "symbol": "JIRAIssueChangeItem.fieldType",
+      "symbol_kind": "source.lang.swift.decl.var.instance",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/goodle/github/BugHub/SwiftyJIRA/Sources/Models/JIRAIssue.swift",
+      "line": 282,
       "symbol": "JIRAIssueChangeItem.fieldId",
       "symbol_kind": "source.lang.swift.decl.var.instance",
       "warning": "undocumented"
     },
     {
       "file": "/Users/goodle/github/BugHub/SwiftyJIRA/Sources/Models/JIRAIssue.swift",
-      "line": 276,
+      "line": 283,
       "symbol": "JIRAIssueChangeItem.from",
       "symbol_kind": "source.lang.swift.decl.var.instance",
       "warning": "undocumented"
     },
     {
       "file": "/Users/goodle/github/BugHub/SwiftyJIRA/Sources/Models/JIRAIssue.swift",
-      "line": 277,
+      "line": 284,
       "symbol": "JIRAIssueChangeItem.fromString",
       "symbol_kind": "source.lang.swift.decl.var.instance",
       "warning": "undocumented"
     },
     {
       "file": "/Users/goodle/github/BugHub/SwiftyJIRA/Sources/Models/JIRAIssue.swift",
-      "line": 278,
+      "line": 285,
       "symbol": "JIRAIssueChangeItem.to",
       "symbol_kind": "source.lang.swift.decl.var.instance",
       "warning": "undocumented"
     },
     {
       "file": "/Users/goodle/github/BugHub/SwiftyJIRA/Sources/Models/JIRAIssue.swift",
-      "line": 279,
+      "line": 286,
       "symbol": "JIRAIssueChangeItem.toString",
       "symbol_kind": "source.lang.swift.decl.var.instance",
       "warning": "undocumented"
     },
     {
       "file": "/Users/goodle/github/BugHub/SwiftyJIRA/Sources/Models/JIRAIssue.swift",
-      "line": 284,
-      "symbol": "JIRAIssueHistoryMetadata.type",
-      "symbol_kind": "source.lang.swift.decl.var.instance",
-      "warning": "undocumented"
-    },
-    {
-      "file": "/Users/goodle/github/BugHub/SwiftyJIRA/Sources/Models/JIRAIssue.swift",
-      "line": 285,
-      "symbol": "JIRAIssueHistoryMetadata.description",
-      "symbol_kind": "source.lang.swift.decl.var.instance",
-      "warning": "undocumented"
-    },
-    {
-      "file": "/Users/goodle/github/BugHub/SwiftyJIRA/Sources/Models/JIRAIssue.swift",
-      "line": 286,
-      "symbol": "JIRAIssueHistoryMetadata.descriptionKey",
-      "symbol_kind": "source.lang.swift.decl.var.instance",
-      "warning": "undocumented"
-    },
-    {
-      "file": "/Users/goodle/github/BugHub/SwiftyJIRA/Sources/Models/JIRAIssue.swift",
-      "line": 287,
-      "symbol": "JIRAIssueHistoryMetadata.activityDescription",
-      "symbol_kind": "source.lang.swift.decl.var.instance",
-      "warning": "undocumented"
-    },
-    {
-      "file": "/Users/goodle/github/BugHub/SwiftyJIRA/Sources/Models/JIRAIssue.swift",
-      "line": 288,
-      "symbol": "JIRAIssueHistoryMetadata.activityDescriptionKey",
-      "symbol_kind": "source.lang.swift.decl.var.instance",
-      "warning": "undocumented"
-    },
-    {
-      "file": "/Users/goodle/github/BugHub/SwiftyJIRA/Sources/Models/JIRAIssue.swift",
-      "line": 289,
-      "symbol": "JIRAIssueHistoryMetadata.emailDescription",
-      "symbol_kind": "source.lang.swift.decl.var.instance",
-      "warning": "undocumented"
-    },
-    {
-      "file": "/Users/goodle/github/BugHub/SwiftyJIRA/Sources/Models/JIRAIssue.swift",
-      "line": 290,
-      "symbol": "JIRAIssueHistoryMetadata.emailDescriptionKey",
-      "symbol_kind": "source.lang.swift.decl.var.instance",
-      "warning": "undocumented"
-    },
-    {
-      "file": "/Users/goodle/github/BugHub/SwiftyJIRA/Sources/Models/JIRAIssue.swift",
       "line": 291,
-      "symbol": "JIRAIssueHistoryMetadata.actor",
+      "symbol": "JIRAHistoryMetadata.type",
       "symbol_kind": "source.lang.swift.decl.var.instance",
       "warning": "undocumented"
     },
     {
       "file": "/Users/goodle/github/BugHub/SwiftyJIRA/Sources/Models/JIRAIssue.swift",
       "line": 292,
-      "symbol": "JIRAIssueHistoryMetadata.generator",
+      "symbol": "JIRAHistoryMetadata.description",
       "symbol_kind": "source.lang.swift.decl.var.instance",
       "warning": "undocumented"
     },
     {
       "file": "/Users/goodle/github/BugHub/SwiftyJIRA/Sources/Models/JIRAIssue.swift",
       "line": 293,
-      "symbol": "JIRAIssueHistoryMetadata.cause",
+      "symbol": "JIRAHistoryMetadata.descriptionKey",
+      "symbol_kind": "source.lang.swift.decl.var.instance",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/goodle/github/BugHub/SwiftyJIRA/Sources/Models/JIRAIssue.swift",
+      "line": 294,
+      "symbol": "JIRAHistoryMetadata.activityDescription",
+      "symbol_kind": "source.lang.swift.decl.var.instance",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/goodle/github/BugHub/SwiftyJIRA/Sources/Models/JIRAIssue.swift",
+      "line": 295,
+      "symbol": "JIRAHistoryMetadata.activityDescriptionKey",
+      "symbol_kind": "source.lang.swift.decl.var.instance",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/goodle/github/BugHub/SwiftyJIRA/Sources/Models/JIRAIssue.swift",
+      "line": 296,
+      "symbol": "JIRAHistoryMetadata.emailDescription",
+      "symbol_kind": "source.lang.swift.decl.var.instance",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/goodle/github/BugHub/SwiftyJIRA/Sources/Models/JIRAIssue.swift",
+      "line": 297,
+      "symbol": "JIRAHistoryMetadata.emailDescriptionKey",
+      "symbol_kind": "source.lang.swift.decl.var.instance",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/goodle/github/BugHub/SwiftyJIRA/Sources/Models/JIRAIssue.swift",
+      "line": 298,
+      "symbol": "JIRAHistoryMetadata.actor",
       "symbol_kind": "source.lang.swift.decl.var.instance",
       "warning": "undocumented"
     },
     {
       "file": "/Users/goodle/github/BugHub/SwiftyJIRA/Sources/Models/JIRAIssue.swift",
       "line": 299,
-      "symbol": "JIRAIssueHistoryMetadataParticipant.id",
+      "symbol": "JIRAHistoryMetadata.generator",
       "symbol_kind": "source.lang.swift.decl.var.instance",
       "warning": "undocumented"
     },
     {
       "file": "/Users/goodle/github/BugHub/SwiftyJIRA/Sources/Models/JIRAIssue.swift",
       "line": 300,
-      "symbol": "JIRAIssueHistoryMetadataParticipant.displayName",
+      "symbol": "JIRAHistoryMetadata.cause",
       "symbol_kind": "source.lang.swift.decl.var.instance",
       "warning": "undocumented"
     },
     {
       "file": "/Users/goodle/github/BugHub/SwiftyJIRA/Sources/Models/JIRAIssue.swift",
       "line": 301,
-      "symbol": "JIRAIssueHistoryMetadataParticipant.displayNameKey",
+      "symbol": "JIRAHistoryMetadata.extraData",
       "symbol_kind": "source.lang.swift.decl.var.instance",
       "warning": "undocumented"
     },
     {
       "file": "/Users/goodle/github/BugHub/SwiftyJIRA/Sources/Models/JIRAIssue.swift",
-      "line": 302,
-      "symbol": "JIRAIssueHistoryMetadataParticipant.type",
+      "line": 306,
+      "symbol": "JIRAHistoryMetadataParticipant.id",
       "symbol_kind": "source.lang.swift.decl.var.instance",
       "warning": "undocumented"
     },
     {
       "file": "/Users/goodle/github/BugHub/SwiftyJIRA/Sources/Models/JIRAIssue.swift",
-      "line": 303,
-      "symbol": "JIRAIssueHistoryMetadataParticipant.avatarUrl",
+      "line": 307,
+      "symbol": "JIRAHistoryMetadataParticipant.displayName",
       "symbol_kind": "source.lang.swift.decl.var.instance",
       "warning": "undocumented"
     },
     {
       "file": "/Users/goodle/github/BugHub/SwiftyJIRA/Sources/Models/JIRAIssue.swift",
-      "line": 304,
-      "symbol": "JIRAIssueHistoryMetadataParticipant.url",
+      "line": 308,
+      "symbol": "JIRAHistoryMetadataParticipant.displayNameKey",
       "symbol_kind": "source.lang.swift.decl.var.instance",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/goodle/github/BugHub/SwiftyJIRA/Sources/Models/JIRAIssue.swift",
+      "line": 309,
+      "symbol": "JIRAHistoryMetadataParticipant.type",
+      "symbol_kind": "source.lang.swift.decl.var.instance",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/goodle/github/BugHub/SwiftyJIRA/Sources/Models/JIRAIssue.swift",
+      "line": 310,
+      "symbol": "JIRAHistoryMetadataParticipant.avatarUrl",
+      "symbol_kind": "source.lang.swift.decl.var.instance",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/goodle/github/BugHub/SwiftyJIRA/Sources/Models/JIRAIssue.swift",
+      "line": 311,
+      "symbol": "JIRAHistoryMetadataParticipant.url",
+      "symbol_kind": "source.lang.swift.decl.var.instance",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/goodle/github/BugHub/SwiftyJIRA/Sources/Models/JIRAIssue.swift",
+      "line": 314,
+      "symbol": "JIRARestrictJSONBean",
+      "symbol_kind": "source.lang.swift.decl.struct",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/goodle/github/BugHub/SwiftyJIRA/Sources/Models/JIRAIssue.swift",
+      "line": 315,
+      "symbol": "JIRARestrictJSONBean.groups",
+      "symbol_kind": "source.lang.swift.decl.var.instance",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/goodle/github/BugHub/SwiftyJIRA/Sources/Models/JIRAIssue.swift",
+      "line": 316,
+      "symbol": "JIRARestrictJSONBean.permissions",
+      "symbol_kind": "source.lang.swift.decl.var.instance",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/goodle/github/BugHub/SwiftyJIRA/Sources/Models/JIRAIssue.swift",
+      "line": 319,
+      "symbol": "JIRAPermissionJSONBean",
+      "symbol_kind": "source.lang.swift.decl.struct",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/goodle/github/BugHub/SwiftyJIRA/Sources/Models/JIRAIssue.swift",
+      "line": 320,
+      "symbol": "JIRAPermissionJSONBean.id",
+      "symbol_kind": "source.lang.swift.decl.var.instance",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/goodle/github/BugHub/SwiftyJIRA/Sources/Models/JIRAIssue.swift",
+      "line": 321,
+      "symbol": "JIRAPermissionJSONBean.key",
+      "symbol_kind": "source.lang.swift.decl.var.instance",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/goodle/github/BugHub/SwiftyJIRA/Sources/Models/JIRAIssue.swift",
+      "line": 324,
+      "symbol": "JIRAToJSONBean",
+      "symbol_kind": "source.lang.swift.decl.struct",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/goodle/github/BugHub/SwiftyJIRA/Sources/Models/JIRAIssue.swift",
+      "line": 325,
+      "symbol": "JIRAToJSONBean.assignee",
+      "symbol_kind": "source.lang.swift.decl.var.instance",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/goodle/github/BugHub/SwiftyJIRA/Sources/Models/JIRAIssue.swift",
+      "line": 326,
+      "symbol": "JIRAToJSONBean.groups",
+      "symbol_kind": "source.lang.swift.decl.var.instance",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/goodle/github/BugHub/SwiftyJIRA/Sources/Models/JIRAIssue.swift",
+      "line": 327,
+      "symbol": "JIRAToJSONBean.reporter",
+      "symbol_kind": "source.lang.swift.decl.var.instance",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/goodle/github/BugHub/SwiftyJIRA/Sources/Models/JIRAIssue.swift",
+      "line": 328,
+      "symbol": "JIRAToJSONBean.users",
+      "symbol_kind": "source.lang.swift.decl.var.instance",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/goodle/github/BugHub/SwiftyJIRA/Sources/Models/JIRAIssue.swift",
+      "line": 329,
+      "symbol": "JIRAToJSONBean.voters",
+      "symbol_kind": "source.lang.swift.decl.var.instance",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/goodle/github/BugHub/SwiftyJIRA/Sources/Models/JIRAIssue.swift",
+      "line": 330,
+      "symbol": "JIRAToJSONBean.watchers",
+      "symbol_kind": "source.lang.swift.decl.var.instance",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/goodle/github/BugHub/SwiftyJIRA/Sources/Models/JIRAIssue.swift",
+      "line": 333,
+      "symbol": "JIRAIssueUpdateBean",
+      "symbol_kind": "source.lang.swift.decl.struct",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/goodle/github/BugHub/SwiftyJIRA/Sources/Models/JIRAIssue.swift",
+      "line": 334,
+      "symbol": "JIRAIssueUpdateBean.fields",
+      "symbol_kind": "source.lang.swift.decl.var.instance",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/goodle/github/BugHub/SwiftyJIRA/Sources/Models/JIRAIssue.swift",
+      "line": 335,
+      "symbol": "JIRAIssueUpdateBean.historyMetadata",
+      "symbol_kind": "source.lang.swift.decl.var.instance",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/goodle/github/BugHub/SwiftyJIRA/Sources/Models/JIRAIssue.swift",
+      "line": 336,
+      "symbol": "JIRAIssueUpdateBean.properties",
+      "symbol_kind": "source.lang.swift.decl.var.instance",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/goodle/github/BugHub/SwiftyJIRA/Sources/Models/JIRAIssue.swift",
+      "line": 337,
+      "symbol": "JIRAIssueUpdateBean.transition",
+      "symbol_kind": "source.lang.swift.decl.var.instance",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/goodle/github/BugHub/SwiftyJIRA/Sources/Models/JIRAIssue.swift",
+      "line": 338,
+      "symbol": "JIRAIssueUpdateBean.update",
+      "symbol_kind": "source.lang.swift.decl.var.instance",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/goodle/github/BugHub/SwiftyJIRA/Sources/Models/JIRAIssue.swift",
+      "line": 341,
+      "symbol": "JIRAIssueUpdateAdditionalProperties",
+      "symbol_kind": "source.lang.swift.decl.struct",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/goodle/github/BugHub/SwiftyJIRA/Sources/Models/JIRAIssue.swift",
+      "line": 342,
+      "symbol": "JIRAIssueUpdateAdditionalProperties.additionalProperties",
+      "symbol_kind": "source.lang.swift.decl.var.instance",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/goodle/github/BugHub/SwiftyJIRA/Sources/Models/JIRAIssue.swift",
+      "line": 345,
+      "symbol": "JIRARemoteEntityLinkJSONBean",
+      "symbol_kind": "source.lang.swift.decl.struct",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/goodle/github/BugHub/SwiftyJIRA/Sources/Models/JIRAIssue.swift",
+      "line": 346,
+      "symbol": "JIRARemoteEntityLinkJSONBean.link",
+      "symbol_kind": "source.lang.swift.decl.var.instance",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/goodle/github/BugHub/SwiftyJIRA/Sources/Models/JIRAIssue.swift",
+      "line": 347,
+      "symbol": "JIRARemoteEntityLinkJSONBean.name",
+      "symbol_kind": "source.lang.swift.decl.var.instance",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/goodle/github/BugHub/SwiftyJIRA/Sources/Models/JIRAIssue.swift",
+      "line": 348,
+      "symbol": "JIRARemoteEntityLinkJSONBean.self",
+      "symbol_kind": "source.lang.swift.decl.var.instance",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/goodle/github/BugHub/SwiftyJIRA/Sources/Models/JIRAIssue.swift",
+      "line": 351,
+      "symbol": "JIRAIssueQueryFields",
+      "symbol_kind": "source.lang.swift.decl.struct",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/goodle/github/BugHub/SwiftyJIRA/Sources/Models/JIRAIssue.swift",
+      "line": 352,
+      "symbol": "JIRAIssueQueryFields.fields",
+      "symbol_kind": "source.lang.swift.decl.var.instance",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/goodle/github/BugHub/SwiftyJIRA/Sources/Models/JIRAIssue.swift",
+      "line": 355,
+      "symbol": "JIRAIssueQueryField",
+      "symbol_kind": "source.lang.swift.decl.enum",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/goodle/github/BugHub/SwiftyJIRA/Sources/Models/JIRAIssue.swift",
+      "line": 356,
+      "symbol": "JIRAIssueQueryField.all",
+      "symbol_kind": "source.lang.swift.decl.enumelement",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/goodle/github/BugHub/SwiftyJIRA/Sources/Models/JIRAIssue.swift",
+      "line": 357,
+      "symbol": "JIRAIssueQueryField.navigable",
+      "symbol_kind": "source.lang.swift.decl.enumelement",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/goodle/github/BugHub/SwiftyJIRA/Sources/Models/JIRAIssue.swift",
+      "line": 358,
+      "symbol": "JIRAIssueQueryField.summaryComment",
+      "symbol_kind": "source.lang.swift.decl.enumelement",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/goodle/github/BugHub/SwiftyJIRA/Sources/Models/JIRAIssue.swift",
+      "line": 359,
+      "symbol": "JIRAIssueQueryField.noComment",
+      "symbol_kind": "source.lang.swift.decl.enumelement",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/goodle/github/BugHub/SwiftyJIRA/Sources/Models/JIRAIssue.swift",
+      "line": 360,
+      "symbol": "JIRAIssueQueryField.allComment",
+      "symbol_kind": "source.lang.swift.decl.enumelement",
       "warning": "undocumented"
     },
     {
@@ -1793,6 +2570,356 @@
       "warning": "undocumented"
     },
     {
+      "file": "/Users/goodle/github/BugHub/SwiftyJIRA/Sources/Models/JIRAProject.swift",
+      "line": 17,
+      "symbol": "JIRAProject.description",
+      "symbol_kind": "source.lang.swift.decl.var.instance",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/goodle/github/BugHub/SwiftyJIRA/Sources/Models/JIRAProject.swift",
+      "line": 18,
+      "symbol": "JIRAProject.lead",
+      "symbol_kind": "source.lang.swift.decl.var.instance",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/goodle/github/BugHub/SwiftyJIRA/Sources/Models/JIRAProject.swift",
+      "line": 19,
+      "symbol": "JIRAProject.components",
+      "symbol_kind": "source.lang.swift.decl.var.instance",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/goodle/github/BugHub/SwiftyJIRA/Sources/Models/JIRAProject.swift",
+      "line": 20,
+      "symbol": "JIRAProject.issueTypes",
+      "symbol_kind": "source.lang.swift.decl.var.instance",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/goodle/github/BugHub/SwiftyJIRA/Sources/Models/JIRAProject.swift",
+      "line": 21,
+      "symbol": "JIRAProject.url",
+      "symbol_kind": "source.lang.swift.decl.var.instance",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/goodle/github/BugHub/SwiftyJIRA/Sources/Models/JIRAProject.swift",
+      "line": 22,
+      "symbol": "JIRAProject.email",
+      "symbol_kind": "source.lang.swift.decl.var.instance",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/goodle/github/BugHub/SwiftyJIRA/Sources/Models/JIRAProject.swift",
+      "line": 23,
+      "symbol": "JIRAProject.assigneeType",
+      "symbol_kind": "source.lang.swift.decl.var.instance",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/goodle/github/BugHub/SwiftyJIRA/Sources/Models/JIRAProject.swift",
+      "line": 24,
+      "symbol": "JIRAProject.versions",
+      "symbol_kind": "source.lang.swift.decl.var.instance",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/goodle/github/BugHub/SwiftyJIRA/Sources/Models/JIRAProject.swift",
+      "line": 25,
+      "symbol": "JIRAProject.roles",
+      "symbol_kind": "source.lang.swift.decl.var.instance",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/goodle/github/BugHub/SwiftyJIRA/Sources/Models/JIRAProject.swift",
+      "line": 26,
+      "symbol": "JIRAProject.projectCategory",
+      "symbol_kind": "source.lang.swift.decl.var.instance",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/goodle/github/BugHub/SwiftyJIRA/Sources/Models/JIRAProject.swift",
+      "line": 27,
+      "symbol": "JIRAProject.simplified",
+      "symbol_kind": "source.lang.swift.decl.var.instance",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/goodle/github/BugHub/SwiftyJIRA/Sources/Models/JIRAProject.swift",
+      "line": 32,
+      "symbol": "JIRAProjectCategory.self",
+      "symbol_kind": "source.lang.swift.decl.var.instance",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/goodle/github/BugHub/SwiftyJIRA/Sources/Models/JIRAProject.swift",
+      "line": 33,
+      "symbol": "JIRAProjectCategory.id",
+      "symbol_kind": "source.lang.swift.decl.var.instance",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/goodle/github/BugHub/SwiftyJIRA/Sources/Models/JIRAProject.swift",
+      "line": 34,
+      "symbol": "JIRAProjectCategory.name",
+      "symbol_kind": "source.lang.swift.decl.var.instance",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/goodle/github/BugHub/SwiftyJIRA/Sources/Models/JIRAProject.swift",
+      "line": 35,
+      "symbol": "JIRAProjectCategory.description",
+      "symbol_kind": "source.lang.swift.decl.var.instance",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/goodle/github/BugHub/SwiftyJIRA/Sources/Models/JIRAProject.swift",
+      "line": 38,
+      "symbol": "JIRAProjectComponent",
+      "symbol_kind": "source.lang.swift.decl.struct",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/goodle/github/BugHub/SwiftyJIRA/Sources/Models/JIRAProject.swift",
+      "line": 39,
+      "symbol": "JIRAProjectComponent.self",
+      "symbol_kind": "source.lang.swift.decl.var.instance",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/goodle/github/BugHub/SwiftyJIRA/Sources/Models/JIRAProject.swift",
+      "line": 40,
+      "symbol": "JIRAProjectComponent.id",
+      "symbol_kind": "source.lang.swift.decl.var.instance",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/goodle/github/BugHub/SwiftyJIRA/Sources/Models/JIRAProject.swift",
+      "line": 41,
+      "symbol": "JIRAProjectComponent.name",
+      "symbol_kind": "source.lang.swift.decl.var.instance",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/goodle/github/BugHub/SwiftyJIRA/Sources/Models/JIRAProject.swift",
+      "line": 42,
+      "symbol": "JIRAProjectComponent.description",
+      "symbol_kind": "source.lang.swift.decl.var.instance",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/goodle/github/BugHub/SwiftyJIRA/Sources/Models/JIRAProject.swift",
+      "line": 43,
+      "symbol": "JIRAProjectComponent.lead",
+      "symbol_kind": "source.lang.swift.decl.var.instance",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/goodle/github/BugHub/SwiftyJIRA/Sources/Models/JIRAProject.swift",
+      "line": 44,
+      "symbol": "JIRAProjectComponent.assigneeType",
+      "symbol_kind": "source.lang.swift.decl.var.instance",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/goodle/github/BugHub/SwiftyJIRA/Sources/Models/JIRAProject.swift",
+      "line": 45,
+      "symbol": "JIRAProjectComponent.assignee",
+      "symbol_kind": "source.lang.swift.decl.var.instance",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/goodle/github/BugHub/SwiftyJIRA/Sources/Models/JIRAProject.swift",
+      "line": 46,
+      "symbol": "JIRAProjectComponent.realAssigneeType",
+      "symbol_kind": "source.lang.swift.decl.var.instance",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/goodle/github/BugHub/SwiftyJIRA/Sources/Models/JIRAProject.swift",
+      "line": 47,
+      "symbol": "JIRAProjectComponent.realAssignee",
+      "symbol_kind": "source.lang.swift.decl.var.instance",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/goodle/github/BugHub/SwiftyJIRA/Sources/Models/JIRAProject.swift",
+      "line": 48,
+      "symbol": "JIRAProjectComponent.isAssigneeTypeValid",
+      "symbol_kind": "source.lang.swift.decl.var.instance",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/goodle/github/BugHub/SwiftyJIRA/Sources/Models/JIRAProject.swift",
+      "line": 49,
+      "symbol": "JIRAProjectComponent.project",
+      "symbol_kind": "source.lang.swift.decl.var.instance",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/goodle/github/BugHub/SwiftyJIRA/Sources/Models/JIRAProject.swift",
+      "line": 50,
+      "symbol": "JIRAProjectComponent.projectId",
+      "symbol_kind": "source.lang.swift.decl.var.instance",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/goodle/github/BugHub/SwiftyJIRA/Sources/Models/JIRAProject.swift",
+      "line": 53,
+      "symbol": "JIRAassigneeType",
+      "symbol_kind": "source.lang.swift.decl.enum",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/goodle/github/BugHub/SwiftyJIRA/Sources/Models/JIRAProject.swift",
+      "line": 54,
+      "symbol": "JIRAassigneeType.PROJECT_LEAD",
+      "symbol_kind": "source.lang.swift.decl.enumelement",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/goodle/github/BugHub/SwiftyJIRA/Sources/Models/JIRARemoteLink.swift",
+      "line": 10,
+      "symbol": "JIRARemoteLink",
+      "symbol_kind": "source.lang.swift.decl.struct",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/goodle/github/BugHub/SwiftyJIRA/Sources/Models/JIRARemoteLink.swift",
+      "line": 11,
+      "symbol": "JIRARemoteLink.globalId",
+      "symbol_kind": "source.lang.swift.decl.var.instance",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/goodle/github/BugHub/SwiftyJIRA/Sources/Models/JIRARemoteLink.swift",
+      "line": 12,
+      "symbol": "JIRARemoteLink.relationship",
+      "symbol_kind": "source.lang.swift.decl.var.instance",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/goodle/github/BugHub/SwiftyJIRA/Sources/Models/JIRARemoteLink.swift",
+      "line": 13,
+      "symbol": "JIRARemoteLink.object",
+      "symbol_kind": "source.lang.swift.decl.var.instance",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/goodle/github/BugHub/SwiftyJIRA/Sources/Models/JIRARemoteLink.swift",
+      "line": 16,
+      "symbol": "JIRAObject",
+      "symbol_kind": "source.lang.swift.decl.struct",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/goodle/github/BugHub/SwiftyJIRA/Sources/Models/JIRARemoteLink.swift",
+      "line": 17,
+      "symbol": "JIRAObject.url",
+      "symbol_kind": "source.lang.swift.decl.var.instance",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/goodle/github/BugHub/SwiftyJIRA/Sources/Models/JIRARemoteLink.swift",
+      "line": 18,
+      "symbol": "JIRAObject.title",
+      "symbol_kind": "source.lang.swift.decl.var.instance",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/goodle/github/BugHub/SwiftyJIRA/Sources/Models/JIRARemoteLink.swift",
+      "line": 19,
+      "symbol": "JIRAObject.summary",
+      "symbol_kind": "source.lang.swift.decl.var.instance",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/goodle/github/BugHub/SwiftyJIRA/Sources/Models/JIRARemoteLink.swift",
+      "line": 20,
+      "symbol": "JIRAObject.icon",
+      "symbol_kind": "source.lang.swift.decl.var.instance",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/goodle/github/BugHub/SwiftyJIRA/Sources/Models/JIRARemoteLink.swift",
+      "line": 21,
+      "symbol": "JIRAObject.application",
+      "symbol_kind": "source.lang.swift.decl.var.instance",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/goodle/github/BugHub/SwiftyJIRA/Sources/Models/JIRARemoteLink.swift",
+      "line": 24,
+      "symbol": "JIRAObjectStatus",
+      "symbol_kind": "source.lang.swift.decl.struct",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/goodle/github/BugHub/SwiftyJIRA/Sources/Models/JIRARemoteLink.swift",
+      "line": 25,
+      "symbol": "JIRAObjectStatus.resolved",
+      "symbol_kind": "source.lang.swift.decl.var.instance",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/goodle/github/BugHub/SwiftyJIRA/Sources/Models/JIRARemoteLink.swift",
+      "line": 26,
+      "symbol": "JIRAObjectStatus.icon",
+      "symbol_kind": "source.lang.swift.decl.var.instance",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/goodle/github/BugHub/SwiftyJIRA/Sources/Models/JIRARemoteLink.swift",
+      "line": 29,
+      "symbol": "JIRAObjectIcon",
+      "symbol_kind": "source.lang.swift.decl.struct",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/goodle/github/BugHub/SwiftyJIRA/Sources/Models/JIRARemoteLink.swift",
+      "line": 30,
+      "symbol": "JIRAObjectIcon.url16x16",
+      "symbol_kind": "source.lang.swift.decl.var.instance",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/goodle/github/BugHub/SwiftyJIRA/Sources/Models/JIRARemoteLink.swift",
+      "line": 31,
+      "symbol": "JIRAObjectIcon.title",
+      "symbol_kind": "source.lang.swift.decl.var.instance",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/goodle/github/BugHub/SwiftyJIRA/Sources/Models/JIRARemoteLink.swift",
+      "line": 32,
+      "symbol": "JIRAObjectIcon.link",
+      "symbol_kind": "source.lang.swift.decl.var.instance",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/goodle/github/BugHub/SwiftyJIRA/Sources/Models/JIRARemoteLink.swift",
+      "line": 35,
+      "symbol": "JIRAObjectApplication",
+      "symbol_kind": "source.lang.swift.decl.struct",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/goodle/github/BugHub/SwiftyJIRA/Sources/Models/JIRARemoteLink.swift",
+      "line": 36,
+      "symbol": "JIRAObjectApplication.name",
+      "symbol_kind": "source.lang.swift.decl.var.instance",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/goodle/github/BugHub/SwiftyJIRA/Sources/Models/JIRARemoteLink.swift",
+      "line": 37,
+      "symbol": "JIRAObjectApplication.type",
+      "symbol_kind": "source.lang.swift.decl.var.instance",
+      "warning": "undocumented"
+    },
+    {
       "file": "/Users/goodle/github/BugHub/SwiftyJIRA/Sources/Models/JIRASprintWebhookEvent.swift",
       "line": 12,
       "symbol": "JIRASprintWebhookEvent.timestamp",
@@ -1807,128 +2934,128 @@
       "warning": "undocumented"
     },
     {
-      "file": "/Users/goodle/github/BugHub/SwiftyJIRA/Sources/Models/JIRAUser.swift",
+      "file": "/Users/goodle/github/BugHub/SwiftyJIRA/Sources/Models/JIRAUserJSONBean.swift",
       "line": 12,
-      "symbol": "JIRAUser.self",
+      "symbol": "JIRAUserJSONBean.self",
       "symbol_kind": "source.lang.swift.decl.var.instance",
       "warning": "undocumented"
     },
     {
-      "file": "/Users/goodle/github/BugHub/SwiftyJIRA/Sources/Models/JIRAUser.swift",
+      "file": "/Users/goodle/github/BugHub/SwiftyJIRA/Sources/Models/JIRAUserJSONBean.swift",
       "line": 13,
-      "symbol": "JIRAUser.key",
+      "symbol": "JIRAUserJSONBean.key",
       "symbol_kind": "source.lang.swift.decl.var.instance",
       "warning": "undocumented"
     },
     {
-      "file": "/Users/goodle/github/BugHub/SwiftyJIRA/Sources/Models/JIRAUser.swift",
+      "file": "/Users/goodle/github/BugHub/SwiftyJIRA/Sources/Models/JIRAUserJSONBean.swift",
       "line": 14,
-      "symbol": "JIRAUser.accountId",
+      "symbol": "JIRAUserJSONBean.accountId",
       "symbol_kind": "source.lang.swift.decl.var.instance",
       "warning": "undocumented"
     },
     {
-      "file": "/Users/goodle/github/BugHub/SwiftyJIRA/Sources/Models/JIRAUser.swift",
+      "file": "/Users/goodle/github/BugHub/SwiftyJIRA/Sources/Models/JIRAUserJSONBean.swift",
       "line": 15,
-      "symbol": "JIRAUser.name",
+      "symbol": "JIRAUserJSONBean.name",
       "symbol_kind": "source.lang.swift.decl.var.instance",
       "warning": "undocumented"
     },
     {
-      "file": "/Users/goodle/github/BugHub/SwiftyJIRA/Sources/Models/JIRAUser.swift",
+      "file": "/Users/goodle/github/BugHub/SwiftyJIRA/Sources/Models/JIRAUserJSONBean.swift",
       "line": 16,
-      "symbol": "JIRAUser.emailAddress",
+      "symbol": "JIRAUserJSONBean.emailAddress",
       "symbol_kind": "source.lang.swift.decl.var.instance",
       "warning": "undocumented"
     },
     {
-      "file": "/Users/goodle/github/BugHub/SwiftyJIRA/Sources/Models/JIRAUser.swift",
+      "file": "/Users/goodle/github/BugHub/SwiftyJIRA/Sources/Models/JIRAUserJSONBean.swift",
       "line": 17,
-      "symbol": "JIRAUser.avatarUrls",
+      "symbol": "JIRAUserJSONBean.avatarUrls",
       "symbol_kind": "source.lang.swift.decl.var.instance",
       "warning": "undocumented"
     },
     {
-      "file": "/Users/goodle/github/BugHub/SwiftyJIRA/Sources/Models/JIRAUser.swift",
+      "file": "/Users/goodle/github/BugHub/SwiftyJIRA/Sources/Models/JIRAUserJSONBean.swift",
       "line": 18,
-      "symbol": "JIRAUser.displayName",
+      "symbol": "JIRAUserJSONBean.displayName",
       "symbol_kind": "source.lang.swift.decl.var.instance",
       "warning": "undocumented"
     },
     {
-      "file": "/Users/goodle/github/BugHub/SwiftyJIRA/Sources/Models/JIRAUser.swift",
+      "file": "/Users/goodle/github/BugHub/SwiftyJIRA/Sources/Models/JIRAUserJSONBean.swift",
       "line": 19,
-      "symbol": "JIRAUser.active",
+      "symbol": "JIRAUserJSONBean.active",
       "symbol_kind": "source.lang.swift.decl.var.instance",
       "warning": "undocumented"
     },
     {
-      "file": "/Users/goodle/github/BugHub/SwiftyJIRA/Sources/Models/JIRAUser.swift",
+      "file": "/Users/goodle/github/BugHub/SwiftyJIRA/Sources/Models/JIRAUserJSONBean.swift",
       "line": 20,
-      "symbol": "JIRAUser.timeZone",
+      "symbol": "JIRAUserJSONBean.timeZone",
       "symbol_kind": "source.lang.swift.decl.var.instance",
       "warning": "undocumented"
     },
     {
-      "file": "/Users/goodle/github/BugHub/SwiftyJIRA/Sources/Models/JIRAUser.swift",
+      "file": "/Users/goodle/github/BugHub/SwiftyJIRA/Sources/Models/JIRAUserJSONBean.swift",
       "line": 21,
-      "symbol": "JIRAUser.locale",
+      "symbol": "JIRAUserJSONBean.locale",
       "symbol_kind": "source.lang.swift.decl.var.instance",
       "warning": "undocumented"
     },
     {
-      "file": "/Users/goodle/github/BugHub/SwiftyJIRA/Sources/Models/JIRAUser.swift",
+      "file": "/Users/goodle/github/BugHub/SwiftyJIRA/Sources/Models/JIRAUserJSONBean.swift",
       "line": 22,
-      "symbol": "JIRAUser.groups",
+      "symbol": "JIRAUserJSONBean.groups",
       "symbol_kind": "source.lang.swift.decl.var.instance",
       "warning": "undocumented"
     },
     {
-      "file": "/Users/goodle/github/BugHub/SwiftyJIRA/Sources/Models/JIRAUser.swift",
+      "file": "/Users/goodle/github/BugHub/SwiftyJIRA/Sources/Models/JIRAUserJSONBean.swift",
       "line": 23,
-      "symbol": "JIRAUser.applicationRoles",
+      "symbol": "JIRAUserJSONBean.applicationRoles",
       "symbol_kind": "source.lang.swift.decl.var.instance",
       "warning": "undocumented"
     },
     {
-      "file": "/Users/goodle/github/BugHub/SwiftyJIRA/Sources/Models/JIRAUser.swift",
+      "file": "/Users/goodle/github/BugHub/SwiftyJIRA/Sources/Models/JIRAUserJSONBean.swift",
       "line": 24,
-      "symbol": "JIRAUser.expand",
+      "symbol": "JIRAUserJSONBean.expand",
       "symbol_kind": "source.lang.swift.decl.var.instance",
       "warning": "undocumented"
     },
     {
-      "file": "/Users/goodle/github/BugHub/SwiftyJIRA/Sources/Models/JIRAUser.swift",
+      "file": "/Users/goodle/github/BugHub/SwiftyJIRA/Sources/Models/JIRAUserJSONBean.swift",
       "line": 29,
       "symbol": "JIRASimpleListWrapper.size",
       "symbol_kind": "source.lang.swift.decl.var.instance",
       "warning": "undocumented"
     },
     {
-      "file": "/Users/goodle/github/BugHub/SwiftyJIRA/Sources/Models/JIRAUser.swift",
+      "file": "/Users/goodle/github/BugHub/SwiftyJIRA/Sources/Models/JIRAUserJSONBean.swift",
       "line": 30,
       "symbol": "JIRASimpleListWrapper.max_results",
       "symbol_kind": "source.lang.swift.decl.var.instance",
       "warning": "undocumented"
     },
     {
-      "file": "/Users/goodle/github/BugHub/SwiftyJIRA/Sources/Models/JIRAUser.swift",
+      "file": "/Users/goodle/github/BugHub/SwiftyJIRA/Sources/Models/JIRAUserJSONBean.swift",
       "line": 31,
       "symbol": "JIRASimpleListWrapper.items",
       "symbol_kind": "source.lang.swift.decl.var.instance",
       "warning": "undocumented"
     },
     {
-      "file": "/Users/goodle/github/BugHub/SwiftyJIRA/Sources/Models/JIRAUser.swift",
+      "file": "/Users/goodle/github/BugHub/SwiftyJIRA/Sources/Models/JIRAUserJSONBean.swift",
       "line": 36,
-      "symbol": "JIRAGroup.name",
+      "symbol": "JIRAGroupJSONBean.name",
       "symbol_kind": "source.lang.swift.decl.var.instance",
       "warning": "undocumented"
     },
     {
-      "file": "/Users/goodle/github/BugHub/SwiftyJIRA/Sources/Models/JIRAUser.swift",
+      "file": "/Users/goodle/github/BugHub/SwiftyJIRA/Sources/Models/JIRAUserJSONBean.swift",
       "line": 37,
-      "symbol": "JIRAGroup.self",
+      "symbol": "JIRAGroupJSONBean.self",
       "symbol_kind": "source.lang.swift.decl.var.instance",
       "warning": "undocumented"
     },
@@ -1949,6 +3076,13 @@
     {
       "file": "/Users/goodle/github/BugHub/SwiftyJIRA/Sources/Models/JIRAWorkflowScheme.swift",
       "line": 14,
+      "symbol": "JIRAWorkflowScheme.description",
+      "symbol_kind": "source.lang.swift.decl.var.instance",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/goodle/github/BugHub/SwiftyJIRA/Sources/Models/JIRAWorkflowScheme.swift",
+      "line": 15,
       "symbol": "JIRAWorkflowScheme.defaultWorkflow",
       "symbol_kind": "source.lang.swift.decl.var.instance",
       "warning": "undocumented"
@@ -1956,56 +3090,133 @@
     {
       "file": "/Users/goodle/github/BugHub/SwiftyJIRA/Sources/Models/JIRAWorkflowScheme.swift",
       "line": 16,
-      "symbol": "JIRAWorkflowScheme.originalDefaultWorkflow",
+      "symbol": "JIRAWorkflowScheme.issueTypeMappings",
       "symbol_kind": "source.lang.swift.decl.var.instance",
       "warning": "undocumented"
     },
     {
       "file": "/Users/goodle/github/BugHub/SwiftyJIRA/Sources/Models/JIRAWorkflowScheme.swift",
       "line": 17,
-      "symbol": "JIRAWorkflowScheme.originalIssueTypeMappings",
+      "symbol": "JIRAWorkflowScheme.originalDefaultWorkflow",
       "symbol_kind": "source.lang.swift.decl.var.instance",
       "warning": "undocumented"
     },
     {
       "file": "/Users/goodle/github/BugHub/SwiftyJIRA/Sources/Models/JIRAWorkflowScheme.swift",
       "line": 18,
-      "symbol": "JIRAWorkflowScheme.draft",
+      "symbol": "JIRAWorkflowScheme.originalIssueTypeMappings",
       "symbol_kind": "source.lang.swift.decl.var.instance",
       "warning": "undocumented"
     },
     {
       "file": "/Users/goodle/github/BugHub/SwiftyJIRA/Sources/Models/JIRAWorkflowScheme.swift",
       "line": 19,
-      "symbol": "JIRAWorkflowScheme.lastModifiedUser",
+      "symbol": "JIRAWorkflowScheme.draft",
       "symbol_kind": "source.lang.swift.decl.var.instance",
       "warning": "undocumented"
     },
     {
       "file": "/Users/goodle/github/BugHub/SwiftyJIRA/Sources/Models/JIRAWorkflowScheme.swift",
       "line": 20,
-      "symbol": "JIRAWorkflowScheme.lastModified",
+      "symbol": "JIRAWorkflowScheme.lastModifiedUser",
       "symbol_kind": "source.lang.swift.decl.var.instance",
       "warning": "undocumented"
     },
     {
       "file": "/Users/goodle/github/BugHub/SwiftyJIRA/Sources/Models/JIRAWorkflowScheme.swift",
       "line": 21,
-      "symbol": "JIRAWorkflowScheme.self",
+      "symbol": "JIRAWorkflowScheme.lastModified",
       "symbol_kind": "source.lang.swift.decl.var.instance",
       "warning": "undocumented"
     },
     {
       "file": "/Users/goodle/github/BugHub/SwiftyJIRA/Sources/Models/JIRAWorkflowScheme.swift",
       "line": 22,
-      "symbol": "JIRAWorkflowScheme.updateDraftIfNeeded",
+      "symbol": "JIRAWorkflowScheme.self",
       "symbol_kind": "source.lang.swift.decl.var.instance",
       "warning": "undocumented"
     },
     {
       "file": "/Users/goodle/github/BugHub/SwiftyJIRA/Sources/Models/JIRAWorkflowScheme.swift",
       "line": 23,
+      "symbol": "JIRAWorkflowScheme.updateDraftIfNeeded",
+      "symbol_kind": "source.lang.swift.decl.var.instance",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/goodle/github/BugHub/SwiftyJIRA/Sources/Models/JIRAWorkflowScheme.swift",
+      "line": 24,
       "symbol": "JIRAWorkflowScheme.issueTypes",
+      "symbol_kind": "source.lang.swift.decl.var.instance",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/goodle/github/BugHub/SwiftyJIRA/Sources/Models/JIRAWorkflowScheme.swift",
+      "line": 29,
+      "symbol": "JIRAWorkflow.name",
+      "symbol_kind": "source.lang.swift.decl.var.instance",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/goodle/github/BugHub/SwiftyJIRA/Sources/Models/JIRAWorkflowScheme.swift",
+      "line": 30,
+      "symbol": "JIRAWorkflow.description",
+      "symbol_kind": "source.lang.swift.decl.var.instance",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/goodle/github/BugHub/SwiftyJIRA/Sources/Models/JIRAWorkflowScheme.swift",
+      "line": 31,
+      "symbol": "JIRAWorkflow.lastModifiedDate",
+      "symbol_kind": "source.lang.swift.decl.var.instance",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/goodle/github/BugHub/SwiftyJIRA/Sources/Models/JIRAWorkflowScheme.swift",
+      "line": 32,
+      "symbol": "JIRAWorkflow.lastModifiedUser",
+      "symbol_kind": "source.lang.swift.decl.var.instance",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/goodle/github/BugHub/SwiftyJIRA/Sources/Models/JIRAWorkflowScheme.swift",
+      "line": 33,
+      "symbol": "JIRAWorkflow.steps",
+      "symbol_kind": "source.lang.swift.decl.var.instance",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/goodle/github/BugHub/SwiftyJIRA/Sources/Models/JIRAWorkflowScheme.swift",
+      "line": 34,
+      "symbol": "JIRAWorkflow.default",
+      "symbol_kind": "source.lang.swift.decl.var.instance",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/goodle/github/BugHub/SwiftyJIRA/Sources/Models/JIRAWorkflowScheme.swift",
+      "line": 37,
+      "symbol": "JIRAWorkflowMapping",
+      "symbol_kind": "source.lang.swift.decl.struct",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/goodle/github/BugHub/SwiftyJIRA/Sources/Models/JIRAWorkflowScheme.swift",
+      "line": 38,
+      "symbol": "JIRAWorkflowMapping.workflow",
+      "symbol_kind": "source.lang.swift.decl.var.instance",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/goodle/github/BugHub/SwiftyJIRA/Sources/Models/JIRAWorkflowScheme.swift",
+      "line": 39,
+      "symbol": "JIRAWorkflowMapping.issueTypes",
+      "symbol_kind": "source.lang.swift.decl.var.instance",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/goodle/github/BugHub/SwiftyJIRA/Sources/Models/JIRAWorkflowScheme.swift",
+      "line": 40,
+      "symbol": "JIRAWorkflowMapping.defaultMapping",
       "symbol_kind": "source.lang.swift.decl.var.instance",
       "warning": "undocumented"
     },

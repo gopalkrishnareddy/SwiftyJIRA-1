@@ -14,7 +14,7 @@ public struct JIRACommentJSONBean: Codable {
     public var created: String?
     public var updateAuthor: JIRAUserJSONBean?
     public var updated: String?
-    public var `self`: String?
+    public var `self`: URL?
     public var body: String?
     public var properties: [JIRAEntityPropertyBean]?
     public var renderedBody: String?

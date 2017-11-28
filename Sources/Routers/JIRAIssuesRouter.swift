@@ -1,3 +1,10 @@
+//
+//  JIRAIssuesRouter.swift
+//  SwiftyJIRA
+//
+//  Created by Joe DeCapo on 11/28/17.
+//
+
 import Foundation
 import Alamofire
 
@@ -5,7 +12,7 @@ struct JIRAIssuesRouter: URLRequestConvertible {
     
     enum Action {
         case createIssue(body: JIRACreateIssueBody, params: Parameters)
-        case createIssues(params: Parameters)
+        case createIssues(body: JIRACreateIssuesBody)
         case getIssue(issueIdOrKey: String, params: Parameters)
         case deleteIssue(issueIdOrKey: String, params: Parameters)
         case editIssue(issueIdOrKey: String, params: Parameters)
@@ -45,10 +52,10 @@ struct JIRAIssuesRouter: URLRequestConvertible {
             method = .post
             parameters = params
             bodyData = try JSONEncoder().encode(body)
-        case .createIssues(let params):
+        case .createIssues(let body):
             method = .post
             relativePath = "bulk"
-            parameters = params
+            bodyData = try JSONEncoder().encode(body)
         case .getIssue(let issueIdOrKey, let params):
             method = .get
             relativePath = "\(issueIdOrKey)"

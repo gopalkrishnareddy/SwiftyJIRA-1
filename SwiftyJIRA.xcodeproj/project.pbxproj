@@ -9,11 +9,11 @@
 /* Begin PBXAggregateTarget section */
 		"SwiftyJIRA::SwiftyJIRAPackageTests::ProductTarget" /* SwiftyJIRAPackageTests */ = {
 			isa = PBXAggregateTarget;
-			buildConfigurationList = OBJ_134 /* Build configuration list for PBXAggregateTarget "SwiftyJIRAPackageTests" */;
+			buildConfigurationList = OBJ_167 /* Build configuration list for PBXAggregateTarget "SwiftyJIRAPackageTests" */;
 			buildPhases = (
 			);
 			dependencies = (
-				OBJ_137 /* PBXTargetDependency */,
+				OBJ_170 /* PBXTargetDependency */,
 			);
 			name = SwiftyJIRAPackageTests;
 			productName = SwiftyJIRAPackageTests;
@@ -21,74 +21,88 @@
 /* End PBXAggregateTarget section */
 
 /* Begin PBXBuildFile section */
-		C6ED80851FCAEDDA0004E9A7 /* JIRARemoteLink.swift in Sources */ = {isa = PBXBuildFile; fileRef = C6ED80831FCAEDD00004E9A7 /* JIRARemoteLink.swift */; };
-		OBJ_100 /* JIRAIssueWebhookEvent.swift in Sources */ = {isa = PBXBuildFile; fileRef = OBJ_23 /* JIRAIssueWebhookEvent.swift */; };
-		OBJ_101 /* JIRAIssuelinkWebhookEvent.swift in Sources */ = {isa = PBXBuildFile; fileRef = OBJ_24 /* JIRAIssuelinkWebhookEvent.swift */; };
-		OBJ_102 /* JIRAProject.swift in Sources */ = {isa = PBXBuildFile; fileRef = OBJ_25 /* JIRAProject.swift */; };
-		OBJ_103 /* JIRASprintWebhookEvent.swift in Sources */ = {isa = PBXBuildFile; fileRef = OBJ_26 /* JIRASprintWebhookEvent.swift */; };
-		OBJ_104 /* JIRAUserJSONBean.swift in Sources */ = {isa = PBXBuildFile; fileRef = OBJ_27 /* JIRAUserJSONBean.swift */; };
-		OBJ_105 /* JIRAWorkflowScheme.swift in Sources */ = {isa = PBXBuildFile; fileRef = OBJ_28 /* JIRAWorkflowScheme.swift */; };
-		OBJ_106 /* JIRAWorklogWebhookEvent.swift in Sources */ = {isa = PBXBuildFile; fileRef = OBJ_29 /* JIRAWorklogWebhookEvent.swift */; };
-		OBJ_107 /* JIRAIssuesRouter.swift in Sources */ = {isa = PBXBuildFile; fileRef = OBJ_31 /* JIRAIssuesRouter.swift */; };
-		OBJ_109 /* Alamofire.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = "Alamofire::Alamofire::Product" /* Alamofire.framework */; };
-		OBJ_115 /* AFError.swift in Sources */ = {isa = PBXBuildFile; fileRef = OBJ_39 /* AFError.swift */; };
-		OBJ_116 /* Alamofire.swift in Sources */ = {isa = PBXBuildFile; fileRef = OBJ_40 /* Alamofire.swift */; };
-		OBJ_117 /* DispatchQueue+Alamofire.swift in Sources */ = {isa = PBXBuildFile; fileRef = OBJ_41 /* DispatchQueue+Alamofire.swift */; };
-		OBJ_118 /* MultipartFormData.swift in Sources */ = {isa = PBXBuildFile; fileRef = OBJ_42 /* MultipartFormData.swift */; };
-		OBJ_119 /* NetworkReachabilityManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = OBJ_43 /* NetworkReachabilityManager.swift */; };
-		OBJ_120 /* Notifications.swift in Sources */ = {isa = PBXBuildFile; fileRef = OBJ_44 /* Notifications.swift */; };
-		OBJ_121 /* ParameterEncoding.swift in Sources */ = {isa = PBXBuildFile; fileRef = OBJ_45 /* ParameterEncoding.swift */; };
-		OBJ_122 /* Request.swift in Sources */ = {isa = PBXBuildFile; fileRef = OBJ_46 /* Request.swift */; };
-		OBJ_123 /* Response.swift in Sources */ = {isa = PBXBuildFile; fileRef = OBJ_47 /* Response.swift */; };
-		OBJ_124 /* ResponseSerialization.swift in Sources */ = {isa = PBXBuildFile; fileRef = OBJ_48 /* ResponseSerialization.swift */; };
-		OBJ_125 /* Result.swift in Sources */ = {isa = PBXBuildFile; fileRef = OBJ_49 /* Result.swift */; };
-		OBJ_126 /* ServerTrustPolicy.swift in Sources */ = {isa = PBXBuildFile; fileRef = OBJ_50 /* ServerTrustPolicy.swift */; };
-		OBJ_127 /* SessionDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = OBJ_51 /* SessionDelegate.swift */; };
-		OBJ_128 /* SessionManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = OBJ_52 /* SessionManager.swift */; };
-		OBJ_129 /* TaskDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = OBJ_53 /* TaskDelegate.swift */; };
-		OBJ_130 /* Timeline.swift in Sources */ = {isa = PBXBuildFile; fileRef = OBJ_54 /* Timeline.swift */; };
-		OBJ_131 /* Validation.swift in Sources */ = {isa = PBXBuildFile; fileRef = OBJ_55 /* Validation.swift */; };
-		OBJ_65 /* Package.swift in Sources */ = {isa = PBXBuildFile; fileRef = OBJ_6 /* Package.swift */; };
-		OBJ_71 /* Package.swift in Sources */ = {isa = PBXBuildFile; fileRef = OBJ_38 /* Package.swift */; };
-		OBJ_77 /* IssuesTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = OBJ_34 /* IssuesTests.swift */; };
-		OBJ_79 /* SwiftyJIRA.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = "SwiftyJIRA::SwiftyJIRA::Product" /* SwiftyJIRA.framework */; };
-		OBJ_80 /* Alamofire.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = "Alamofire::Alamofire::Product" /* Alamofire.framework */; };
-		OBJ_89 /* JIRAIssuesController.swift in Sources */ = {isa = PBXBuildFile; fileRef = OBJ_10 /* JIRAIssuesController.swift */; };
-		OBJ_90 /* Array+ParameterEncoding.swift in Sources */ = {isa = PBXBuildFile; fileRef = OBJ_12 /* Array+ParameterEncoding.swift */; };
-		OBJ_91 /* Date+IS08601.swift in Sources */ = {isa = PBXBuildFile; fileRef = OBJ_13 /* Date+IS08601.swift */; };
-		OBJ_92 /* HexColor.swift in Sources */ = {isa = PBXBuildFile; fileRef = OBJ_14 /* HexColor.swift */; };
-		OBJ_93 /* JIRAGlobals.swift in Sources */ = {isa = PBXBuildFile; fileRef = OBJ_15 /* JIRAGlobals.swift */; };
-		OBJ_94 /* JIRAAttachmentWebhookEvent.swift in Sources */ = {isa = PBXBuildFile; fileRef = OBJ_17 /* JIRAAttachmentWebhookEvent.swift */; };
-		OBJ_95 /* JIRACommentJSONBean.swift in Sources */ = {isa = PBXBuildFile; fileRef = OBJ_18 /* JIRACommentJSONBean.swift */; };
-		OBJ_96 /* JIRACommentWebhookEvent.swift in Sources */ = {isa = PBXBuildFile; fileRef = OBJ_19 /* JIRACommentWebhookEvent.swift */; };
-		OBJ_97 /* JIRAEnums.swift in Sources */ = {isa = PBXBuildFile; fileRef = OBJ_20 /* JIRAEnums.swift */; };
-		OBJ_98 /* JIRAEvents.swift in Sources */ = {isa = PBXBuildFile; fileRef = OBJ_21 /* JIRAEvents.swift */; };
-		OBJ_99 /* JIRAIssue.swift in Sources */ = {isa = PBXBuildFile; fileRef = OBJ_22 /* JIRAIssue.swift */; };
+		OBJ_107 /* JIRAIssuesController+Comments.swift in Sources */ = {isa = PBXBuildFile; fileRef = OBJ_10 /* JIRAIssuesController+Comments.swift */; };
+		OBJ_108 /* JIRAIssuesController+IssueLinks.swift in Sources */ = {isa = PBXBuildFile; fileRef = OBJ_11 /* JIRAIssuesController+IssueLinks.swift */; };
+		OBJ_109 /* JIRAIssuesController+IssueType.swift in Sources */ = {isa = PBXBuildFile; fileRef = OBJ_12 /* JIRAIssuesController+IssueType.swift */; };
+		OBJ_110 /* JIRAIssuesController.swift in Sources */ = {isa = PBXBuildFile; fileRef = OBJ_13 /* JIRAIssuesController.swift */; };
+		OBJ_111 /* JIRAProjectsController.swift in Sources */ = {isa = PBXBuildFile; fileRef = OBJ_15 /* JIRAProjectsController.swift */; };
+		OBJ_112 /* JIRAStatusesController+StatusCategory.swift in Sources */ = {isa = PBXBuildFile; fileRef = OBJ_17 /* JIRAStatusesController+StatusCategory.swift */; };
+		OBJ_113 /* JIRAStatusesController.swift in Sources */ = {isa = PBXBuildFile; fileRef = OBJ_18 /* JIRAStatusesController.swift */; };
+		OBJ_114 /* JIRAWorkflowsController+WorkflowScheme.swift in Sources */ = {isa = PBXBuildFile; fileRef = OBJ_20 /* JIRAWorkflowsController+WorkflowScheme.swift */; };
+		OBJ_115 /* JIRAWorkflowsController.swift in Sources */ = {isa = PBXBuildFile; fileRef = OBJ_21 /* JIRAWorkflowsController.swift */; };
+		OBJ_116 /* Array+ParameterEncoding.swift in Sources */ = {isa = PBXBuildFile; fileRef = OBJ_23 /* Array+ParameterEncoding.swift */; };
+		OBJ_117 /* Date+IS08601.swift in Sources */ = {isa = PBXBuildFile; fileRef = OBJ_24 /* Date+IS08601.swift */; };
+		OBJ_118 /* HexColor.swift in Sources */ = {isa = PBXBuildFile; fileRef = OBJ_25 /* HexColor.swift */; };
+		OBJ_119 /* JIRAGlobals.swift in Sources */ = {isa = PBXBuildFile; fileRef = OBJ_26 /* JIRAGlobals.swift */; };
+		OBJ_120 /* JIRAAttachmentWebhookEvent.swift in Sources */ = {isa = PBXBuildFile; fileRef = OBJ_28 /* JIRAAttachmentWebhookEvent.swift */; };
+		OBJ_121 /* JIRACommentJSONBean.swift in Sources */ = {isa = PBXBuildFile; fileRef = OBJ_29 /* JIRACommentJSONBean.swift */; };
+		OBJ_122 /* JIRACommentWebhookEvent.swift in Sources */ = {isa = PBXBuildFile; fileRef = OBJ_30 /* JIRACommentWebhookEvent.swift */; };
+		OBJ_123 /* JIRAEnums.swift in Sources */ = {isa = PBXBuildFile; fileRef = OBJ_31 /* JIRAEnums.swift */; };
+		OBJ_124 /* JIRAEvents.swift in Sources */ = {isa = PBXBuildFile; fileRef = OBJ_32 /* JIRAEvents.swift */; };
+		OBJ_125 /* JIRAIssue.swift in Sources */ = {isa = PBXBuildFile; fileRef = OBJ_33 /* JIRAIssue.swift */; };
+		OBJ_126 /* JIRAIssueWebhookEvent.swift in Sources */ = {isa = PBXBuildFile; fileRef = OBJ_34 /* JIRAIssueWebhookEvent.swift */; };
+		OBJ_127 /* JIRAIssuelinkWebhookEvent.swift in Sources */ = {isa = PBXBuildFile; fileRef = OBJ_35 /* JIRAIssuelinkWebhookEvent.swift */; };
+		OBJ_128 /* JIRAProject.swift in Sources */ = {isa = PBXBuildFile; fileRef = OBJ_36 /* JIRAProject.swift */; };
+		OBJ_129 /* JIRARemoteLink.swift in Sources */ = {isa = PBXBuildFile; fileRef = OBJ_37 /* JIRARemoteLink.swift */; };
+		OBJ_130 /* JIRASprintWebhookEvent.swift in Sources */ = {isa = PBXBuildFile; fileRef = OBJ_38 /* JIRASprintWebhookEvent.swift */; };
+		OBJ_131 /* JIRAUserJSONBean.swift in Sources */ = {isa = PBXBuildFile; fileRef = OBJ_39 /* JIRAUserJSONBean.swift */; };
+		OBJ_132 /* JIRAWorkflowScheme.swift in Sources */ = {isa = PBXBuildFile; fileRef = OBJ_40 /* JIRAWorkflowScheme.swift */; };
+		OBJ_133 /* JIRAWorklogWebhookEvent.swift in Sources */ = {isa = PBXBuildFile; fileRef = OBJ_41 /* JIRAWorklogWebhookEvent.swift */; };
+		OBJ_134 /* JIRAIssueTypeRouter.swift in Sources */ = {isa = PBXBuildFile; fileRef = OBJ_43 /* JIRAIssueTypeRouter.swift */; };
+		OBJ_135 /* JIRAIssuesRouter.swift in Sources */ = {isa = PBXBuildFile; fileRef = OBJ_44 /* JIRAIssuesRouter.swift */; };
+		OBJ_136 /* JIRAProjectsRouter.swift in Sources */ = {isa = PBXBuildFile; fileRef = OBJ_45 /* JIRAProjectsRouter.swift */; };
+		OBJ_137 /* JIRAStatusCategoriesRouter.swift in Sources */ = {isa = PBXBuildFile; fileRef = OBJ_46 /* JIRAStatusCategoriesRouter.swift */; };
+		OBJ_138 /* JIRAStatusesRouter.swift in Sources */ = {isa = PBXBuildFile; fileRef = OBJ_47 /* JIRAStatusesRouter.swift */; };
+		OBJ_139 /* JIRAWorkflowSchemesRouter.swift in Sources */ = {isa = PBXBuildFile; fileRef = OBJ_48 /* JIRAWorkflowSchemesRouter.swift */; };
+		OBJ_140 /* JIRAWorkflowsRouter.swift in Sources */ = {isa = PBXBuildFile; fileRef = OBJ_49 /* JIRAWorkflowsRouter.swift */; };
+		OBJ_142 /* Alamofire.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = "Alamofire::Alamofire::Product" /* Alamofire.framework */; };
+		OBJ_148 /* AFError.swift in Sources */ = {isa = PBXBuildFile; fileRef = OBJ_57 /* AFError.swift */; };
+		OBJ_149 /* Alamofire.swift in Sources */ = {isa = PBXBuildFile; fileRef = OBJ_58 /* Alamofire.swift */; };
+		OBJ_150 /* DispatchQueue+Alamofire.swift in Sources */ = {isa = PBXBuildFile; fileRef = OBJ_59 /* DispatchQueue+Alamofire.swift */; };
+		OBJ_151 /* MultipartFormData.swift in Sources */ = {isa = PBXBuildFile; fileRef = OBJ_60 /* MultipartFormData.swift */; };
+		OBJ_152 /* NetworkReachabilityManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = OBJ_61 /* NetworkReachabilityManager.swift */; };
+		OBJ_153 /* Notifications.swift in Sources */ = {isa = PBXBuildFile; fileRef = OBJ_62 /* Notifications.swift */; };
+		OBJ_154 /* ParameterEncoding.swift in Sources */ = {isa = PBXBuildFile; fileRef = OBJ_63 /* ParameterEncoding.swift */; };
+		OBJ_155 /* Request.swift in Sources */ = {isa = PBXBuildFile; fileRef = OBJ_64 /* Request.swift */; };
+		OBJ_156 /* Response.swift in Sources */ = {isa = PBXBuildFile; fileRef = OBJ_65 /* Response.swift */; };
+		OBJ_157 /* ResponseSerialization.swift in Sources */ = {isa = PBXBuildFile; fileRef = OBJ_66 /* ResponseSerialization.swift */; };
+		OBJ_158 /* Result.swift in Sources */ = {isa = PBXBuildFile; fileRef = OBJ_67 /* Result.swift */; };
+		OBJ_159 /* ServerTrustPolicy.swift in Sources */ = {isa = PBXBuildFile; fileRef = OBJ_68 /* ServerTrustPolicy.swift */; };
+		OBJ_160 /* SessionDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = OBJ_69 /* SessionDelegate.swift */; };
+		OBJ_161 /* SessionManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = OBJ_70 /* SessionManager.swift */; };
+		OBJ_162 /* TaskDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = OBJ_71 /* TaskDelegate.swift */; };
+		OBJ_163 /* Timeline.swift in Sources */ = {isa = PBXBuildFile; fileRef = OBJ_72 /* Timeline.swift */; };
+		OBJ_164 /* Validation.swift in Sources */ = {isa = PBXBuildFile; fileRef = OBJ_73 /* Validation.swift */; };
+		OBJ_83 /* Package.swift in Sources */ = {isa = PBXBuildFile; fileRef = OBJ_6 /* Package.swift */; };
+		OBJ_89 /* Package.swift in Sources */ = {isa = PBXBuildFile; fileRef = OBJ_56 /* Package.swift */; };
+		OBJ_95 /* IssuesTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = OBJ_52 /* IssuesTests.swift */; };
+		OBJ_97 /* SwiftyJIRA.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = "SwiftyJIRA::SwiftyJIRA::Product" /* SwiftyJIRA.framework */; };
+		OBJ_98 /* Alamofire.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = "Alamofire::Alamofire::Product" /* Alamofire.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
-		C6ED807F1FCA5DE10004E9A7 /* PBXContainerItemProxy */ = {
+		C63407491FCE2E1E00A9CDD0 /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
 			containerPortal = OBJ_1 /* Project object */;
 			proxyType = 1;
 			remoteGlobalIDString = "Alamofire::Alamofire";
 			remoteInfo = Alamofire;
 		};
-		C6ED80801FCA5DE10004E9A7 /* PBXContainerItemProxy */ = {
+		C634074A1FCE2E1E00A9CDD0 /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
 			containerPortal = OBJ_1 /* Project object */;
 			proxyType = 1;
 			remoteGlobalIDString = "SwiftyJIRA::SwiftyJIRA";
 			remoteInfo = SwiftyJIRA;
 		};
-		C6ED80811FCA5DE10004E9A7 /* PBXContainerItemProxy */ = {
+		C634074B1FCE2E1E00A9CDD0 /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
 			containerPortal = OBJ_1 /* Project object */;
 			proxyType = 1;
 			remoteGlobalIDString = "Alamofire::Alamofire";
 			remoteInfo = Alamofire;
 		};
-		C6ED80821FCA5DE10004E9A7 /* PBXContainerItemProxy */ = {
+		C634074C1FCE2E1E00A9CDD0 /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
 			containerPortal = OBJ_1 /* Project object */;
 			proxyType = 1;
@@ -99,182 +113,240 @@
 
 /* Begin PBXFileReference section */
 		"Alamofire::Alamofire::Product" /* Alamofire.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; path = Alamofire.framework; sourceTree = BUILT_PRODUCTS_DIR; };
-		C6ED80831FCAEDD00004E9A7 /* JIRARemoteLink.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = JIRARemoteLink.swift; sourceTree = "<group>"; };
-		OBJ_10 /* JIRAIssuesController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = JIRAIssuesController.swift; sourceTree = "<group>"; };
-		OBJ_12 /* Array+ParameterEncoding.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Array+ParameterEncoding.swift"; sourceTree = "<group>"; };
-		OBJ_13 /* Date+IS08601.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Date+IS08601.swift"; sourceTree = "<group>"; };
-		OBJ_14 /* HexColor.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HexColor.swift; sourceTree = "<group>"; };
-		OBJ_15 /* JIRAGlobals.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = JIRAGlobals.swift; sourceTree = "<group>"; };
-		OBJ_17 /* JIRAAttachmentWebhookEvent.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = JIRAAttachmentWebhookEvent.swift; sourceTree = "<group>"; };
-		OBJ_18 /* JIRACommentJSONBean.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = JIRACommentJSONBean.swift; sourceTree = "<group>"; };
-		OBJ_19 /* JIRACommentWebhookEvent.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = JIRACommentWebhookEvent.swift; sourceTree = "<group>"; };
-		OBJ_20 /* JIRAEnums.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = JIRAEnums.swift; sourceTree = "<group>"; };
-		OBJ_21 /* JIRAEvents.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = JIRAEvents.swift; sourceTree = "<group>"; };
-		OBJ_22 /* JIRAIssue.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = JIRAIssue.swift; sourceTree = "<group>"; };
-		OBJ_23 /* JIRAIssueWebhookEvent.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = JIRAIssueWebhookEvent.swift; sourceTree = "<group>"; };
-		OBJ_24 /* JIRAIssuelinkWebhookEvent.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = JIRAIssuelinkWebhookEvent.swift; sourceTree = "<group>"; };
-		OBJ_25 /* JIRAProject.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = JIRAProject.swift; sourceTree = "<group>"; };
-		OBJ_26 /* JIRASprintWebhookEvent.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = JIRASprintWebhookEvent.swift; sourceTree = "<group>"; };
-		OBJ_27 /* JIRAUserJSONBean.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = JIRAUserJSONBean.swift; sourceTree = "<group>"; };
-		OBJ_28 /* JIRAWorkflowScheme.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = JIRAWorkflowScheme.swift; sourceTree = "<group>"; };
-		OBJ_29 /* JIRAWorklogWebhookEvent.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = JIRAWorklogWebhookEvent.swift; sourceTree = "<group>"; };
-		OBJ_31 /* JIRAIssuesRouter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = JIRAIssuesRouter.swift; sourceTree = "<group>"; };
-		OBJ_34 /* IssuesTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = IssuesTests.swift; sourceTree = "<group>"; };
-		OBJ_35 /* script */ = {isa = PBXFileReference; lastKnownFileType = folder; path = script; sourceTree = SOURCE_ROOT; };
-		OBJ_38 /* Package.swift */ = {isa = PBXFileReference; explicitFileType = sourcecode.swift; name = Package.swift; path = "/Users/goodle/github/BugHub/SwiftyJIRA/.build/checkouts/Alamofire.git-1442282756688770939/Package.swift"; sourceTree = "<group>"; };
-		OBJ_39 /* AFError.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AFError.swift; sourceTree = "<group>"; };
-		OBJ_40 /* Alamofire.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Alamofire.swift; sourceTree = "<group>"; };
-		OBJ_41 /* DispatchQueue+Alamofire.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "DispatchQueue+Alamofire.swift"; sourceTree = "<group>"; };
-		OBJ_42 /* MultipartFormData.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MultipartFormData.swift; sourceTree = "<group>"; };
-		OBJ_43 /* NetworkReachabilityManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NetworkReachabilityManager.swift; sourceTree = "<group>"; };
-		OBJ_44 /* Notifications.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Notifications.swift; sourceTree = "<group>"; };
-		OBJ_45 /* ParameterEncoding.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ParameterEncoding.swift; sourceTree = "<group>"; };
-		OBJ_46 /* Request.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Request.swift; sourceTree = "<group>"; };
-		OBJ_47 /* Response.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Response.swift; sourceTree = "<group>"; };
-		OBJ_48 /* ResponseSerialization.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ResponseSerialization.swift; sourceTree = "<group>"; };
-		OBJ_49 /* Result.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Result.swift; sourceTree = "<group>"; };
-		OBJ_50 /* ServerTrustPolicy.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ServerTrustPolicy.swift; sourceTree = "<group>"; };
-		OBJ_51 /* SessionDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SessionDelegate.swift; sourceTree = "<group>"; };
-		OBJ_52 /* SessionManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SessionManager.swift; sourceTree = "<group>"; };
-		OBJ_53 /* TaskDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TaskDelegate.swift; sourceTree = "<group>"; };
-		OBJ_54 /* Timeline.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Timeline.swift; sourceTree = "<group>"; };
-		OBJ_55 /* Validation.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Validation.swift; sourceTree = "<group>"; };
+		OBJ_10 /* JIRAIssuesController+Comments.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "JIRAIssuesController+Comments.swift"; sourceTree = "<group>"; };
+		OBJ_11 /* JIRAIssuesController+IssueLinks.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "JIRAIssuesController+IssueLinks.swift"; sourceTree = "<group>"; };
+		OBJ_12 /* JIRAIssuesController+IssueType.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "JIRAIssuesController+IssueType.swift"; sourceTree = "<group>"; };
+		OBJ_13 /* JIRAIssuesController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = JIRAIssuesController.swift; sourceTree = "<group>"; };
+		OBJ_15 /* JIRAProjectsController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = JIRAProjectsController.swift; sourceTree = "<group>"; };
+		OBJ_17 /* JIRAStatusesController+StatusCategory.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "JIRAStatusesController+StatusCategory.swift"; sourceTree = "<group>"; };
+		OBJ_18 /* JIRAStatusesController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = JIRAStatusesController.swift; sourceTree = "<group>"; };
+		OBJ_20 /* JIRAWorkflowsController+WorkflowScheme.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "JIRAWorkflowsController+WorkflowScheme.swift"; sourceTree = "<group>"; };
+		OBJ_21 /* JIRAWorkflowsController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = JIRAWorkflowsController.swift; sourceTree = "<group>"; };
+		OBJ_23 /* Array+ParameterEncoding.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Array+ParameterEncoding.swift"; sourceTree = "<group>"; };
+		OBJ_24 /* Date+IS08601.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Date+IS08601.swift"; sourceTree = "<group>"; };
+		OBJ_25 /* HexColor.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HexColor.swift; sourceTree = "<group>"; };
+		OBJ_26 /* JIRAGlobals.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = JIRAGlobals.swift; sourceTree = "<group>"; };
+		OBJ_28 /* JIRAAttachmentWebhookEvent.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = JIRAAttachmentWebhookEvent.swift; sourceTree = "<group>"; };
+		OBJ_29 /* JIRACommentJSONBean.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = JIRACommentJSONBean.swift; sourceTree = "<group>"; };
+		OBJ_30 /* JIRACommentWebhookEvent.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = JIRACommentWebhookEvent.swift; sourceTree = "<group>"; };
+		OBJ_31 /* JIRAEnums.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = JIRAEnums.swift; sourceTree = "<group>"; };
+		OBJ_32 /* JIRAEvents.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = JIRAEvents.swift; sourceTree = "<group>"; };
+		OBJ_33 /* JIRAIssue.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = JIRAIssue.swift; sourceTree = "<group>"; };
+		OBJ_34 /* JIRAIssueWebhookEvent.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = JIRAIssueWebhookEvent.swift; sourceTree = "<group>"; };
+		OBJ_35 /* JIRAIssuelinkWebhookEvent.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = JIRAIssuelinkWebhookEvent.swift; sourceTree = "<group>"; };
+		OBJ_36 /* JIRAProject.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = JIRAProject.swift; sourceTree = "<group>"; };
+		OBJ_37 /* JIRARemoteLink.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = JIRARemoteLink.swift; sourceTree = "<group>"; };
+		OBJ_38 /* JIRASprintWebhookEvent.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = JIRASprintWebhookEvent.swift; sourceTree = "<group>"; };
+		OBJ_39 /* JIRAUserJSONBean.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = JIRAUserJSONBean.swift; sourceTree = "<group>"; };
+		OBJ_40 /* JIRAWorkflowScheme.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = JIRAWorkflowScheme.swift; sourceTree = "<group>"; };
+		OBJ_41 /* JIRAWorklogWebhookEvent.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = JIRAWorklogWebhookEvent.swift; sourceTree = "<group>"; };
+		OBJ_43 /* JIRAIssueTypeRouter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = JIRAIssueTypeRouter.swift; sourceTree = "<group>"; };
+		OBJ_44 /* JIRAIssuesRouter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = JIRAIssuesRouter.swift; sourceTree = "<group>"; };
+		OBJ_45 /* JIRAProjectsRouter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = JIRAProjectsRouter.swift; sourceTree = "<group>"; };
+		OBJ_46 /* JIRAStatusCategoriesRouter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = JIRAStatusCategoriesRouter.swift; sourceTree = "<group>"; };
+		OBJ_47 /* JIRAStatusesRouter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = JIRAStatusesRouter.swift; sourceTree = "<group>"; };
+		OBJ_48 /* JIRAWorkflowSchemesRouter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = JIRAWorkflowSchemesRouter.swift; sourceTree = "<group>"; };
+		OBJ_49 /* JIRAWorkflowsRouter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = JIRAWorkflowsRouter.swift; sourceTree = "<group>"; };
+		OBJ_52 /* IssuesTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = IssuesTests.swift; sourceTree = "<group>"; };
+		OBJ_53 /* script */ = {isa = PBXFileReference; lastKnownFileType = folder; path = script; sourceTree = SOURCE_ROOT; };
+		OBJ_56 /* Package.swift */ = {isa = PBXFileReference; explicitFileType = sourcecode.swift; name = Package.swift; path = "/Users/goodle/github/BugHub/SwiftyJIRA/.build/checkouts/Alamofire.git-1442282756688770939/Package.swift"; sourceTree = "<group>"; };
+		OBJ_57 /* AFError.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AFError.swift; sourceTree = "<group>"; };
+		OBJ_58 /* Alamofire.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Alamofire.swift; sourceTree = "<group>"; };
+		OBJ_59 /* DispatchQueue+Alamofire.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "DispatchQueue+Alamofire.swift"; sourceTree = "<group>"; };
 		OBJ_6 /* Package.swift */ = {isa = PBXFileReference; explicitFileType = sourcecode.swift; path = Package.swift; sourceTree = "<group>"; };
+		OBJ_60 /* MultipartFormData.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MultipartFormData.swift; sourceTree = "<group>"; };
+		OBJ_61 /* NetworkReachabilityManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NetworkReachabilityManager.swift; sourceTree = "<group>"; };
+		OBJ_62 /* Notifications.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Notifications.swift; sourceTree = "<group>"; };
+		OBJ_63 /* ParameterEncoding.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ParameterEncoding.swift; sourceTree = "<group>"; };
+		OBJ_64 /* Request.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Request.swift; sourceTree = "<group>"; };
+		OBJ_65 /* Response.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Response.swift; sourceTree = "<group>"; };
+		OBJ_66 /* ResponseSerialization.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ResponseSerialization.swift; sourceTree = "<group>"; };
+		OBJ_67 /* Result.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Result.swift; sourceTree = "<group>"; };
+		OBJ_68 /* ServerTrustPolicy.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ServerTrustPolicy.swift; sourceTree = "<group>"; };
+		OBJ_69 /* SessionDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SessionDelegate.swift; sourceTree = "<group>"; };
+		OBJ_70 /* SessionManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SessionManager.swift; sourceTree = "<group>"; };
+		OBJ_71 /* TaskDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TaskDelegate.swift; sourceTree = "<group>"; };
+		OBJ_72 /* Timeline.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Timeline.swift; sourceTree = "<group>"; };
+		OBJ_73 /* Validation.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Validation.swift; sourceTree = "<group>"; };
 		"SwiftyJIRA::SwiftyJIRA::Product" /* SwiftyJIRA.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; path = SwiftyJIRA.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		"SwiftyJIRA::SwiftyJIRATests::Product" /* SwiftyJIRATests.xctest */ = {isa = PBXFileReference; lastKnownFileType = file; path = SwiftyJIRATests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
-		OBJ_108 /* Frameworks */ = {
+		OBJ_141 /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 0;
 			files = (
-				OBJ_109 /* Alamofire.framework in Frameworks */,
+				OBJ_142 /* Alamofire.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		OBJ_132 /* Frameworks */ = {
+		OBJ_165 /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 0;
 			files = (
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		OBJ_78 /* Frameworks */ = {
+		OBJ_96 /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 0;
 			files = (
-				OBJ_79 /* SwiftyJIRA.framework in Frameworks */,
-				OBJ_80 /* Alamofire.framework in Frameworks */,
+				OBJ_97 /* SwiftyJIRA.framework in Frameworks */,
+				OBJ_98 /* Alamofire.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
-		OBJ_11 /* Extensions */ = {
+		OBJ_14 /* Projects */ = {
 			isa = PBXGroup;
 			children = (
-				OBJ_12 /* Array+ParameterEncoding.swift */,
-				OBJ_13 /* Date+IS08601.swift */,
+				OBJ_15 /* JIRAProjectsController.swift */,
+			);
+			path = Projects;
+			sourceTree = "<group>";
+		};
+		OBJ_16 /* Statuses */ = {
+			isa = PBXGroup;
+			children = (
+				OBJ_17 /* JIRAStatusesController+StatusCategory.swift */,
+				OBJ_18 /* JIRAStatusesController.swift */,
+			);
+			path = Statuses;
+			sourceTree = "<group>";
+		};
+		OBJ_19 /* Workflows */ = {
+			isa = PBXGroup;
+			children = (
+				OBJ_20 /* JIRAWorkflowsController+WorkflowScheme.swift */,
+				OBJ_21 /* JIRAWorkflowsController.swift */,
+			);
+			path = Workflows;
+			sourceTree = "<group>";
+		};
+		OBJ_22 /* Extensions */ = {
+			isa = PBXGroup;
+			children = (
+				OBJ_23 /* Array+ParameterEncoding.swift */,
+				OBJ_24 /* Date+IS08601.swift */,
 			);
 			path = Extensions;
 			sourceTree = "<group>";
 		};
-		OBJ_16 /* Models */ = {
+		OBJ_27 /* Models */ = {
 			isa = PBXGroup;
 			children = (
-				OBJ_17 /* JIRAAttachmentWebhookEvent.swift */,
-				OBJ_18 /* JIRACommentJSONBean.swift */,
-				OBJ_19 /* JIRACommentWebhookEvent.swift */,
-				OBJ_20 /* JIRAEnums.swift */,
-				OBJ_21 /* JIRAEvents.swift */,
-				OBJ_22 /* JIRAIssue.swift */,
-				OBJ_23 /* JIRAIssueWebhookEvent.swift */,
-				OBJ_24 /* JIRAIssuelinkWebhookEvent.swift */,
-				OBJ_25 /* JIRAProject.swift */,
-				C6ED80831FCAEDD00004E9A7 /* JIRARemoteLink.swift */,
-				OBJ_26 /* JIRASprintWebhookEvent.swift */,
-				OBJ_27 /* JIRAUserJSONBean.swift */,
-				OBJ_28 /* JIRAWorkflowScheme.swift */,
-				OBJ_29 /* JIRAWorklogWebhookEvent.swift */,
+				OBJ_28 /* JIRAAttachmentWebhookEvent.swift */,
+				OBJ_29 /* JIRACommentJSONBean.swift */,
+				OBJ_30 /* JIRACommentWebhookEvent.swift */,
+				OBJ_31 /* JIRAEnums.swift */,
+				OBJ_32 /* JIRAEvents.swift */,
+				OBJ_33 /* JIRAIssue.swift */,
+				OBJ_34 /* JIRAIssueWebhookEvent.swift */,
+				OBJ_35 /* JIRAIssuelinkWebhookEvent.swift */,
+				OBJ_36 /* JIRAProject.swift */,
+				OBJ_37 /* JIRARemoteLink.swift */,
+				OBJ_38 /* JIRASprintWebhookEvent.swift */,
+				OBJ_39 /* JIRAUserJSONBean.swift */,
+				OBJ_40 /* JIRAWorkflowScheme.swift */,
+				OBJ_41 /* JIRAWorklogWebhookEvent.swift */,
 			);
 			path = Models;
 			sourceTree = "<group>";
 		};
-		OBJ_30 /* Routers */ = {
+		OBJ_42 /* Routers */ = {
 			isa = PBXGroup;
 			children = (
-				OBJ_31 /* JIRAIssuesRouter.swift */,
+				OBJ_43 /* JIRAIssueTypeRouter.swift */,
+				OBJ_44 /* JIRAIssuesRouter.swift */,
+				OBJ_45 /* JIRAProjectsRouter.swift */,
+				OBJ_46 /* JIRAStatusCategoriesRouter.swift */,
+				OBJ_47 /* JIRAStatusesRouter.swift */,
+				OBJ_48 /* JIRAWorkflowSchemesRouter.swift */,
+				OBJ_49 /* JIRAWorkflowsRouter.swift */,
 			);
 			path = Routers;
 			sourceTree = "<group>";
 		};
-		OBJ_32 /* Tests */ = {
+		OBJ_5 = {
 			isa = PBXGroup;
 			children = (
-				OBJ_33 /* SwiftyJIRATests */,
+				OBJ_6 /* Package.swift */,
+				OBJ_7 /* Sources */,
+				OBJ_50 /* Tests */,
+				OBJ_53 /* script */,
+				OBJ_54 /* Dependencies */,
+				OBJ_74 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		OBJ_50 /* Tests */ = {
+			isa = PBXGroup;
+			children = (
+				OBJ_51 /* SwiftyJIRATests */,
 			);
 			name = Tests;
 			sourceTree = SOURCE_ROOT;
 		};
-		OBJ_33 /* SwiftyJIRATests */ = {
+		OBJ_51 /* SwiftyJIRATests */ = {
 			isa = PBXGroup;
 			children = (
-				OBJ_34 /* IssuesTests.swift */,
+				OBJ_52 /* IssuesTests.swift */,
 			);
 			name = SwiftyJIRATests;
 			path = Tests/SwiftyJIRATests;
 			sourceTree = SOURCE_ROOT;
 		};
-		OBJ_36 /* Dependencies */ = {
+		OBJ_54 /* Dependencies */ = {
 			isa = PBXGroup;
 			children = (
-				OBJ_37 /* Alamofire */,
+				OBJ_55 /* Alamofire */,
 			);
 			name = Dependencies;
 			sourceTree = "<group>";
 		};
-		OBJ_37 /* Alamofire */ = {
+		OBJ_55 /* Alamofire */ = {
 			isa = PBXGroup;
 			children = (
-				OBJ_38 /* Package.swift */,
-				OBJ_39 /* AFError.swift */,
-				OBJ_40 /* Alamofire.swift */,
-				OBJ_41 /* DispatchQueue+Alamofire.swift */,
-				OBJ_42 /* MultipartFormData.swift */,
-				OBJ_43 /* NetworkReachabilityManager.swift */,
-				OBJ_44 /* Notifications.swift */,
-				OBJ_45 /* ParameterEncoding.swift */,
-				OBJ_46 /* Request.swift */,
-				OBJ_47 /* Response.swift */,
-				OBJ_48 /* ResponseSerialization.swift */,
-				OBJ_49 /* Result.swift */,
-				OBJ_50 /* ServerTrustPolicy.swift */,
-				OBJ_51 /* SessionDelegate.swift */,
-				OBJ_52 /* SessionManager.swift */,
-				OBJ_53 /* TaskDelegate.swift */,
-				OBJ_54 /* Timeline.swift */,
-				OBJ_55 /* Validation.swift */,
+				OBJ_56 /* Package.swift */,
+				OBJ_57 /* AFError.swift */,
+				OBJ_58 /* Alamofire.swift */,
+				OBJ_59 /* DispatchQueue+Alamofire.swift */,
+				OBJ_60 /* MultipartFormData.swift */,
+				OBJ_61 /* NetworkReachabilityManager.swift */,
+				OBJ_62 /* Notifications.swift */,
+				OBJ_63 /* ParameterEncoding.swift */,
+				OBJ_64 /* Request.swift */,
+				OBJ_65 /* Response.swift */,
+				OBJ_66 /* ResponseSerialization.swift */,
+				OBJ_67 /* Result.swift */,
+				OBJ_68 /* ServerTrustPolicy.swift */,
+				OBJ_69 /* SessionDelegate.swift */,
+				OBJ_70 /* SessionManager.swift */,
+				OBJ_71 /* TaskDelegate.swift */,
+				OBJ_72 /* Timeline.swift */,
+				OBJ_73 /* Validation.swift */,
 			);
 			name = Alamofire;
 			path = ".build/checkouts/Alamofire.git-1442282756688770939/Source";
 			sourceTree = SOURCE_ROOT;
 		};
-		OBJ_5 /*  */ = {
+		OBJ_7 /* Sources */ = {
 			isa = PBXGroup;
 			children = (
-				OBJ_6 /* Package.swift */,
-				OBJ_7 /* Sources */,
-				OBJ_32 /* Tests */,
-				OBJ_35 /* script */,
-				OBJ_36 /* Dependencies */,
-				OBJ_56 /* Products */,
+				OBJ_8 /* Controllers */,
+				OBJ_22 /* Extensions */,
+				OBJ_25 /* HexColor.swift */,
+				OBJ_26 /* JIRAGlobals.swift */,
+				OBJ_27 /* Models */,
+				OBJ_42 /* Routers */,
 			);
-			name = "";
-			sourceTree = "<group>";
+			path = Sources;
+			sourceTree = SOURCE_ROOT;
 		};
-		OBJ_56 /* Products */ = {
+		OBJ_74 /* Products */ = {
 			isa = PBXGroup;
 			children = (
 				"SwiftyJIRA::SwiftyJIRATests::Product" /* SwiftyJIRATests.xctest */,
@@ -284,23 +356,13 @@
 			name = Products;
 			sourceTree = BUILT_PRODUCTS_DIR;
 		};
-		OBJ_7 /* Sources */ = {
-			isa = PBXGroup;
-			children = (
-				OBJ_8 /* Controllers */,
-				OBJ_11 /* Extensions */,
-				OBJ_14 /* HexColor.swift */,
-				OBJ_15 /* JIRAGlobals.swift */,
-				OBJ_16 /* Models */,
-				OBJ_30 /* Routers */,
-			);
-			path = Sources;
-			sourceTree = SOURCE_ROOT;
-		};
 		OBJ_8 /* Controllers */ = {
 			isa = PBXGroup;
 			children = (
 				OBJ_9 /* Issues */,
+				OBJ_14 /* Projects */,
+				OBJ_16 /* Statuses */,
+				OBJ_19 /* Workflows */,
 			);
 			path = Controllers;
 			sourceTree = "<group>";
@@ -308,7 +370,10 @@
 		OBJ_9 /* Issues */ = {
 			isa = PBXGroup;
 			children = (
-				OBJ_10 /* JIRAIssuesController.swift */,
+				OBJ_10 /* JIRAIssuesController+Comments.swift */,
+				OBJ_11 /* JIRAIssuesController+IssueLinks.swift */,
+				OBJ_12 /* JIRAIssuesController+IssueType.swift */,
+				OBJ_13 /* JIRAIssuesController.swift */,
 			);
 			path = Issues;
 			sourceTree = "<group>";
@@ -318,10 +383,10 @@
 /* Begin PBXNativeTarget section */
 		"Alamofire::Alamofire" /* Alamofire */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = OBJ_111 /* Build configuration list for PBXNativeTarget "Alamofire" */;
+			buildConfigurationList = OBJ_144 /* Build configuration list for PBXNativeTarget "Alamofire" */;
 			buildPhases = (
-				OBJ_114 /* Sources */,
-				OBJ_132 /* Frameworks */,
+				OBJ_147 /* Sources */,
+				OBJ_165 /* Frameworks */,
 			);
 			buildRules = (
 			);
@@ -334,9 +399,9 @@
 		};
 		"Alamofire::SwiftPMPackageDescription" /* AlamofirePackageDescription */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = OBJ_67 /* Build configuration list for PBXNativeTarget "AlamofirePackageDescription" */;
+			buildConfigurationList = OBJ_85 /* Build configuration list for PBXNativeTarget "AlamofirePackageDescription" */;
 			buildPhases = (
-				OBJ_70 /* Sources */,
+				OBJ_88 /* Sources */,
 			);
 			buildRules = (
 			);
@@ -348,9 +413,9 @@
 		};
 		"SwiftyJIRA::SwiftPMPackageDescription" /* SwiftyJIRAPackageDescription */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = OBJ_61 /* Build configuration list for PBXNativeTarget "SwiftyJIRAPackageDescription" */;
+			buildConfigurationList = OBJ_79 /* Build configuration list for PBXNativeTarget "SwiftyJIRAPackageDescription" */;
 			buildPhases = (
-				OBJ_64 /* Sources */,
+				OBJ_82 /* Sources */,
 			);
 			buildRules = (
 			);
@@ -362,15 +427,15 @@
 		};
 		"SwiftyJIRA::SwiftyJIRA" /* SwiftyJIRA */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = OBJ_85 /* Build configuration list for PBXNativeTarget "SwiftyJIRA" */;
+			buildConfigurationList = OBJ_103 /* Build configuration list for PBXNativeTarget "SwiftyJIRA" */;
 			buildPhases = (
-				OBJ_88 /* Sources */,
-				OBJ_108 /* Frameworks */,
+				OBJ_106 /* Sources */,
+				OBJ_141 /* Frameworks */,
 			);
 			buildRules = (
 			);
 			dependencies = (
-				OBJ_110 /* PBXTargetDependency */,
+				OBJ_143 /* PBXTargetDependency */,
 			);
 			name = SwiftyJIRA;
 			productName = SwiftyJIRA;
@@ -379,16 +444,16 @@
 		};
 		"SwiftyJIRA::SwiftyJIRATests" /* SwiftyJIRATests */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = OBJ_73 /* Build configuration list for PBXNativeTarget "SwiftyJIRATests" */;
+			buildConfigurationList = OBJ_91 /* Build configuration list for PBXNativeTarget "SwiftyJIRATests" */;
 			buildPhases = (
-				OBJ_76 /* Sources */,
-				OBJ_78 /* Frameworks */,
+				OBJ_94 /* Sources */,
+				OBJ_96 /* Frameworks */,
 			);
 			buildRules = (
 			);
 			dependencies = (
-				OBJ_81 /* PBXTargetDependency */,
-				OBJ_83 /* PBXTargetDependency */,
+				OBJ_99 /* PBXTargetDependency */,
+				OBJ_101 /* PBXTargetDependency */,
 			);
 			name = SwiftyJIRATests;
 			productName = SwiftyJIRATests;
@@ -410,8 +475,8 @@
 			knownRegions = (
 				en,
 			);
-			mainGroup = OBJ_5 /*  */;
-			productRefGroup = OBJ_56 /* Products */;
+			mainGroup = OBJ_5;
+			productRefGroup = OBJ_74 /* Products */;
 			projectDirPath = "";
 			projectRoot = "";
 			targets = (
@@ -426,51 +491,76 @@
 /* End PBXProject section */
 
 /* Begin PBXSourcesBuildPhase section */
-		OBJ_114 /* Sources */ = {
+		OBJ_106 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 0;
 			files = (
-				OBJ_115 /* AFError.swift in Sources */,
-				OBJ_116 /* Alamofire.swift in Sources */,
-				OBJ_117 /* DispatchQueue+Alamofire.swift in Sources */,
-				OBJ_118 /* MultipartFormData.swift in Sources */,
-				OBJ_119 /* NetworkReachabilityManager.swift in Sources */,
-				OBJ_120 /* Notifications.swift in Sources */,
-				OBJ_121 /* ParameterEncoding.swift in Sources */,
-				OBJ_122 /* Request.swift in Sources */,
-				OBJ_123 /* Response.swift in Sources */,
-				OBJ_124 /* ResponseSerialization.swift in Sources */,
-				OBJ_125 /* Result.swift in Sources */,
-				OBJ_126 /* ServerTrustPolicy.swift in Sources */,
-				OBJ_127 /* SessionDelegate.swift in Sources */,
-				OBJ_128 /* SessionManager.swift in Sources */,
-				OBJ_129 /* TaskDelegate.swift in Sources */,
-				OBJ_130 /* Timeline.swift in Sources */,
-				OBJ_131 /* Validation.swift in Sources */,
+				OBJ_107 /* JIRAIssuesController+Comments.swift in Sources */,
+				OBJ_108 /* JIRAIssuesController+IssueLinks.swift in Sources */,
+				OBJ_109 /* JIRAIssuesController+IssueType.swift in Sources */,
+				OBJ_110 /* JIRAIssuesController.swift in Sources */,
+				OBJ_111 /* JIRAProjectsController.swift in Sources */,
+				OBJ_112 /* JIRAStatusesController+StatusCategory.swift in Sources */,
+				OBJ_113 /* JIRAStatusesController.swift in Sources */,
+				OBJ_114 /* JIRAWorkflowsController+WorkflowScheme.swift in Sources */,
+				OBJ_115 /* JIRAWorkflowsController.swift in Sources */,
+				OBJ_116 /* Array+ParameterEncoding.swift in Sources */,
+				OBJ_117 /* Date+IS08601.swift in Sources */,
+				OBJ_118 /* HexColor.swift in Sources */,
+				OBJ_119 /* JIRAGlobals.swift in Sources */,
+				OBJ_120 /* JIRAAttachmentWebhookEvent.swift in Sources */,
+				OBJ_121 /* JIRACommentJSONBean.swift in Sources */,
+				OBJ_122 /* JIRACommentWebhookEvent.swift in Sources */,
+				OBJ_123 /* JIRAEnums.swift in Sources */,
+				OBJ_124 /* JIRAEvents.swift in Sources */,
+				OBJ_125 /* JIRAIssue.swift in Sources */,
+				OBJ_126 /* JIRAIssueWebhookEvent.swift in Sources */,
+				OBJ_127 /* JIRAIssuelinkWebhookEvent.swift in Sources */,
+				OBJ_128 /* JIRAProject.swift in Sources */,
+				OBJ_129 /* JIRARemoteLink.swift in Sources */,
+				OBJ_130 /* JIRASprintWebhookEvent.swift in Sources */,
+				OBJ_131 /* JIRAUserJSONBean.swift in Sources */,
+				OBJ_132 /* JIRAWorkflowScheme.swift in Sources */,
+				OBJ_133 /* JIRAWorklogWebhookEvent.swift in Sources */,
+				OBJ_134 /* JIRAIssueTypeRouter.swift in Sources */,
+				OBJ_135 /* JIRAIssuesRouter.swift in Sources */,
+				OBJ_136 /* JIRAProjectsRouter.swift in Sources */,
+				OBJ_137 /* JIRAStatusCategoriesRouter.swift in Sources */,
+				OBJ_138 /* JIRAStatusesRouter.swift in Sources */,
+				OBJ_139 /* JIRAWorkflowSchemesRouter.swift in Sources */,
+				OBJ_140 /* JIRAWorkflowsRouter.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		OBJ_64 /* Sources */ = {
+		OBJ_147 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 0;
 			files = (
-				OBJ_65 /* Package.swift in Sources */,
+				OBJ_148 /* AFError.swift in Sources */,
+				OBJ_149 /* Alamofire.swift in Sources */,
+				OBJ_150 /* DispatchQueue+Alamofire.swift in Sources */,
+				OBJ_151 /* MultipartFormData.swift in Sources */,
+				OBJ_152 /* NetworkReachabilityManager.swift in Sources */,
+				OBJ_153 /* Notifications.swift in Sources */,
+				OBJ_154 /* ParameterEncoding.swift in Sources */,
+				OBJ_155 /* Request.swift in Sources */,
+				OBJ_156 /* Response.swift in Sources */,
+				OBJ_157 /* ResponseSerialization.swift in Sources */,
+				OBJ_158 /* Result.swift in Sources */,
+				OBJ_159 /* ServerTrustPolicy.swift in Sources */,
+				OBJ_160 /* SessionDelegate.swift in Sources */,
+				OBJ_161 /* SessionManager.swift in Sources */,
+				OBJ_162 /* TaskDelegate.swift in Sources */,
+				OBJ_163 /* Timeline.swift in Sources */,
+				OBJ_164 /* Validation.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		OBJ_70 /* Sources */ = {
+		OBJ_82 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 0;
 			files = (
-				OBJ_71 /* Package.swift in Sources */,
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
-		OBJ_76 /* Sources */ = {
-			isa = PBXSourcesBuildPhase;
-			buildActionMask = 0;
-			files = (
-				OBJ_77 /* IssuesTests.swift in Sources */,
+				OBJ_83 /* Package.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -478,56 +568,89 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 0;
 			files = (
-				OBJ_89 /* JIRAIssuesController.swift in Sources */,
-				OBJ_90 /* Array+ParameterEncoding.swift in Sources */,
-				OBJ_91 /* Date+IS08601.swift in Sources */,
-				OBJ_92 /* HexColor.swift in Sources */,
-				OBJ_93 /* JIRAGlobals.swift in Sources */,
-				OBJ_94 /* JIRAAttachmentWebhookEvent.swift in Sources */,
-				OBJ_95 /* JIRACommentJSONBean.swift in Sources */,
-				C6ED80851FCAEDDA0004E9A7 /* JIRARemoteLink.swift in Sources */,
-				OBJ_96 /* JIRACommentWebhookEvent.swift in Sources */,
-				OBJ_97 /* JIRAEnums.swift in Sources */,
-				OBJ_98 /* JIRAEvents.swift in Sources */,
-				OBJ_99 /* JIRAIssue.swift in Sources */,
-				OBJ_100 /* JIRAIssueWebhookEvent.swift in Sources */,
-				OBJ_101 /* JIRAIssuelinkWebhookEvent.swift in Sources */,
-				OBJ_102 /* JIRAProject.swift in Sources */,
-				OBJ_103 /* JIRASprintWebhookEvent.swift in Sources */,
-				OBJ_104 /* JIRAUserJSONBean.swift in Sources */,
-				OBJ_105 /* JIRAWorkflowScheme.swift in Sources */,
-				OBJ_106 /* JIRAWorklogWebhookEvent.swift in Sources */,
-				OBJ_107 /* JIRAIssuesRouter.swift in Sources */,
+				OBJ_89 /* Package.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		OBJ_94 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 0;
+			files = (
+				OBJ_95 /* IssuesTests.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXSourcesBuildPhase section */
 
 /* Begin PBXTargetDependency section */
-		OBJ_110 /* PBXTargetDependency */ = {
+		OBJ_101 /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
 			target = "Alamofire::Alamofire" /* Alamofire */;
-			targetProxy = C6ED807F1FCA5DE10004E9A7 /* PBXContainerItemProxy */;
+			targetProxy = C634074B1FCE2E1E00A9CDD0 /* PBXContainerItemProxy */;
 		};
-		OBJ_137 /* PBXTargetDependency */ = {
+		OBJ_143 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = "Alamofire::Alamofire" /* Alamofire */;
+			targetProxy = C63407491FCE2E1E00A9CDD0 /* PBXContainerItemProxy */;
+		};
+		OBJ_170 /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
 			target = "SwiftyJIRA::SwiftyJIRATests" /* SwiftyJIRATests */;
-			targetProxy = C6ED80821FCA5DE10004E9A7 /* PBXContainerItemProxy */;
+			targetProxy = C634074C1FCE2E1E00A9CDD0 /* PBXContainerItemProxy */;
 		};
-		OBJ_81 /* PBXTargetDependency */ = {
+		OBJ_99 /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
 			target = "SwiftyJIRA::SwiftyJIRA" /* SwiftyJIRA */;
-			targetProxy = C6ED80801FCA5DE10004E9A7 /* PBXContainerItemProxy */;
-		};
-		OBJ_83 /* PBXTargetDependency */ = {
-			isa = PBXTargetDependency;
-			target = "Alamofire::Alamofire" /* Alamofire */;
-			targetProxy = C6ED80811FCA5DE10004E9A7 /* PBXContainerItemProxy */;
+			targetProxy = C634074A1FCE2E1E00A9CDD0 /* PBXContainerItemProxy */;
 		};
 /* End PBXTargetDependency section */
 
 /* Begin XCBuildConfiguration section */
-		OBJ_112 /* Debug */ = {
+		OBJ_104 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ENABLE_TESTABILITY = YES;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PLATFORM_DIR)/Developer/Library/Frameworks",
+				);
+				HEADER_SEARCH_PATHS = "$(inherited)";
+				INFOPLIST_FILE = SwiftyJIRA.xcodeproj/SwiftyJIRA_Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(TOOLCHAIN_DIR)/usr/lib/swift/macosx";
+				OTHER_LDFLAGS = "$(inherited)";
+				OTHER_SWIFT_FLAGS = "$(inherited)";
+				PRODUCT_BUNDLE_IDENTIFIER = SwiftyJIRA;
+				PRODUCT_MODULE_NAME = "$(TARGET_NAME:c99extidentifier)";
+				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
+				SKIP_INSTALL = YES;
+				SWIFT_VERSION = 4.0;
+				TARGET_NAME = SwiftyJIRA;
+			};
+			name = Debug;
+		};
+		OBJ_105 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ENABLE_TESTABILITY = YES;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PLATFORM_DIR)/Developer/Library/Frameworks",
+				);
+				HEADER_SEARCH_PATHS = "$(inherited)";
+				INFOPLIST_FILE = SwiftyJIRA.xcodeproj/SwiftyJIRA_Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(TOOLCHAIN_DIR)/usr/lib/swift/macosx";
+				OTHER_LDFLAGS = "$(inherited)";
+				OTHER_SWIFT_FLAGS = "$(inherited)";
+				PRODUCT_BUNDLE_IDENTIFIER = SwiftyJIRA;
+				PRODUCT_MODULE_NAME = "$(TARGET_NAME:c99extidentifier)";
+				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
+				SKIP_INSTALL = YES;
+				SWIFT_VERSION = 4.0;
+				TARGET_NAME = SwiftyJIRA;
+			};
+			name = Release;
+		};
+		OBJ_145 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ENABLE_TESTABILITY = YES;
@@ -549,7 +672,7 @@
 			};
 			name = Debug;
 		};
-		OBJ_113 /* Release */ = {
+		OBJ_146 /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ENABLE_TESTABILITY = YES;
@@ -571,13 +694,13 @@
 			};
 			name = Release;
 		};
-		OBJ_135 /* Debug */ = {
+		OBJ_168 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
 			};
 			name = Debug;
 		};
-		OBJ_136 /* Release */ = {
+		OBJ_169 /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
 			};
@@ -625,7 +748,7 @@
 			};
 			name = Release;
 		};
-		OBJ_62 /* Debug */ = {
+		OBJ_80 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				LD = /usr/bin/true;
@@ -634,130 +757,95 @@
 			};
 			name = Debug;
 		};
-		OBJ_63 /* Release */ = {
+		OBJ_81 /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				LD = /usr/bin/true;
 				OTHER_SWIFT_FLAGS = "-swift-version 4 -I /Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/pm/4 -target x86_64-apple-macosx10.10 -sdk /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX10.13.sdk";
 				SWIFT_VERSION = 4.0;
-			};
-			name = Release;
-		};
-		OBJ_68 /* Debug */ = {
-			isa = XCBuildConfiguration;
-			buildSettings = {
-				LD = /usr/bin/true;
-				OTHER_SWIFT_FLAGS = "-swift-version 3 -I /Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/pm/3 -target x86_64-apple-macosx10.10 -sdk /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX10.13.sdk";
-				SWIFT_VERSION = 3.0;
-			};
-			name = Debug;
-		};
-		OBJ_69 /* Release */ = {
-			isa = XCBuildConfiguration;
-			buildSettings = {
-				LD = /usr/bin/true;
-				OTHER_SWIFT_FLAGS = "-swift-version 3 -I /Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/pm/3 -target x86_64-apple-macosx10.10 -sdk /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX10.13.sdk";
-				SWIFT_VERSION = 3.0;
-			};
-			name = Release;
-		};
-		OBJ_74 /* Debug */ = {
-			isa = XCBuildConfiguration;
-			buildSettings = {
-				EMBEDDED_CONTENT_CONTAINS_SWIFT = YES;
-				FRAMEWORK_SEARCH_PATHS = (
-					"$(inherited)",
-					"$(PLATFORM_DIR)/Developer/Library/Frameworks",
-				);
-				HEADER_SEARCH_PATHS = "$(inherited)";
-				INFOPLIST_FILE = SwiftyJIRA.xcodeproj/SwiftyJIRATests_Info.plist;
-				LD_RUNPATH_SEARCH_PATHS = "@loader_path/../Frameworks @loader_path/Frameworks";
-				OTHER_LDFLAGS = "$(inherited)";
-				OTHER_SWIFT_FLAGS = "$(inherited)";
-				SWIFT_VERSION = 4.0;
-				TARGET_NAME = SwiftyJIRATests;
-			};
-			name = Debug;
-		};
-		OBJ_75 /* Release */ = {
-			isa = XCBuildConfiguration;
-			buildSettings = {
-				EMBEDDED_CONTENT_CONTAINS_SWIFT = YES;
-				FRAMEWORK_SEARCH_PATHS = (
-					"$(inherited)",
-					"$(PLATFORM_DIR)/Developer/Library/Frameworks",
-				);
-				HEADER_SEARCH_PATHS = "$(inherited)";
-				INFOPLIST_FILE = SwiftyJIRA.xcodeproj/SwiftyJIRATests_Info.plist;
-				LD_RUNPATH_SEARCH_PATHS = "@loader_path/../Frameworks @loader_path/Frameworks";
-				OTHER_LDFLAGS = "$(inherited)";
-				OTHER_SWIFT_FLAGS = "$(inherited)";
-				SWIFT_VERSION = 4.0;
-				TARGET_NAME = SwiftyJIRATests;
 			};
 			name = Release;
 		};
 		OBJ_86 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
-				ENABLE_TESTABILITY = YES;
-				FRAMEWORK_SEARCH_PATHS = (
-					"$(inherited)",
-					"$(PLATFORM_DIR)/Developer/Library/Frameworks",
-				);
-				HEADER_SEARCH_PATHS = "$(inherited)";
-				INFOPLIST_FILE = SwiftyJIRA.xcodeproj/SwiftyJIRA_Info.plist;
-				LD_RUNPATH_SEARCH_PATHS = "$(TOOLCHAIN_DIR)/usr/lib/swift/macosx";
-				OTHER_LDFLAGS = "$(inherited)";
-				OTHER_SWIFT_FLAGS = "$(inherited)";
-				PRODUCT_BUNDLE_IDENTIFIER = SwiftyJIRA;
-				PRODUCT_MODULE_NAME = "$(TARGET_NAME:c99extidentifier)";
-				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
-				SKIP_INSTALL = YES;
-				SWIFT_VERSION = 4.0;
-				TARGET_NAME = SwiftyJIRA;
+				LD = /usr/bin/true;
+				OTHER_SWIFT_FLAGS = "-swift-version 3 -I /Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/pm/3 -target x86_64-apple-macosx10.10 -sdk /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX10.13.sdk";
+				SWIFT_VERSION = 3.0;
 			};
 			name = Debug;
 		};
 		OBJ_87 /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
-				ENABLE_TESTABILITY = YES;
+				LD = /usr/bin/true;
+				OTHER_SWIFT_FLAGS = "-swift-version 3 -I /Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/pm/3 -target x86_64-apple-macosx10.10 -sdk /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX10.13.sdk";
+				SWIFT_VERSION = 3.0;
+			};
+			name = Release;
+		};
+		OBJ_92 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				EMBEDDED_CONTENT_CONTAINS_SWIFT = YES;
 				FRAMEWORK_SEARCH_PATHS = (
 					"$(inherited)",
 					"$(PLATFORM_DIR)/Developer/Library/Frameworks",
 				);
 				HEADER_SEARCH_PATHS = "$(inherited)";
-				INFOPLIST_FILE = SwiftyJIRA.xcodeproj/SwiftyJIRA_Info.plist;
-				LD_RUNPATH_SEARCH_PATHS = "$(TOOLCHAIN_DIR)/usr/lib/swift/macosx";
+				INFOPLIST_FILE = SwiftyJIRA.xcodeproj/SwiftyJIRATests_Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "@loader_path/../Frameworks @loader_path/Frameworks";
 				OTHER_LDFLAGS = "$(inherited)";
 				OTHER_SWIFT_FLAGS = "$(inherited)";
-				PRODUCT_BUNDLE_IDENTIFIER = SwiftyJIRA;
-				PRODUCT_MODULE_NAME = "$(TARGET_NAME:c99extidentifier)";
-				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
-				SKIP_INSTALL = YES;
 				SWIFT_VERSION = 4.0;
-				TARGET_NAME = SwiftyJIRA;
+				TARGET_NAME = SwiftyJIRATests;
+			};
+			name = Debug;
+		};
+		OBJ_93 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				EMBEDDED_CONTENT_CONTAINS_SWIFT = YES;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PLATFORM_DIR)/Developer/Library/Frameworks",
+				);
+				HEADER_SEARCH_PATHS = "$(inherited)";
+				INFOPLIST_FILE = SwiftyJIRA.xcodeproj/SwiftyJIRATests_Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "@loader_path/../Frameworks @loader_path/Frameworks";
+				OTHER_LDFLAGS = "$(inherited)";
+				OTHER_SWIFT_FLAGS = "$(inherited)";
+				SWIFT_VERSION = 4.0;
+				TARGET_NAME = SwiftyJIRATests;
 			};
 			name = Release;
 		};
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
-		OBJ_111 /* Build configuration list for PBXNativeTarget "Alamofire" */ = {
+		OBJ_103 /* Build configuration list for PBXNativeTarget "SwiftyJIRA" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
-				OBJ_112 /* Debug */,
-				OBJ_113 /* Release */,
+				OBJ_104 /* Debug */,
+				OBJ_105 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Debug;
 		};
-		OBJ_134 /* Build configuration list for PBXAggregateTarget "SwiftyJIRAPackageTests" */ = {
+		OBJ_144 /* Build configuration list for PBXNativeTarget "Alamofire" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
-				OBJ_135 /* Debug */,
-				OBJ_136 /* Release */,
+				OBJ_145 /* Debug */,
+				OBJ_146 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Debug;
+		};
+		OBJ_167 /* Build configuration list for PBXAggregateTarget "SwiftyJIRAPackageTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				OBJ_168 /* Debug */,
+				OBJ_169 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Debug;
@@ -771,38 +859,29 @@
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Debug;
 		};
-		OBJ_61 /* Build configuration list for PBXNativeTarget "SwiftyJIRAPackageDescription" */ = {
+		OBJ_79 /* Build configuration list for PBXNativeTarget "SwiftyJIRAPackageDescription" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
-				OBJ_62 /* Debug */,
-				OBJ_63 /* Release */,
+				OBJ_80 /* Debug */,
+				OBJ_81 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Debug;
 		};
-		OBJ_67 /* Build configuration list for PBXNativeTarget "AlamofirePackageDescription" */ = {
-			isa = XCConfigurationList;
-			buildConfigurations = (
-				OBJ_68 /* Debug */,
-				OBJ_69 /* Release */,
-			);
-			defaultConfigurationIsVisible = 0;
-			defaultConfigurationName = Debug;
-		};
-		OBJ_73 /* Build configuration list for PBXNativeTarget "SwiftyJIRATests" */ = {
-			isa = XCConfigurationList;
-			buildConfigurations = (
-				OBJ_74 /* Debug */,
-				OBJ_75 /* Release */,
-			);
-			defaultConfigurationIsVisible = 0;
-			defaultConfigurationName = Debug;
-		};
-		OBJ_85 /* Build configuration list for PBXNativeTarget "SwiftyJIRA" */ = {
+		OBJ_85 /* Build configuration list for PBXNativeTarget "AlamofirePackageDescription" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				OBJ_86 /* Debug */,
 				OBJ_87 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Debug;
+		};
+		OBJ_91 /* Build configuration list for PBXNativeTarget "SwiftyJIRATests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				OBJ_92 /* Debug */,
+				OBJ_93 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Debug;

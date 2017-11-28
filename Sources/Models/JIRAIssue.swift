@@ -11,7 +11,7 @@ import Foundation
 public struct JIRAIssue: Codable {
     public var expand: String?
     public var id: String?
-    public var `self`: String?
+    public var `self`: URL?
     public var key: String?
     public var fields: JIRAIssueFields?
     public var renderedFields: [String]?
@@ -72,7 +72,7 @@ public struct JIRAIssueAttachment: Codable {
     public var size: Int?
     public var id: String?
     public var created: String?
-    public var `self`: String?
+    public var `self`: URL?
     public var mimeType: String?
     public var filename: String?
     public var thumbnail: String?
@@ -80,17 +80,17 @@ public struct JIRAIssueAttachment: Codable {
 
 /// JIRA Issue Status
 public struct JIRAIssueStatus: Codable {
-    public var `self`: String?
+    public var `self`: URL?
     public var description: String?
     public var name: String?
     public var statusCategory: JIRAStatusCategoryJSONBean?
-    public var iconUrl: String?
+    public var iconUrl: URL?
     public var id: String?
 }
 
 /// JIRA Issue Link
 public struct JIRAIssueLink: Codable {
-    public var `self`: String?
+    public var `self`: URL?
     public var id: String?
     public var inwardIssue: JIRAIssue?
     public var type: JIRAIssueType?
@@ -99,16 +99,20 @@ public struct JIRAIssueLink: Codable {
 /// JIRA Issue Version
 public struct JIRAVersion: Codable {
     public var description: String?
-    public var `self`: String?
+    public var `self`: URL?
     public var archived: Bool?
     public var id: String?
     public var released: Bool?
+    public var releaseDate: String?
+    public var overdue: Bool?
+    public var userReleaseDate: String?
+    public var projectId: Int?
     public var name: String?
 }
 
 /// JIRA Issue Priority
 public struct JIRAIssuePriority: Codable {
-    public var `self`: String?
+    public var `self`: URL?
     public var name: String?
     public var iconUrl: String?
     public var id: String?
@@ -124,7 +128,7 @@ public struct JIRAIssueComments: Codable {
 
 /// JIRA Issue Watches
 public struct JIRAIssueWatches: Codable {
-    public var `self`: String?
+    public var `self`: URL?
     public var watchCount: Int?
     public var isWatching: Bool?
 }
@@ -132,13 +136,13 @@ public struct JIRAIssueWatches: Codable {
 /// JIRA Issue Votes
 public struct JIRAIssueVotes: Codable {
     public var votes: Int?
-    public var `self`: String?
+    public var `self`: URL?
     public var hasVoted: Bool?
 }
 
 /// JIRA Issue Subtask
 public struct JIRAIssueSubtask: Codable {
-    public var `self`: String?
+    public var `self`: URL?
     public var id: String?
     public var fields: JIRAIssueFields?
 }
@@ -149,15 +153,24 @@ public struct JIRAIssueProgress: Codable {
     public var total: Int?
 }
 
+public struct JIRACreateIssueTypeBody: Codable {
+    
+}
+
 /// JIRA Issue Type
 public struct JIRAIssueType: Codable {
-    public var `self`: String?
+    public var `self`: URL?
     public var id: String?
     public var description: String?
-    public var iconUrl: String?
+    public var iconUrl: URL?
     public var name: String?
     public var subtask: Bool?
     public var avatarId: Int?
+}
+
+public struct JIRAIssueTransitions: Codable {
+    public var expand: String?
+    public var transitions: [JIRATransitionBean]?
 }
 
 /// JIRA Issue Transition
@@ -166,19 +179,19 @@ public struct JIRATransitionBean: Codable {
     public var name: String?
     public var to: JIRAStatusJSONBean?
     public var hasScreen: Bool?
-    public var global: Bool?
-    public var initial: Bool?
-    public var conditional: Bool?
-    public var fields: [JIRAFieldMetaBean]?
+    public var isGlobal: Bool?
+    public var isInitial: Bool?
+    public var isConditional: Bool?
+    public var fields: [String: JIRAFieldMetaBean]?
     public var expand: String?
 }
 
 /// JIRA Issue Status
 public struct JIRAStatusJSONBean: Codable {
-    public var `self`: String
+    public var `self`: URL
     public var statusColor: String?
     public var description: String?
-    public var iconUrl: String?
+    public var iconUrl: URL?
     public var name: String?
     public var id: String
     public var statusCategory: JIRAStatusCategoryJSONBean?
@@ -186,7 +199,7 @@ public struct JIRAStatusJSONBean: Codable {
 
 /// JIRA Issue Status Category
 public struct JIRAStatusCategoryJSONBean: Codable {
-    public var `self`: String?
+    public var `self`: URL?
     public var id: Int?
     public var key: String?
     public var colorName: String?
@@ -217,7 +230,7 @@ public struct JIRAFieldMetaBean: Codable {
     public var schema: JIRAJSONTypeBean?
     public var name: String?
     public var key: String?
-    public var autoCompleteUrl: String?
+    public var autoCompleteUrl: URL?
     public var hasDefaultValue: Bool?
     public var operations: [String]?
     public var allowedValues: [String: String]?
@@ -240,7 +253,7 @@ public struct JIRASimpleLinkBean: Codable {
     public var iconClass: String?
     public var label: String?
     public var title: String?
-    public var href: String?
+    public var href: URL?
     public var weight: Int?
 }
 
@@ -294,8 +307,8 @@ public struct JIRAHistoryMetadataParticipant: Codable {
     public var displayName: String?
     public var displayNameKey: String?
     public var type: String?
-    public var avatarUrl: String?
-    public var url: String?
+    public var avatarUrl: URL?
+    public var url: URL?
 }
 
 public struct JIRARestrictJSONBean: Codable {
@@ -332,7 +345,7 @@ public struct JIRAIssueUpdateAdditionalProperties: Codable {
 public struct JIRARemoteEntityLinkJSONBean: Codable {
     public var link: String?
     public var name: String?
-    public var `self`: String?
+    public var `self`: URL?
 }
 
 public struct JIRAIssueQueryFields: Codable {

@@ -14,7 +14,7 @@ public struct JIRARemoteLink: Codable {
 }
 
 public struct JIRAObject: Codable {
-    public var url: String?
+    public var url: URL?
     public var title: String?
     public var summary: String?
     public var icon: JIRAObjectIcon?
@@ -27,7 +27,7 @@ public struct JIRAObjectStatus: Codable {
 }
 
 public struct JIRAObjectIcon: Codable {
-    public var url16x16: String?
+    public var url16x16: URL?
     public var title: String?
     public var link: String?
 }

@@ -9,12 +9,12 @@ import Foundation
 
 /// JIRA User
 public struct JIRAUserJSONBean: Codable {
-    public var `self`: String?
+    public var `self`: URL?
     public var key: String?
     public var accountId: String?
     public var name: String?
     public var emailAddress: String?
-    public var avatarUrls: [String: String]?
+    public var avatarUrls: [String: URL]?
     public var displayName: String?
     public var active: Bool?
     public var timeZone: String?
@@ -34,7 +34,7 @@ public struct JIRASimpleListWrapper: Codable {
 /// JIRA Group JSON Bean
 public struct JIRAGroupJSONBean: Codable {
     public var name: String?
-    public var `self`: String?
+    public var `self`: URL?
 }
 
 //public struct AvatarURL: Codable {

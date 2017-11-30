@@ -11,7 +11,7 @@ import Foundation
 public struct JIRAProject: Codable {
     public var `self`: URL?
     public var name: String?
-    public var avatarUrls: [String: URL]?
+    public var avatarUrls: [String: String]?
     public var id: String?
     public var key: String?
     public var description: String?

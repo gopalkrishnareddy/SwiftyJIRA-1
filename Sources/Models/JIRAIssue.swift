@@ -47,7 +47,7 @@ public struct JIRAIssueFields: Codable {
     public var labels: [String]?
     public var workratio: Int?
     public var description: String?
-    public var updated: String
+    public var updated: String?
     public var issuetype: JIRAIssueType?
     public var watches: JIRAIssueWatches?
     public var environment: String?
@@ -188,7 +188,7 @@ public struct JIRATransitionBean: Codable {
 
 /// JIRA Issue Status
 public struct JIRAStatusJSONBean: Codable {
-    public var `self`: URL
+    public var `self`: URL?
     public var statusColor: String?
     public var description: String?
     public var iconUrl: URL?

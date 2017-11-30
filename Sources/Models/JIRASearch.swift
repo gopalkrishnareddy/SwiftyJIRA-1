@@ -32,7 +32,7 @@ public struct JIRASearchProperties {
     public var property2: String?
     public var property3: String?
     public var property4: String?
-    public var property5: String
+    public var property5: String?
     
     public func stringValue() -> String {
         let optionalProps = [property1, property2, property3, property4, property5]

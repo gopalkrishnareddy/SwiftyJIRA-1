@@ -10,6 +10,8 @@ import Foundation
 /// JIRA Issue Event
 public enum JIRAIssueEvent: String, Codable {
     /// Issue updated
+    case issue_generic
+    /// Issue updated
     case issue_updated
     /// Issue created
     case issue_created

@@ -21,6 +21,9 @@
 /* End PBXAggregateTarget section */
 
 /* Begin PBXBuildFile section */
+		C6940ECB1FCFA72200943C42 /* JIRASearchController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C6940ECA1FCFA72200943C42 /* JIRASearchController.swift */; };
+		C6940ECD1FCFA73600943C42 /* JIRASearchRouter.swift in Sources */ = {isa = PBXBuildFile; fileRef = C6940ECC1FCFA73600943C42 /* JIRASearchRouter.swift */; };
+		C6940ECF1FCFA92900943C42 /* JIRASearch.swift in Sources */ = {isa = PBXBuildFile; fileRef = C6940ECE1FCFA92900943C42 /* JIRASearch.swift */; };
 		OBJ_107 /* JIRAIssuesController+Comments.swift in Sources */ = {isa = PBXBuildFile; fileRef = OBJ_10 /* JIRAIssuesController+Comments.swift */; };
 		OBJ_108 /* JIRAIssuesController+IssueLinks.swift in Sources */ = {isa = PBXBuildFile; fileRef = OBJ_11 /* JIRAIssuesController+IssueLinks.swift */; };
 		OBJ_109 /* JIRAIssuesController+IssueType.swift in Sources */ = {isa = PBXBuildFile; fileRef = OBJ_12 /* JIRAIssuesController+IssueType.swift */; };
@@ -113,6 +116,9 @@
 
 /* Begin PBXFileReference section */
 		"Alamofire::Alamofire::Product" /* Alamofire.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; path = Alamofire.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		C6940ECA1FCFA72200943C42 /* JIRASearchController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = JIRASearchController.swift; sourceTree = "<group>"; };
+		C6940ECC1FCFA73600943C42 /* JIRASearchRouter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = JIRASearchRouter.swift; sourceTree = "<group>"; };
+		C6940ECE1FCFA92900943C42 /* JIRASearch.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = JIRASearch.swift; sourceTree = "<group>"; };
 		OBJ_10 /* JIRAIssuesController+Comments.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "JIRAIssuesController+Comments.swift"; sourceTree = "<group>"; };
 		OBJ_11 /* JIRAIssuesController+IssueLinks.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "JIRAIssuesController+IssueLinks.swift"; sourceTree = "<group>"; };
 		OBJ_12 /* JIRAIssuesController+IssueType.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "JIRAIssuesController+IssueType.swift"; sourceTree = "<group>"; };
@@ -200,6 +206,14 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		C6940EC91FCFA70D00943C42 /* Search */ = {
+			isa = PBXGroup;
+			children = (
+				C6940ECA1FCFA72200943C42 /* JIRASearchController.swift */,
+			);
+			path = Search;
+			sourceTree = "<group>";
+		};
 		OBJ_14 /* Projects */ = {
 			isa = PBXGroup;
 			children = (
@@ -252,6 +266,7 @@
 				OBJ_39 /* JIRAUserJSONBean.swift */,
 				OBJ_40 /* JIRAWorkflowScheme.swift */,
 				OBJ_41 /* JIRAWorklogWebhookEvent.swift */,
+				C6940ECE1FCFA92900943C42 /* JIRASearch.swift */,
 			);
 			path = Models;
 			sourceTree = "<group>";
@@ -266,6 +281,7 @@
 				OBJ_47 /* JIRAStatusesRouter.swift */,
 				OBJ_48 /* JIRAWorkflowSchemesRouter.swift */,
 				OBJ_49 /* JIRAWorkflowsRouter.swift */,
+				C6940ECC1FCFA73600943C42 /* JIRASearchRouter.swift */,
 			);
 			path = Routers;
 			sourceTree = "<group>";
@@ -359,6 +375,7 @@
 		OBJ_8 /* Controllers */ = {
 			isa = PBXGroup;
 			children = (
+				C6940EC91FCFA70D00943C42 /* Search */,
 				OBJ_9 /* Issues */,
 				OBJ_14 /* Projects */,
 				OBJ_16 /* Statuses */,
@@ -516,6 +533,8 @@
 				OBJ_125 /* JIRAIssue.swift in Sources */,
 				OBJ_126 /* JIRAIssueWebhookEvent.swift in Sources */,
 				OBJ_127 /* JIRAIssuelinkWebhookEvent.swift in Sources */,
+				C6940ECF1FCFA92900943C42 /* JIRASearch.swift in Sources */,
+				C6940ECB1FCFA72200943C42 /* JIRASearchController.swift in Sources */,
 				OBJ_128 /* JIRAProject.swift in Sources */,
 				OBJ_129 /* JIRARemoteLink.swift in Sources */,
 				OBJ_130 /* JIRASprintWebhookEvent.swift in Sources */,
@@ -524,6 +543,7 @@
 				OBJ_133 /* JIRAWorklogWebhookEvent.swift in Sources */,
 				OBJ_134 /* JIRAIssueTypeRouter.swift in Sources */,
 				OBJ_135 /* JIRAIssuesRouter.swift in Sources */,
+				C6940ECD1FCFA73600943C42 /* JIRASearchRouter.swift in Sources */,
 				OBJ_136 /* JIRAProjectsRouter.swift in Sources */,
 				OBJ_137 /* JIRAStatusCategoriesRouter.swift in Sources */,
 				OBJ_138 /* JIRAStatusesRouter.swift in Sources */,

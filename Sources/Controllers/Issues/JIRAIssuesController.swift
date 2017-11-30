@@ -273,7 +273,7 @@ public enum JIRAIssueExpandParameter: String, Codable {
     case versionedRepresentations
 }
 
-/// Multi-value parameter defining the fields returned for the issue. By default, all fields are returned
+/// Multi-value parameter defining the fields returned for the issue.
 public enum JIRAFieldParameter: String, Codable {
     /// Return all fields
     case all = "*all"

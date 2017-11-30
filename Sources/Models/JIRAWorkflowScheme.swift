@@ -39,3 +39,8 @@ public struct JIRAWorkflowMapping: Codable {
     public var issueTypes: [String]?
     public var defaultMapping: Bool?
 }
+
+public enum JIRAWorkflowMode: String, Codable {
+    case draft
+    case live
+}

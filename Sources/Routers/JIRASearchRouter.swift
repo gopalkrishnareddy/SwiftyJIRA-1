@@ -1,18 +1,18 @@
 //
-//  JIRAWorkflowsRouter.swift
+//  JIRASearchRouter.swift
 //  SwiftyJIRA
 //
-//  Created by Joe DeCapo on 11/28/17.
+//  Created by Joe DeCapo on 11/29/17.
 //
 
 import Foundation
 import Alamofire
 
-struct JIRAWorkflowsRouter: URLRequestConvertible {
+struct JIRASearchRouter: URLRequestConvertible {
     
     enum Action {
-        case getAllWorkflows(params: Parameters?)
-        case getProperties(transitionId: String, params: Parameters?)
+        case searchUsingSearchRequest(request: String)
+        case search(params: Parameters)
     }
     
     let user: String
@@ -26,19 +26,16 @@ struct JIRAWorkflowsRouter: URLRequestConvertible {
         var bodyData: Data?
         
         switch self.action {
-        case .getAllWorkflows(let params):
+        case .searchUsingSearchRequest(let request):
+            method = .post
+            bodyData = try JSONEncoder().encode(request)
+        case .search(let params):
             method = .get
-            if let params = params {
-                parameters = params
-            }
-        case .getProperties(let transitionId, let params):
-            method = .get
-            relativePath = "transitions/\(transitionId)/properties"
             parameters = params
         }
         
         let url: URL = {
-            var url = URL(string: "\(jiraBaseURL)/rest/api/2/workflow")!
+            var url = URL(string: "\(jiraBaseURL)/rest/api/2/search")!
             if let relativePath = relativePath {
                 url = url.appendingPathComponent(relativePath)
             }
@@ -67,6 +64,7 @@ struct JIRAWorkflowsRouter: URLRequestConvertible {
         return request
     }
 }
+
 
 
 

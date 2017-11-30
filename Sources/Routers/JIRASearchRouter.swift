@@ -35,7 +35,7 @@ struct JIRASearchRouter: URLRequestConvertible {
         }
         
         let url: URL = {
-            var url = URL(string: "\(jiraBaseURL)/rest/api/2/search")!
+            var url = URL(string: "\(jiraBaseURL)/search")!
             if let relativePath = relativePath {
                 url = url.appendingPathComponent(relativePath)
             }

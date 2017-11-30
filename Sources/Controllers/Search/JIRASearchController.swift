@@ -26,7 +26,7 @@ public class JIRASearchController {
         self.password = password
     }
     
-    public func search(
+    public func searchRequest(
         jql: String,
         completion: @escaping (JIRASearchResults?) -> Void)
     {
@@ -46,7 +46,7 @@ public class JIRASearchController {
     
     public func search(
         jql: String,
-        startAt: Int,
+        startAt: Int? = nil,
         maxResults: Int = 50,
         validateQuery: JIRAJQLValidation = .strict,
         fields: JIRASearchFieldParameter? = nil,
@@ -57,11 +57,13 @@ public class JIRASearchController {
     {
         var parameters: Parameters = [
             "jql": jql,
-            "startAt": startAt,
             "maxResults": maxResults,
-            "validateQuery": validateQuery,
+            "validateQuery": validateQuery.rawValue,
             "fieldsByKeys": fieldsByKeys
         ]
+        if let startAt = startAt {
+            parameters["startAt"] = startAt
+        }
         if let fields = fields {
             parameters["fields"] = fields.rawValue
         }

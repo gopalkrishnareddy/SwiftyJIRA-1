@@ -56,7 +56,7 @@ struct JIRAIssueTypeRouter: URLRequestConvertible {
         }
         
         let url: URL = {
-            var url = URL(string: "\(jiraBaseURL)/rest/api/2/issuetype")!
+            var url = URL(string: "\(jiraBaseURL)/issuetype")!
             if let relativePath = relativePath {
                 url = url.appendingPathComponent(relativePath)
             }

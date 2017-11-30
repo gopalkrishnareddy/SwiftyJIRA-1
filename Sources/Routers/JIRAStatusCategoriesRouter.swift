@@ -34,7 +34,7 @@ struct JIRAStatusCategoriesRouter: URLRequestConvertible {
         }
         
         let url: URL = {
-            var url = URL(string: "\(jiraBaseURL)/rest/api/2/statuscategory")!
+            var url = URL(string: "\(jiraBaseURL)/statuscategory")!
             if let relativePath = relativePath {
                 url = url.appendingPathComponent(relativePath)
             }

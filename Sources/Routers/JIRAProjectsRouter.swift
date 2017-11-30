@@ -50,7 +50,7 @@ struct JIRAProjectsRouter: URLRequestConvertible {
         }
         
         let url: URL = {
-            var url = URL(string: "\(jiraBaseURL)/rest/api/2/project")!
+            var url = URL(string: "\(jiraBaseURL)/project")!
             if let relativePath = relativePath {
                 url = url.appendingPathComponent(relativePath)
             }

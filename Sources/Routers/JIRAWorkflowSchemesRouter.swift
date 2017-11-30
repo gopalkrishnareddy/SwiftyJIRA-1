@@ -42,7 +42,7 @@ struct JIRAWorkflowSchemesRouter: URLRequestConvertible {
         }
         
         let url: URL = {
-            var url = URL(string: "\(jiraBaseURL)/rest/api/2/workflowscheme")!
+            var url = URL(string: "\(jiraBaseURL)/workflowscheme")!
             if let relativePath = relativePath {
                 url = url.appendingPathComponent(relativePath)
             }

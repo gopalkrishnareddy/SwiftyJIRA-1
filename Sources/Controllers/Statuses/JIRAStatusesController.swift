@@ -6,7 +6,6 @@
 //
 
 import Foundation
-import Dispatch
 import Alamofire
 
 /// The controller class for the JIRA Projects REST API
@@ -16,8 +15,6 @@ public class JIRAStatusesController {
     let user: String
     /// JIRA password
     let password: String
-    
-    private let queue = DispatchQueue(label: "com.polka.cat.SwiftyJIRA")
     
     /// Create instance of `JIRAWorkflowsController`
     ///
@@ -37,7 +34,7 @@ public class JIRAStatusesController {
                                          action: .getStatuses)
         Alamofire.request(request)
             .validate()
-            .responseJSON { response in
+            .responseJSON(queue: queue) { response in
                 guard let data = response.data else {
                     completion(nil)
                     return
@@ -55,7 +52,7 @@ public class JIRAStatusesController {
                                          action: .getStatus(idOrName: idOrName))
         Alamofire.request(request)
             .validate()
-            .responseJSON { response in
+            .responseJSON(queue: queue) { response in
                 guard let data = response.data else {
                     completion(nil)
                     return

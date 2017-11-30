@@ -6,7 +6,6 @@
 //
 
 import Foundation
-import Dispatch
 import Alamofire
 
 /// The controller class for the JIRA Search REST API
@@ -16,8 +15,6 @@ public class JIRASearchController {
     let user: String
     /// JIRA password
     let password: String
-    
-    private let queue = DispatchQueue(label: "com.polka.cat.SwiftyJIRA")
     
     /// Create instance of `JIRASearchController`
     ///
@@ -38,7 +35,7 @@ public class JIRASearchController {
                                        action: .searchUsingSearchRequest(request: jql))
         Alamofire.request(request)
             .validate()
-            .responseJSON { response in
+            .responseJSON(queue: queue) { response in
                 guard let data = response.data else {
                     completion(nil)
                     return
@@ -79,7 +76,7 @@ public class JIRASearchController {
                                        action: .search(params: parameters))
         Alamofire.request(request)
             .validate()
-            .responseJSON { response in
+            .responseJSON(queue: queue) { response in
                 guard let data = response.data else {
                     completion(nil)
                     return

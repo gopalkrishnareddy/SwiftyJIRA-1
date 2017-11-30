@@ -6,7 +6,6 @@
 //
 
 import Foundation
-import Dispatch
 import Alamofire
 
 /// The controller class for the JIRA issues REST API
@@ -16,8 +15,6 @@ public class JIRAIssuesController {
     let user: String
     /// JIRA password
     let password: String
-    
-    private let queue = DispatchQueue(label: "com.polka.cat.SwiftyJIRA")
     
     /// Create instance of `JIRAIssuesController`
     ///
@@ -53,7 +50,7 @@ public class JIRAIssuesController {
                                        action: .createIssue(body: body, params: parameters))
         Alamofire.request(request)
             .validate()
-            .responseJSON { response in
+            .responseJSON(queue: queue) { response in
             guard let data = response.data else {
                 completion(nil)
                 return
@@ -79,7 +76,7 @@ public class JIRAIssuesController {
                                        action: .createIssues(body: body))
         Alamofire.request(request)
             .validate()
-            .responseJSON { response in
+            .responseJSON(queue: queue) { response in
                 guard let data = response.data else {
                     completion(nil)
                     return
@@ -131,7 +128,7 @@ public class JIRAIssuesController {
                                        action: .getIssue(issueIdOrKey: issueIdOrKey, params: parameters))
         Alamofire.request(request)
             .validate()
-            .responseJSON { response in
+            .responseJSON(queue: queue) { response in
                 guard let data = response.data else {
                     completion(nil)
                     return
@@ -211,7 +208,7 @@ public class JIRAIssuesController {
                                        action: .getTransitions(issueIdOrKey: issueIdOrKey, params: parameters))
         Alamofire.request(request)
             .validate()
-            .responseJSON { response in
+            .responseJSON(queue: queue) { response in
                 guard let data = response.data else {
                     completion(nil)
                     return

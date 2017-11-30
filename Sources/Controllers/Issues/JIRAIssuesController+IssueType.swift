@@ -19,7 +19,7 @@ extension JIRAIssuesController {
                                           action: .getAllIssueTypes)
         Alamofire.request(request)
             .validate()
-            .responseJSON { response in
+            .responseJSON(queue: queue) { response in
                 guard let data = response.data else {
                     completion(nil)
                     return
@@ -41,7 +41,7 @@ extension JIRAIssuesController {
                                           action: .getIssueType(id: id))
         Alamofire.request(request)
             .validate()
-            .responseJSON { response in
+            .responseJSON(queue: queue) { response in
                 guard let data = response.data else {
                     completion(nil)
                     return

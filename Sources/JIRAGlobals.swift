@@ -6,9 +6,12 @@
 //
 
 import Foundation
+import Dispatch
 
 /// JIRA API base url
 public let jiraBaseURL = "https://jira.atlassian.com/rest/api/2"
+
+let queue = DispatchQueue(label: "com.polka.cat.SwiftyJIRA")
 
 public enum JIRASortOrder {
     case ascending(value: String)

@@ -25,7 +25,7 @@ extension JIRAWorkflowsController {
                                                 action: .getById(id: id, params: parameters))
         Alamofire.request(request)
             .validate()
-            .responseJSON { response in
+            .responseJSON(queue: queue) { response in
                 guard let data = response.data else {
                     completion(nil)
                     return
@@ -115,7 +115,7 @@ extension JIRAWorkflowsController {
                                                 action: .getIssueType(id: id, issueType: issueType, params: parameters))
         Alamofire.request(request)
             .validate()
-            .responseJSON { response in
+            .responseJSON(queue: queue) { response in
                 guard let data = response.data else {
                     completion(nil)
                     return
@@ -148,7 +148,7 @@ extension JIRAWorkflowsController {
                                                 action: .getWorkflow(id: id, params: parameters))
         Alamofire.request(request)
             .validate()
-            .responseJSON { response in
+            .responseJSON(queue: queue) { response in
                 guard let data = response.data else {
                     completion(nil)
                     return

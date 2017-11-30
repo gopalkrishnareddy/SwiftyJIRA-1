@@ -6,7 +6,6 @@
 //
 
 import Foundation
-import Dispatch
 import Alamofire
 
 /// The controller class for the JIRA Workflows REST API
@@ -16,8 +15,6 @@ public class JIRAWorkflowsController {
     let user: String
     /// JIRA password
     let password: String
-    
-    private let queue = DispatchQueue(label: "com.polka.cat.SwiftyJIRA")
     
     /// Create instance of `JIRAWorkflowsController`
     ///
@@ -37,7 +34,7 @@ public class JIRAWorkflowsController {
                                          action: .getAllWorkflows(params: nil))
         Alamofire.request(request)
             .validate()
-            .responseJSON { response in
+            .responseJSON(queue: queue) { response in
                 guard let data = response.data else {
                     completion(nil)
                     return
@@ -56,7 +53,7 @@ public class JIRAWorkflowsController {
                                           action: .getAllWorkflows(params: parameters))
         Alamofire.request(request)
             .validate()
-            .responseJSON { response in
+            .responseJSON(queue: queue) { response in
                 guard let data = response.data else {
                     completion(nil)
                     return
@@ -109,7 +106,7 @@ public class JIRAWorkflowsController {
                                           action: .getProperties(transitionId: transitionId, params: parameters))
         Alamofire.request(request)
             .validate()
-            .responseJSON { response in
+            .responseJSON(queue: queue) { response in
                 guard let data = response.data else {
                     completion(nil)
                     return

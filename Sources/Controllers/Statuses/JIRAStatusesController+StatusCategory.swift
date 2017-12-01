@@ -23,7 +23,13 @@ extension JIRAStatusesController {
                     completion(nil)
                     return
                 }
-                completion(try? JSONDecoder().decode([JIRAStatusCategoryJSONBean].self, from: data))
+                
+                do {
+                    completion(try JSONDecoder().decode([JIRAStatusCategoryJSONBean].self, from: data))
+                } catch let error {
+                    print(error)
+                    completion(nil)
+                }
         }
     }
     
@@ -41,7 +47,13 @@ extension JIRAStatusesController {
                     completion(nil)
                     return
                 }
-                completion(try? JSONDecoder().decode(JIRAStatusCategoryJSONBean.self, from: data))
+                
+                do {
+                    completion(try JSONDecoder().decode(JIRAStatusCategoryJSONBean.self, from: data))
+                } catch let error {
+                    print(error)
+                    completion(nil)
+                }
         }
     }
 }

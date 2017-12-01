@@ -24,7 +24,13 @@ extension JIRAIssuesController {
                     completion(nil)
                     return
                 }
-                completion(try? JSONDecoder().decode([JIRAIssueType].self, from: data))
+                
+                do {
+                    completion(try JSONDecoder().decode([JIRAIssueType].self, from: data))
+                } catch let error {
+                    print(error)
+                    completion(nil)
+                }
         }
     }
     
@@ -46,7 +52,13 @@ extension JIRAIssuesController {
                     completion(nil)
                     return
                 }
-                completion(try? JSONDecoder().decode(JIRAIssueType.self, from: data))
+                
+                do {
+                    completion(try JSONDecoder().decode(JIRAIssueType.self, from: data))
+                } catch let error {
+                    print(error)
+                    completion(nil)
+                }
         }
     }
     

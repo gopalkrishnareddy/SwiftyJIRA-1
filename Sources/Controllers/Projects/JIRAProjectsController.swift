@@ -58,7 +58,13 @@ public class JIRAProjectsController {
                     completion(nil)
                     return
                 }
-                completion(try? JSONDecoder().decode([JIRAProject].self, from: data))
+                
+                do {
+                    completion(try JSONDecoder().decode([JIRAProject].self, from: data))
+                } catch let error {
+                    print(error)
+                    completion(nil)
+                }
         }
     }
     
@@ -95,7 +101,13 @@ public class JIRAProjectsController {
                     completion(nil)
                     return
                 }
-                completion(try? JSONDecoder().decode(JIRAProject.self, from: data))
+                
+                do {
+                    completion(try JSONDecoder().decode(JIRAProject.self, from: data))
+                } catch let error {
+                    print(error)
+                    completion(nil)
+                }
         }
     }
     
@@ -150,7 +162,13 @@ public class JIRAProjectsController {
                     completion(nil)
                     return
                 }
-                completion(try? JSONDecoder().decode([JIRAVersion].self, from: data))
+                
+                do {
+                    completion(try JSONDecoder().decode([JIRAVersion].self, from: data))
+                } catch let error {
+                    print(error)
+                    completion(nil)
+                }
         }
     }
 }

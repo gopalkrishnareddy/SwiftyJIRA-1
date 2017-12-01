@@ -30,7 +30,13 @@ extension JIRAWorkflowsController {
                     completion(nil)
                     return
                 }
-                completion(try? JSONDecoder().decode(JIRAWorkflowScheme.self, from: data))
+                
+                do {
+                    completion(try JSONDecoder().decode(JIRAWorkflowScheme.self, from: data))
+                } catch let error {
+                    print(error)
+                    completion(nil)
+                }
         }
     }
     
@@ -120,7 +126,13 @@ extension JIRAWorkflowsController {
                     completion(nil)
                     return
                 }
-                completion(try? JSONDecoder().decode(JIRAIssueType.self, from: data))
+                
+                do {
+                    completion(try JSONDecoder().decode(JIRAIssueType.self, from: data))
+                } catch let error {
+                    print(error)
+                    completion(nil)
+                }
         }
     }
     
@@ -153,7 +165,13 @@ extension JIRAWorkflowsController {
                     completion(nil)
                     return
                 }
-                completion(try? JSONDecoder().decode(JIRAWorkflowMapping.self, from: data))
+                
+                do {
+                    completion(try JSONDecoder().decode(JIRAWorkflowMapping.self, from: data))
+                } catch let error {
+                    print(error)
+                    completion(nil)
+                }
         }
     }
     

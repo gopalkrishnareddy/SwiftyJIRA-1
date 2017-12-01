@@ -39,7 +39,13 @@ public class JIRAWorkflowsController {
                     completion(nil)
                     return
                 }
-                completion(try? JSONDecoder().decode([JIRAWorkflow].self, from: data))
+                
+                do {
+                    completion(try JSONDecoder().decode([JIRAWorkflow].self, from: data))
+                } catch let error {
+                    print(error)
+                    completion(nil)
+                }
         }
     }
     
@@ -58,7 +64,13 @@ public class JIRAWorkflowsController {
                     completion(nil)
                     return
                 }
-                completion(try? JSONDecoder().decode(JIRAWorkflow.self, from: data))
+                
+                do {
+                    completion(try JSONDecoder().decode(JIRAWorkflow.self, from: data))
+                } catch let error {
+                    print(error)
+                    completion(nil)
+                }
         }
     }
     
@@ -111,7 +123,13 @@ public class JIRAWorkflowsController {
                     completion(nil)
                     return
                 }
-                completion(try? JSONDecoder().decode(JIRAWorkflow.self, from: data))
+                
+                do {
+                    completion(try JSONDecoder().decode(JIRAWorkflow.self, from: data))
+                } catch let error {
+                    print(error)
+                    completion(nil)
+                }
         }
     }
 }

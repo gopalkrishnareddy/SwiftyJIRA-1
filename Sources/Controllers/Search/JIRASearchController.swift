@@ -40,7 +40,13 @@ public class JIRASearchController {
                     completion(nil)
                     return
                 }
-                completion(try? JSONDecoder().decode(JIRASearchResults.self, from: data))
+                
+                do {
+                    completion(try JSONDecoder().decode(JIRASearchResults.self, from: data))
+                } catch let error {
+                    print(error)
+                    completion(nil)
+                }
         }
     }
     
@@ -83,7 +89,13 @@ public class JIRASearchController {
                     completion(nil)
                     return
                 }
-                completion(try? JSONDecoder().decode(JIRASearchResults.self, from: data))
+                
+                do {
+                    completion(try JSONDecoder().decode(JIRASearchResults.self, from: data))
+                } catch let error {
+                    print(error)
+                    completion(nil)
+                }
         }
     }
 }

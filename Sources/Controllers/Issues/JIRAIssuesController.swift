@@ -51,11 +51,17 @@ public class JIRAIssuesController {
         Alamofire.request(request)
             .validate()
             .responseJSON(queue: queue) { response in
-            guard let data = response.data else {
-                completion(nil)
-                return
-            }
-            completion(try? JSONDecoder().decode(JIRAIssue.self, from: data))
+                guard let data = response.data else {
+                    completion(nil)
+                    return
+                }
+                
+                do {
+                    completion(try JSONDecoder().decode(JIRAIssue.self, from: data))
+                } catch let error {
+                    print(error)
+                    completion(nil)
+                }
         }
     }
     
@@ -81,7 +87,13 @@ public class JIRAIssuesController {
                     completion(nil)
                     return
                 }
-                completion(try? JSONDecoder().decode([JIRAIssue].self, from: data))
+                
+                do {
+                    completion(try JSONDecoder().decode([JIRAIssue].self, from: data))
+                } catch let error {
+                    print(error)
+                    completion(nil)
+                }
         }
     }
     
@@ -133,10 +145,16 @@ public class JIRAIssuesController {
                     completion(nil)
                     return
                 }
-                completion(try? JSONDecoder().decode(JIRAIssue.self, from: data))
+                
+                do {
+                    completion(try JSONDecoder().decode(JIRAIssue.self, from: data))
+                } catch let error {
+                    print(error)
+                    completion(nil)
+                }
         }
     }
-
+    
     public func deleteIssue() {
         // TODO: Implement
     }
@@ -213,7 +231,13 @@ public class JIRAIssuesController {
                     completion(nil)
                     return
                 }
-                completion(try? JSONDecoder().decode(JIRAIssueTransitions.self, from: data))
+                
+                do {
+                    completion(try JSONDecoder().decode(JIRAIssueTransitions.self, from: data))
+                } catch let error {
+                    print(error)
+                    completion(nil)
+                }
         }
     }
     
